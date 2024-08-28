@@ -183,7 +183,7 @@ function App() {
 
       {/* <!-- Hero Section --> */}
       <main>
-        <section data-aos="zoom-in" data-aos-duration="2500" className="sm:h-[90vh] sm:py-24 md:h-[90vh]  md:py-24 flex flex-col items-center justify-center" >
+        <section data-aos="zoom-in" data-aos-duration="2500" className="sm:h-[90vh] xsm:h-[90vh] py-12 md:py-24 flex flex-col items-center justify-center" >
           <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 md:px-6">
             <div className="relative">
               <img
