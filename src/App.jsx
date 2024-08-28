@@ -274,7 +274,7 @@ function App() {
     {/* FAQs Section */}
 
     <section data-aos="fade-up" id="faq-section" className="p-6 rounded-lg shadow-lg">
-      <div className="container px-4 mx-auto">
+      <div className="container px-2 md:px-4 mx-auto">
         <h1 className="text-3xl font-bold md:text-4xl font-bold text-green-900 mb-4">Frequently Asked Questions</h1>
         <div id="accordion-flush ">
           {[
@@ -306,7 +306,7 @@ function App() {
             }
           ].map(({ id, question, answer }) => (
             /* border-b border-gray-200 */
-            <div key={id} className="border-none bg-[#f0f8f0] mb-2 px-3 rounded-lg hover:bg-none">
+            <div key={id} className="border-none bg-[#f0f8f0] mb-2 px-3 shadow rounded-lg hover:bg-none">
               <h2 id={`accordion-flush-heading-${id}`}>
                 <button
                   type="button"
@@ -333,7 +333,7 @@ function App() {
               </h2>
               <div
                 id={`accordion-flush-body-${id}`}
-                className={`py-1  ${openIndex === id ? 'block' : 'hidden'}`}
+                className={`py-1 pb-2  ${openIndex === id ? 'block' : 'hidden'}`}
               >
                 <p className="text-gray-700 font-medium">{answer}</p>
               </div>
