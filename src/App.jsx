@@ -187,7 +187,7 @@ function App() {
           <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 md:px-6">
             <div className="relative">
               <img
-                src="../public/assets/gfgsc_rguktn_nobg.png"
+                src="../assets/gfgsc_rguktn_nobg.png"
                 alt="Hero Image"
                 width="400"
                 height="400"
