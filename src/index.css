@@ -1,29 +1,25 @@
-/*Importing Poppins,Monsterrat,Arvo,GreatVibes,Lobster,Pacifio from google fonts*/
+/* Importing Poppins, Montserrat, Arvo, GreatVibes, Lobster, and Pacifico from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&family=Arvo&family=Great+Vibes&family=Lobster&family=Pacifico&display=swap');
 
-/* Apply fonts to elements */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    /* background-color: #dee2da; */
-}
+/* Global styles */
+/* Mona Sans font */
 @font-face {
   font-family: 'Mona Sans';
-  src:
-    url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
-    url('/fonts/Mona-Sans.woff2') format('woff2-variations');
+  src: url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+       url('/fonts/Mona-Sans.woff2') format('woff2-variations');
   font-weight: 200 900;
   font-stretch: 75% 125%;
 }
-@font-face {
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Mona Sans', 'Poppins', sans-serif !important;
+}
+
+/* @font-face {
     font-family: 'Garet Heavy';
     src: url('/fonts/Garet-Heavy.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
-
-* {
-  font-family: "Mona Sans", "Mona Sans Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-    /* font-family: 'Garet Heavy', sans-serif !important; */
-}
+  } */

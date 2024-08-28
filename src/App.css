@@ -26,6 +26,8 @@
   justify-content:center;
   align-items:center;
   transition: transform 0.5s;
+  /* background-color: #4CAF50; */
+  /* background-color: #4CAF50; */
 }
 .team-member-card h3,.team-member-card p{
   text-align:center;
@@ -40,10 +42,6 @@
 
 
 /*Contact-Us Section*/
-.social-media a i{
-  font-size: 7rem;
-  padding:2rem;
-}
 
 
 
@@ -60,7 +58,18 @@
 
 
 .text-2xl{
-  font-weight: bolder !important;
+  /* font-weight: bolder !important; */
 }
 
 
+/* Responsiveness */
+@media only screen and (max-width:600px) {
+  .hero-section{
+    height:90vh;
+    background-color: red;
+  }
+  .team-member-card{
+    
+  }
+
+}

@@ -52,11 +52,37 @@ const teamMembers = [
     position: 'AI/ML Lead'
   },
   {
-    img_link: '/assets/gfgsc_rguktn_nobg.png',
+    img_link: '/assets/team/nayeem.jpg',
     name: 'M.Nayeem Basha',
     position: 'Web Lead'
   },
   // Add more team members as needed
+];
+const socialLinks = [
+  {
+    href: "https://www.linkedin.com/in/geeksforgeeks-rgukt-nuzvid-854270325/",
+    ariaLabel: "LinkedIn",
+    icon: "bi bi-linkedin",
+    label: "LinkedIn",
+  },
+  {
+    href: "",
+    ariaLabel: "Twitter",
+    icon: "bi bi-twitter-x",
+    label: "Twitter",
+  },
+  {
+    href: "https://www.instagram.com/gfgsc_rguktn",
+    ariaLabel: "Instagram",
+    icon: "bi bi-instagram",
+    label: "Instagram",
+  },
+  {
+    href: "",
+    ariaLabel: "YouTube",
+    icon: "bi bi-discord",
+    label: "Discord",
+  },
 ];
 
 
@@ -107,8 +133,8 @@ function App() {
   return (
     <div className="bg-[#f0f8f0] text-[#1a5a1a] primary">
       {/* <!-- Header Section --> */}
-      
-    <nav className="sticky top-0 z-50 bg-[#f0f8f0] px-4 py-1 shadow-md md:px-6">
+
+    <nav className="sticky top-0 z-50 bg-[#f0f8f0] px-4 py-1 shadow-md md:px-6 navbar">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3">
           <img
@@ -189,7 +215,7 @@ function App() {
 
       {/* <!-- Hero Section --> */}
       <main>
-        <section data-aos="zoom-in" data-aos-duration="2500" className="sm:h-[90vh] xsm:h-[90vh] py-12 md:py-24 flex flex-col items-center justify-center" >
+        <section data-aos="zoom-in" data-aos-duration="2500" className=" hero-section sm:h-[90vh] xsm:h-[90vh] py-12 md:py-24 flex flex-col items-center justify-center" >
           <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 md:px-6">
             <div className="relative">
               <img
@@ -259,7 +285,7 @@ function App() {
       {teamMembers.map((member, index) => (
         <div
           key={index}
-          className={`team-member-card relative rounded-lg bg-green-100 hover:shadow-lg p-4 shadow-md transition-transform`}
+          className={`team-member-card relative rounded-lg bg-green-100 hover:shadow-3xl p-2 md:p-4 shadow-md transition-transform`}
         >
           <img
             src={member.img_link}
@@ -267,15 +293,20 @@ function App() {
             width="300"
             height="300"
             className="mb-4 h-40 w-40 rounded-full object-cover"
-            style={{ aspectRatio: '300/300', objectFit: 'cover',objectPosition: 'top' }}
+            style={{
+              aspectRatio: '300/300',
+              objectFit: 'cover',
+              objectPosition: member.img_link === 'nayeem.jpg' ? 'left' : 'top',
+            }}
           />
-          <h3 className="mb-2 text-lg font-bold">{member.name}</h3>
+          <h3 className="mb-1 md:mb-2 text-lg font-bold">{member.name}</h3>
           <p className="text-[#1a5a1a]">{member.position}</p>
         </div>
       ))}
     </div>
   </div>
 </section>
+
 
     {/* FAQs Section */}
 
@@ -349,32 +380,32 @@ function App() {
       </div>
     </section>
 
-        {/* Contact Us section */}
-        {/* <section data-aos="fade-up" className="flex justify-center items-center py-12">
-  <div className="flex flex-wrap justify-center items-center space-x-6 social-media">
-    <a href="" className="text-[#1a5a1a] text-3xl transition-colors duration-300 hover:text-[#4CAF50]">
-      <i className="fab fa-facebook"></i>
-    </a>
-    <a href="" className="text-[#1a5a1a] text-3xl transition-colors duration-300 hover:text-[#4CAF50]">
-      <i className="fab fa-twitter"></i>
-    </a>
-    <a href="" className="text-[#1a5a1a] text-3xl transition-colors duration-300 hover:text-[#4CAF50]">
-      <i className="fab fa-instagram"></i>
-    </a>
-    <a href="" className="text-[#1a5a1a] text-3xl transition-colors duration-300 hover:text-[#4CAF50]">
-      <i className="fab fa-linkedin"></i>
-    </a>
-    <a href="" className="text-[#1a5a1a] text-3xl transition-colors duration-300 hover:text-[#4CAF50]">
-      <i className="fab fa-github"></i>
-    </a>
-    <a href="" className="text-[#1a5a1a] text-3xl transition-colors duration-300 hover:text-[#4CAF50]">
-      <i className="fab fa-youtube"></i>
-    </a>
+
+        {/* Contact Us Section */}
+        <section data-aos="fade-up" className="bg-[#1a5a1a] text-[#f0f8f0] py-12 md:py-24">
+  <div className="container mx-auto px-4">
+    <h2 className="mb-8 text-3xl font-bold md:text-4xl">Get in Touch with Us</h2>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {socialLinks.map((link, index) => (
+        <a
+          key={index}
+          href={link.href}
+          target="_blank"
+          aria-label={link.ariaLabel}
+          className="flex flex-col items-center justify-center p-6 rounded-lg bg-green-100 text-green-800 hover:shadow-lg transition-all duration-300"
+        >
+          <i className={`${link.icon} fa-brands fa-linkedin text-3xl`}></i>
+          <span className="mt-2 text-lg font-semibold">{link.label}</span>
+        </a>
+      ))}
+    </div>
   </div>
-</section> */}
+</section>
+
+
 
         {/* Subscribe to Newsletter section */}
-        <section data-aos="fade-up" className="bg-[#1a5a1a] py-12 md:py-24">
+        {/* <section data-aos="fade-up" className="bg-[#1a5a1a] py-12 md:py-24">
           <div className="container mx-auto flex flex-col items-center gap-4 px-4 text-white md:px-6">
             <h2 className="text-3xl font-bold md:text-4xl">
               Subscribe to our Newsletter
@@ -395,7 +426,7 @@ function App() {
               </div>
             </form>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* <!-- Footer Section --> */}
