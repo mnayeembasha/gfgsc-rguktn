@@ -306,7 +306,7 @@ function App() {
             }
           ].map(({ id, question, answer }) => (
             /* border-b border-gray-200 */
-            <div key={id} className="border-none hover:bg-none">
+            <div key={id} className="border-none bg-[#f0f8f0] mb-2 px-3 rounded-lg hover:bg-none">
               <h2 id={`accordion-flush-heading-${id}`}>
                 <button
                   type="button"
