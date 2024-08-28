@@ -183,7 +183,7 @@ function App() {
 
       {/* <!-- Hero Section --> */}
       <main>
-        <section data-aos="zoom-in" data-aos-duration="2500" className="sm:h-[90vh] py-12 md:py-24 flex flex-col items-center justify-center" >
+        <section data-aos="zoom-in" data-aos-duration="2500" className="sm:h-[90vh] sm:py-24 md:h-[90vh]  md:py-24 flex flex-col items-center justify-center" >
           <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 md:px-6">
             <div className="relative">
               <img
@@ -212,36 +212,6 @@ function App() {
             Exclusive Career Resources
             Enhance Problem-Solving Skills */}
         <section data-aos="fade-up" id="about" className="py-12 md:py-18">
-          {/* <div className="container mx-auto flex flex-col items-center gap-8 px-4 md:flex-row md:px-6">
-            <div className="flex-1 flex justify-center">
-              <div>
-              <img
-                src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220512131412/Student-Chapter-Article-Banner.png"
-                alt="About Image"
-                width="500"
-                height="500"
-                className="h-48 w-48 md:h-64 md:w-64 rounded-lg object-cover"
-                style={{ aspectRatio: '500/500', objectFit: 'cover' }}
-              /></div>
-            </div>
-            <div className="flex-1 space-y-4">
-              <h2 className="container text-3xl font-bold md:text-4xl">
-                About Us
-              </h2>
-              <p className="text-lg">
-                Welcome to the Geeks for Geeks student chapter at RGUKT Nuzvid!
-                We are a community of passionate students who share a love for
-                technology and programming. Our goal is to create a supportive
-                environment where we can learn, collaborate, and grow together.
-              </p>
-              <p className="text-lg">
-                Through our events, workshops, and projects, we aim to empower
-                students with the skills and knowledge they need to succeed in
-                the tech industry. Join us on this exciting journey as we
-                explore the world of computer science and software development.
-              </p>
-            </div>
-          </div> */}
           <div data-aos="fade-up" className="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 px-4 md:px-6 flex justify-center items-center">
   <div className="md:col-span-5 flex justify-center items-center">
     <img
