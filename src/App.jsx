@@ -202,7 +202,7 @@ function App() {
             </li>
             <li>
               <a
-                href=""
+                href="#contact"
                 className="block py-2 px-3 md:p-0 text-gray-900 rounded transition duration-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
               >
                 Contact
@@ -382,7 +382,7 @@ function App() {
 
 
         {/* Contact Us Section */}
-        <section data-aos="fade-up" className="bg-[#1a5a1a] text-[#f0f8f0] py-12 md:py-24">
+        <section id="contact" data-aos="fade-up" className="bg-[#1a5a1a] text-[#f0f8f0] py-12 md:py-24">
   <div className="container mx-auto px-4">
     <h2 className="mb-8 text-3xl font-bold md:text-4xl">Get in Touch with Us</h2>
     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
