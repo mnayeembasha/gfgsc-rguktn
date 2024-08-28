@@ -1,0 +1,66 @@
+/* Green grid pattern background */
+.primary {
+ width: 100%;
+ height: 100%;
+ --color: rgba(0, 128, 0, 0.05); /* Light green lines */
+ --color: rgba(0, 128, 0, 0.08); /* Light green lines */
+ background-color: #e8f5e9; /* Very light green background */
+ /* background-color: #000; */
+ background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+                   linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+ background-size: 55px 55px;
+}
+
+/* About section */
+/* Apply filter and drop-shadow-xl effects */
+.custom-shadow {
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.1));
+}
+
+
+/* Web Team section */
+.team-member-card{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  transition: transform 0.5s;
+}
+.team-member-card h3,.team-member-card p{
+  text-align:center;
+}
+.team-member-card:hover{
+  transform:scale(1.05);
+}
+
+/* FAQ's section */
+
+
+
+
+/*Contact-Us Section*/
+.social-media a i{
+  font-size: 7rem;
+  padding:2rem;
+}
+
+
+
+
+/*Other utility CSS*/
+.green-gradient-text {
+    background: linear-gradient(to right, #009245, rgb(252, 238, 33));
+    background: linear-gradient(110.1deg, rgb(34, 126, 34) 2.9%, rgb(168, 251, 60) 90.3%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+
+.text-2xl{
+  font-weight: bolder !important;
+}
+
+
