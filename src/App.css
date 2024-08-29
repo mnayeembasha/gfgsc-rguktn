@@ -95,7 +95,21 @@
 
 
 /*Contact-Us Section*/
+.icon-container{
+  width:3rem !important;
+  height:3rem !important;
+}
+.icon-container i{
+  font-size:1.5rem;
+}
+.contact-form input,textarea{
+  outline: none !important;
+  border: 1px solid green !important;
+}
+#contact .container{
+  /* background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
 
+}
 
 
 
