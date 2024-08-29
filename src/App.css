@@ -63,7 +63,8 @@
 /* Responsiveness */
 @media only screen and (max-width:600px) {
   .hero-section{
-    height:90vh;
+    height:80vh !important;
+    overflow: hidden !important;
     /* background-color: red; */
   }
   .team-member-card{
