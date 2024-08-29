@@ -157,7 +157,7 @@
 /* Responsiveness */
 @media only screen and (max-width:600px) {
   .hero-section{
-    height:70vh !important;
+    height:80vh !important;
     overflow: hidden !important;
   }
   .navbar .logo{
@@ -170,8 +170,8 @@
     display: block;
   }
   .hero-img-con img{
-    height:14rem;
-    width:14rem;
+    height:20rem;
+    width: 20rem;
   }
 }
   @media only screen and (max-width:520px) {
@@ -181,7 +181,7 @@
   }
   @media only screen and (max-width:455px) {
     .heading,.tag-line{
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
   }
 @media only screen and (max-width:402px) {
