@@ -1,3 +1,27 @@
+/* Importing Poppins, Montserrat, Arvo, GreatVibes, Lobster, and Pacifico from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&family=Arvo&family=Great+Vibes&family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/*Navbar-section*/
+@font-face {
+    font-family: 'Garet Heavy';
+    src: url('/fonts/Garet-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.navbar .logo-text{
+  /* font-family: 'Garet Heavy' !important; */
+  /* font-family: 'Montserrat' !important; */
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 850;
+}
+.lbr{
+  display: none;
+}
+.heading{
+  line-height: 1.2;
+}
 /* Green grid pattern background */
 .primary {
  width: 100%;
@@ -59,7 +83,6 @@
 
 
 
-
 /* Responsiveness */
 @media only screen and (max-width:600px) {
   .hero-section{
@@ -67,8 +90,37 @@
     overflow: hidden !important;
     /* background-color: red; */
   }
-  .team-member-card{
-
+  .navbar .logo{
+    height:1.5rem;
   }
-
+  .tag-line,.heading{
+    font-size: 2rem;
+  }
+  .lbr{
+    display: block;
+  }
+}
+  @media only screen and (max-width:600px) {
+    .heading{
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (max-width:452px) {
+    .heading{
+      font-size: 2rem;
+    }
+  }
+@media only screen and (max-width:402px) {
+  .navbar .logo{
+    height:1.3rem;
+  }
+  .navbar .logo-text{
+    font-size: 1.2rem;
+  }
+  .tag-line{
+    font-size: 1.6rem;
+  }
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
 }

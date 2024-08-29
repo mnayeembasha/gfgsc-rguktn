@@ -5,6 +5,35 @@ import "./App.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+const faqs = [
+  {
+    id: 1,
+    question: "What is the Geeks for Geeks Student Chapter?",
+    answer: "The Geeks for Geeks Student Chapter is a community-driven platform for students to enhance their technical skills through various workshops, coding competitions, and collaborative projects. Our goal is to provide a supportive environment for learning and growth in the field of technology."
+  },
+  {
+    id: 2,
+    question: "How can I become a member of the Geeks for Geeks Student Chapter?",
+    answer: "To become a member of the Geeks for Geeks Student Chapter, you need to fill out our membership form available on our website. Once submitted, our team will review your application and get back to you with further details on the onboarding process."
+  },
+  {
+    id: 3,
+    question: "What types of events and activities are organized?",
+    answer: "We organize a variety of events and activities, including coding workshops, hackathons, technical talks, and collaborative projects. These events are designed to enhance technical skills, foster collaboration, and provide networking opportunities with industry professionals."
+  },
+  {
+    id: 4,
+    question: "How can I get involved in organizing events?",
+    answer: "If you’re interested in helping organize events, you can reach out to us through our contact form or join our organizing committee. We welcome enthusiastic members who want to contribute to the planning and execution of our activities."
+  },
+  {
+    id: 5,
+    question: "Where can I find more information about upcoming events?",
+    answer: "You can find information about upcoming events on our website’s events page or follow us on social media for regular updates. We also send out newsletters to our members with details about upcoming activities."
+
+  }
+]
+
 const teamMembers = [
   {
     img_link: '/assets/team/lilly.jpg',
@@ -83,6 +112,12 @@ const socialLinks = [
     icon: "bi bi-discord",
     label: "Discord",
   },
+  // {
+  //   href: "mailto:geeksforgeeksrguktnuzvid@gmail.com",
+  //   ariaLabel: "Email",
+  //   icon: "bi bi-envelope",
+  //   label: "geeksforgeeksrguktnuzvid@gmail.com",
+  // },
 ];
 
 
@@ -139,10 +174,10 @@ function App() {
         <a href="/" className="flex items-center space-x-3">
           <img
             src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"
-            className="h-7"
+            className="h-7 logo"
             alt=""
           />
-          <span className="self-center text-2xl font-bold whitespace-nowrap">
+          <span className="logo-text self-center text-2xl font-bold whitespace-nowrap">
             GFGSC-RGUKTN
           </span>
         </a>
@@ -169,6 +204,12 @@ function App() {
               d="M1 1h15M1 7h15M1 13h15"
             />
           </svg>
+        {/* <img
+          src="/assets/menu.svg"
+          alt="Menu"
+          className="w-8 h-8"
+        /> */}
+
         </button>
         <div
           className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
@@ -217,6 +258,9 @@ function App() {
       <main>
         <section data-aos="zoom-in" data-aos-duration="2500" className="hero-section sm:h-[80vh] xsm:h-[80vh] md:h-[90vh] py-2 md:py-24 flex flex-col items-center justify-center" >
           <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 md:px-6">
+          <h1 className="text-2xl  font-bold md:text-5xl text-center heading">
+              GFG Student Chapter <br className="lbr"/>RGUKT Nuzvid
+            </h1>
             <div className="relative">
               <img
                 src="./assets/gfgsc_rguktn_nobg.png"
@@ -227,10 +271,11 @@ function App() {
                 style={{ aspectRatio: "400/400", objectFit: "cover" }}
               />
             </div>
-            <h1 className="text-2xl  font-bold md:text-5xl ">
-              Geeks for Geeks RGUKT Nuzvid
-            </h1>
-            <div className="text-2xl font-bold md:text-5xl">
+
+            <div className="text-2xl font-bold md:text-5xl tag-line">
+            Unlock the Geek in You
+            </div>
+            <div className="text-2xl font-bold md:text-5xl tag-line">
               Join us for <span id="typewriter"></span>{" "}
             </div>
           </div>
@@ -281,29 +326,30 @@ function App() {
         <section data-aos="fade-up" id="team" className="py-12 md:py-24">
   <div className="container mx-auto px-4 md:px-6">
     <h2 className="mb-8 text-3xl font-bold md:text-4xl">Core Team</h2>
-    <div className="grid grid-cols-2 xsm:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {teamMembers.map((member, index) => (
-        <div
-          key={index}
-          className={`team-member-card relative rounded-lg bg-green-100 hover:shadow-3xl p-2 md:p-4 shadow-md transition-transform`}
-        >
-          <img
-            src={member.img_link}
-            alt={`Team Member ${index + 1}`}
-            width="300"
-            height="300"
-            className="mb-4 h-40 w-40 rounded-full object-cover"
-            style={{
-              aspectRatio: '300/300',
-              objectFit: 'cover',
-              objectPosition: member.img_link === 'nayeem.jpg' ? 'left' : 'top',
-            }}
-          />
-          <h3 className="mb-1 md:mb-2 text-lg font-bold">{member.name}</h3>
-          <p className="text-[#1a5a1a]">{member.position}</p>
-        </div>
-      ))}
+    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+  {teamMembers.map((member, index) => (
+    <div
+      key={index}
+      className={`team-member-card relative rounded-lg bg-green-100 hover:shadow-3xl p-2 md:p-4 shadow-md transition-transform`}
+    >
+      <img
+        src={member.img_link}
+        alt={`Team Member ${index + 1}`}
+        width="300"
+        height="300"
+        className="mb-4 h-40 w-40 rounded-full object-cover"
+        style={{
+          aspectRatio: '300/300',
+          objectFit: 'cover',
+          objectPosition: member.img_link === 'nayeem.jpg' ? 'left' : 'top',
+        }}
+      />
+      <h3 className="mb-1 md:mb-2 text-lg font-bold">{member.name}</h3>
+      <p className="text-[#1a5a1a]">{member.position}</p>
     </div>
+  ))}
+</div>
+
   </div>
 </section>
 
@@ -314,34 +360,7 @@ function App() {
       <div className="container px-2 md:px-4 mx-auto">
         <h1 className="text-3xl font-bold md:text-4xl font-bold text-green-900 mb-4">Frequently Asked Questions</h1>
         <div id="accordion-flush ">
-          {[
-            {
-              id: 1,
-              question: "What is the Geeks for Geeks Student Chapter?",
-              answer: "The Geeks for Geeks Student Chapter is a community-driven platform for students to enhance their technical skills through various workshops, coding competitions, and collaborative projects. Our goal is to provide a supportive environment for learning and growth in the field of technology."
-            },
-            {
-              id: 2,
-              question: "How can I become a member of the Geeks for Geeks Student Chapter?",
-              answer: "To become a member of the Geeks for Geeks Student Chapter, you need to fill out our membership form available on our website. Once submitted, our team will review your application and get back to you with further details on the onboarding process."
-            },
-            {
-              id: 3,
-              question: "What types of events and activities are organized?",
-              answer: "We organize a variety of events and activities, including coding workshops, hackathons, technical talks, and collaborative projects. These events are designed to enhance technical skills, foster collaboration, and provide networking opportunities with industry professionals."
-            },
-            {
-              id: 4,
-              question: "How can I get involved in organizing events?",
-              answer: "If you’re interested in helping organize events, you can reach out to us through our contact form or join our organizing committee. We welcome enthusiastic members who want to contribute to the planning and execution of our activities."
-            },
-            {
-              id: 5,
-              question: "Where can I find more information about upcoming events?",
-              answer: "You can find information about upcoming events on our website’s events page or follow us on social media for regular updates. We also send out newsletters to our members with details about upcoming activities."
-
-            }
-          ].map(({ id, question, answer }) => (
+          {faqs.map(({ id, question, answer }) => (
             /* border-b border-gray-200 */
             <div key={id} className="border-none bg-[#f0f8f0] mb-2 px-3 shadow rounded-lg hover:bg-none">
               <h2 id={`accordion-flush-heading-${id}`}>
@@ -383,23 +402,26 @@ function App() {
 
         {/* Contact Us Section */}
         <section id="contact" data-aos="fade-up" className="bg-[#1a5a1a] text-[#f0f8f0] py-12 md:py-24">
-  <div className="container mx-auto px-4">
-    <h2 className="mb-8 text-3xl font-bold md:text-4xl">Get in Touch with Us</h2>
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-      {socialLinks.map((link, index) => (
-        <a
-          key={index}
-          href={link.href}
-          target="_blank"
-          aria-label={link.ariaLabel}
-          className="flex flex-col items-center justify-center p-6 rounded-lg bg-green-100 text-green-800 hover:shadow-lg transition-all duration-300"
-        >
-          <i className={`${link.icon} fa-brands fa-linkedin text-3xl`}></i>
-          <span className="mt-2 text-lg font-semibold">{link.label}</span>
-        </a>
-      ))}
-    </div>
+        <div className="container mx-auto px-4">
+  <h2 className="mb-8 text-3xl font-bold md:text-4xl">Get in Touch with Us</h2>
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+    {socialLinks.map((link, index) => (
+      <a
+        key={index}
+        href={link.href}
+        target="_blank"
+        aria-label={link.ariaLabel}
+        className="flex flex-col items-center justify-center p-4 md:p-6 rounded-lg bg-green-100 text-green-800 hover:shadow-lg transition-all duration-300 max-w-full text-center"
+      >
+        <i className={`${link.icon} text-3xl`}></i>
+        <span className="mt-2 text-lg font-semibold break-words">
+          {link.label}
+        </span>
+      </a>
+    ))}
   </div>
+</div>
+
 </section>
 
 
@@ -436,15 +458,6 @@ function App() {
           <p className="text-sm text-center">
             © 2024 Geeks for Geeks RGUKT Nuzvid. All rights reserved.
           </p>
-          {/* </div> */}
-          {/* <nav className="flex gap-4">
-            <a className="text-sm font-medium hover:text-[#1a5a1a]/80" href="">
-              Privacy Policy
-            </a>
-            <a className="text-sm font-medium hover:text-[#1a5a1a]/80" href="">
-              Terms of Service
-            </a>
-          </nav> */}
         </div>
       </footer>
     </div>
