@@ -176,12 +176,12 @@
 }
   @media only screen and (max-width:520px) {
     .heading,.tag-line{
-      font-size: 2.2rem;
+      font-size: 2.3rem;
     }
   }
   @media only screen and (max-width:455px) {
     .heading,.tag-line{
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
   }
 @media only screen and (max-width:402px) {
@@ -191,8 +191,8 @@
   .navbar .logo-text{
     font-size: 1.2rem;
   }
-  .tag-line{
-    font-size: 1.6rem;
+  .heading,.tag-line{
+    font-size: 1.7rem;
   }
   .grid {
     grid-template-columns: 1fr !important;
