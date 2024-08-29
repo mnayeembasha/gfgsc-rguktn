@@ -157,7 +157,7 @@
 /* Responsiveness */
 @media only screen and (max-width:600px) {
   .hero-section{
-    height:80vh !important;
+    height:70vh !important;
     overflow: hidden !important;
   }
   .navbar .logo{
