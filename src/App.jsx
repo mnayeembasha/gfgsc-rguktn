@@ -121,7 +121,22 @@ const socialLinks = [
 ];
 
 
+
 function App() {
+
+
+  useEffect(() => {
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
+
+    document.addEventListener('contextmenu', handleContextMenu);
+
+    // Cleanup function to remove the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+    };
+  }, []);
 
 
   useEffect(() => {
@@ -171,7 +186,7 @@ function App() {
 
     <nav className="sticky top-0 z-50 bg-[#f0f8f0] px-4 py-1 shadow-md md:px-6 navbar">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" className="flex items-center space-x-3">
+        <a href="/" className="flex items-center space-x-3 image-container">
           <img
             src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"
             className="h-7 logo"
@@ -261,7 +276,7 @@ function App() {
           <h1 className="text-2xl  font-bold md:text-5xl text-center heading">
               GFG Student Chapter <br className="lbr"/>RGUKT Nuzvid
             </h1>
-            <div className="relative">
+            <div className="relative image-container">
               <img
                 src="./assets/gfgsc_rguktn_nobg.png"
                 alt="Hero Image"
@@ -290,7 +305,7 @@ function App() {
             Enhance Problem-Solving Skills */}
         <section data-aos="fade-up" id="about" className="py-12 md:py-18">
           <div data-aos="fade-up" className="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 px-4 md:px-6 flex justify-center items-center">
-  <div className="md:col-span-5 flex justify-center items-center">
+  <div className="md:col-span-5 flex justify-center items-center image-container">
     <img
       src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220512131412/Student-Chapter-Article-Banner.png"
       alt="About Image"
@@ -330,7 +345,7 @@ function App() {
   {teamMembers.map((member, index) => (
     <div
       key={index}
-      className={`team-member-card relative rounded-lg bg-green-100 hover:shadow-3xl p-2 md:p-4 shadow-md transition-transform`}
+      className={`team-member-card relative image-container rounded-lg bg-green-100 hover:shadow-3xl p-2 md:p-4 shadow-md transition-transform`}
     >
       <img
         src={member.img_link}
