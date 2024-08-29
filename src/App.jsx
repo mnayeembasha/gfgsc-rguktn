@@ -130,6 +130,7 @@ function App() {
       e.preventDefault();
     };
 
+
     document.addEventListener('contextmenu', handleContextMenu);
 
     // Cleanup function to remove the event listener when the component unmounts
@@ -137,7 +138,6 @@ function App() {
       document.removeEventListener('contextmenu', handleContextMenu);
     };
   }, []);
-
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -230,7 +230,7 @@ function App() {
           className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-solid-bg"
         >
-          <ul className="flex flex-col font-medium mt-4 rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+          <ul className="nav-menu flex flex-col font-medium mt-4 rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent">
             <li>
               <a
                 href="/"
@@ -276,21 +276,21 @@ function App() {
           <h1 className="text-2xl  font-bold md:text-5xl text-center heading">
               GFG Student Chapter <br className="lbr"/>RGUKT Nuzvid
             </h1>
-            <div className="relative image-container">
+            <div className="relative image-container hero-img-con">
               <img
                 src="./assets/gfgsc_rguktn_nobg.png"
                 alt="Hero Image"
                 width="400"
                 height="400"
-                className="animate-bounce-vertical h-48 w-48 rounded-full object-cover  md:h-64 md:w-64"
+                className="animate-bounce-vertical h-48 w-48 rounded-full object-cover  md:h-64 md:w-64 hero-img"
                 style={{ aspectRatio: "400/400", objectFit: "cover" }}
               />
             </div>
 
-            <div className="text-2xl font-bold md:text-5xl tag-line">
-            Unlock the Geek in You
+            <div className="text-2xl font-bold md:text-5xl tag-line green-gradient-text">
+            Unlock the <span className="geek">Geek</span> in You!
             </div>
-            <div className="text-2xl font-bold md:text-5xl tag-line">
+            <div className="text-2xl font-bold md:text-5xl tag-line green-gradient-text">
               Join us for <span id="typewriter"></span>{" "}
             </div>
           </div>
@@ -344,24 +344,28 @@ function App() {
     <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
   {teamMembers.map((member, index) => (
     <div
-      key={index}
-      className={`team-member-card relative image-container rounded-lg bg-green-100 hover:shadow-3xl p-2 md:p-4 shadow-md transition-transform`}
-    >
-      <img
-        src={member.img_link}
-        alt={`Team Member ${index + 1}`}
-        width="300"
-        height="300"
-        className="mb-4 h-40 w-40 rounded-full object-cover"
-        style={{
-          aspectRatio: '300/300',
-          objectFit: 'cover',
-          objectPosition: member.img_link === 'nayeem.jpg' ? 'left' : 'top',
-        }}
-      />
-      <h3 className="mb-1 md:mb-2 text-lg font-bold">{member.name}</h3>
-      <p className="text-[#1a5a1a]">{member.position}</p>
-    </div>
+  key={index}
+  // hover:bg-green-500
+  className={`team-member-card relative image-container rounded-lg bg-green-100  p-2 md:p-4 shadow-md transition-colors duration-2000 ease-in-out`}
+>
+  <img
+  src={member.img_link}
+  alt={`Team Member ${index + 1}`}
+  width="300"
+  height="300"
+  className="mb-4 h-40 w-40 rounded-full object-cover  border-4 border-transparent transition-border duration-2000 ease-in-out"
+  style={{
+    aspectRatio: '300/300',
+    objectFit: 'cover',
+    objectPosition: member.img_link === 'nayeem.jpg' ? 'left' : 'top',
+  }}
+/>
+
+  <h3 className="mb-1 md:mb-2 text-lg font-bold  group-hover:text-[#4CAF50]">{member.name}</h3>
+  <p className="text-[#1a5a1a] hover:text-[#4CAF50]">{member.position}</p>
+</div>
+
+
   ))}
 </div>
 
@@ -422,17 +426,18 @@ function App() {
   <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
     {socialLinks.map((link, index) => (
       <a
-        key={index}
-        href={link.href}
-        target="_blank"
-        aria-label={link.ariaLabel}
-        className="flex flex-col items-center justify-center p-4 md:p-6 rounded-lg bg-green-100 text-green-800 hover:shadow-lg transition-all duration-300 max-w-full text-center"
-      >
-        <i className={`${link.icon} text-3xl`}></i>
-        <span className="mt-2 text-lg font-semibold break-words">
-          {link.label}
-        </span>
-      </a>
+  key={index}
+  href={link.href}
+  target="_blank"
+  aria-label={link.ariaLabel}
+  className="group flex flex-col items-center justify-center p-4 md:p-6 rounded-lg bg-green-100 text-green-800 hover:shadow-lg transition-all duration-700 max-w-full text-center"
+>
+  <i className={`${link.icon} text-3xl group-hover:text-[#4CAF50]`}></i>
+  <span className="mt-2 text-lg font-semibold break-words group-hover:text-[#4CAF50]">
+    {link.label}
+  </span>
+</a>
+
     ))}
   </div>
 </div>

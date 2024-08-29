@@ -16,6 +16,9 @@
   font-family: "Nunito", sans-serif !important;
   font-weight: 850;
 }
+.nav-menu li a{
+  color:#1a5a1a;
+}
 .lbr{
   display: none;
 }
@@ -49,7 +52,8 @@
   flex-direction: column;
   justify-content:center;
   align-items:center;
-  transition: transform 0.5s;
+  /* transition: transform 0.5s; */
+  transition: all 2s ease-in-out !important;
   /* background-color: #4CAF50; */
   /* background-color: #4CAF50; */
 }
@@ -57,7 +61,14 @@
   text-align:center;
 }
 .team-member-card:hover{
-  transform:scale(1.05);
+  /* transform:scale(1.05); */
+}
+.team-member-card img{
+  transition: all 0.3s ease-in !important;
+}
+.team-member-card:hover img{
+  border:6px solid ;
+  color:#1a5a1a;
 }
 
 /* FAQ's section */
@@ -72,14 +83,40 @@
 
 /*Other utility CSS*/
 .green-gradient-text {
-    background: linear-gradient(to right, #009245, rgb(252, 238, 33));
-    background: linear-gradient(110.1deg, rgb(34, 126, 34) 2.9%, rgb(168, 251, 60) 90.3%);
+    /* background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%); */
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+    /* background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%); */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
+#typewriter{
+  background: linear-gradient(111.4deg, rgb(2, 255, 4) 18.4%, rgb(0, 232, 237) 100.2%);
+      background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.geek{
+  /* background: linear-gradient(111.4deg, rgb(2, 255, 4) 18.4%, rgb(0, 232, 237) 100.2%); */
+  /* background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%); */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
 
+.heading{
+  background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+  background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
 .image-container {
   position: relative;
 }
@@ -104,26 +141,29 @@
   .hero-section{
     height:80vh !important;
     overflow: hidden !important;
-    /* background-color: red; */
   }
   .navbar .logo{
     height:1.5rem;
   }
   .tag-line,.heading{
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .lbr{
     display: block;
   }
+  .hero-img-con img{
+    height:14rem;
+    width:14rem;
+  }
 }
-  @media only screen and (max-width:600px) {
-    .heading{
-      font-size: 2rem;
+  @media only screen and (max-width:520px) {
+    .heading,.tag-line{
+      font-size: 2.2rem;
     }
   }
-  @media only screen and (max-width:452px) {
-    .heading{
-      font-size: 2rem;
+  @media only screen and (max-width:455px) {
+    .heading,.tag-line{
+      font-size: 1.8rem;
     }
   }
 @media only screen and (max-width:402px) {
