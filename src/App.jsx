@@ -362,7 +362,7 @@ function App() {
 />
 
   <h3 className="mb-1 md:mb-2 text-lg font-bold  group-hover:text-[#4CAF50]">{member.name}</h3>
-  <p className="text-[#1a5a1a] hover:text-[#4CAF50]">{member.position}</p>
+  <p className="text-[#1a5a1a] group-hover:text-[#4CAF50]">{member.position}</p>
 </div>
 
 

@@ -60,16 +60,34 @@
 .team-member-card h3,.team-member-card p{
   text-align:center;
 }
+/* .team-member-card:hover img{
+  border:6px solid linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);;
+  color:#1a5a1a;
+} */
+.team-member-card {
+  position: relative;
+  transition: all 0.5s ease-in !important;
+}
+
+.team-member-card img {
+  border: 6px solid transparent;
+  transition: all 0.5s ease-in !important;
+}
+
+.team-member-card:hover img {
+  /* border:8px solid #41B06E; */
+}
+.team-member-card:hover h3,.team-member-card:hover p{
+  color:#06D001;
+}
 .team-member-card:hover{
   /* transform:scale(1.05); */
 }
 .team-member-card img{
   transition: all 0.3s ease-in !important;
 }
-.team-member-card:hover img{
-  border:6px solid ;
-  color:#1a5a1a;
-}
+
+
 
 /* FAQ's section */
 
@@ -93,7 +111,7 @@
 }
 #typewriter{
   background: linear-gradient(111.4deg, rgb(2, 255, 4) 18.4%, rgb(0, 232, 237) 100.2%);
-      background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
+  background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
