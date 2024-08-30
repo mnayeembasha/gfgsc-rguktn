@@ -134,14 +134,7 @@
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
-.geek{
-  /* background: linear-gradient(111.4deg, rgb(2, 255, 4) 18.4%, rgb(0, 232, 237) 100.2%); */
-  /* background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%); */
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
+
 
 .heading{
   background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
