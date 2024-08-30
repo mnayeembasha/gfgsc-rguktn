@@ -17,28 +17,30 @@ const Contact = () => {
             </p>
           </div>
           <div className="space-y-4  px-4 md:px-8">
-            <div data-aos="fade-up" className="flex items-center gap-2 mb-8">
-              <div className="bg-[#32a852] rounded-full w-8 h-8 flex items-center justify-center icon-container">
-                <i className="bi bi-telephone-fill text-white"></i>
-              </div>
-              <a
-                href="tel:+1234567890"
-                className="text-green-700 hover:underline hover:underline-offset-2"
-              >
-                +91 12345-67890
-              </a>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="bg-[#32a852] rounded-full w-8 h-8 flex items-center justify-center icon-container">
-                <i className="bi bi-envelope-fill text-white"></i>
-              </div>
-              <a
-                href="mailto:geeksforgeeksrguktnuzvid@gmail.com"
-                className="text-green-700 hover:underline hover:underline-offset-2"
-              >
-                geeksforgeeksrguktnuzvid@gmail.com
-              </a>
-            </div>
+          <div data-aos="fade-up" className="flex items-center gap-2 mb-8 flex-wrap w-full">
+  <div className="bg-[#32a852] rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
+    <i className="bi bi-telephone-fill text-white"></i>
+  </div>
+  <a
+    href="tel:+1234567890"
+    className="text-green-700 hover:underline hover:underline-offset-2"
+  >
+    +91 12345-67890
+  </a>
+</div>
+
+<div className="flex items-center gap-2 flex-wrap w-full">
+  <div className="bg-[#32a852] rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
+    <i className="bi bi-envelope-fill text-white"></i>
+  </div>
+  <a
+    href="mailto:geeksforgeeksrguktnuzvid@gmail.com"
+    className="text-green-700 hover:underline hover:underline-offset-2 break-all"
+  >
+    geeksforgeeksrguktnuzvid@gmail.com
+  </a>
+</div>
+
             <div
               data-aos="fade-up"
               className="flex items-center gap-4 py-2 md:py-4"
