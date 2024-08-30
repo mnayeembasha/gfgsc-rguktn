@@ -65,17 +65,13 @@
   color:#1a5a1a;
 } */
 .team-member-card {
-  position: relative;
-  transition: all 0.5s ease-in !important;
+
+  transition: all 0.3s ease-in !important;
 }
 
-.team-member-card img {
-  border: 6px solid transparent;
-  transition: all 0.5s ease-in !important;
-}
-
-.team-member-card:hover img {
+.team-member-card:hover {
   /* border:8px solid #41B06E; */
+  border:2px solid #41B06E;
 }
 .team-member-card:hover h3,.team-member-card:hover p{
   /* color:#06D001; */
@@ -84,7 +80,7 @@
   /* transform:scale(1.05); */
 }
 .team-member-card img{
-  transition: all 0.3s ease-in !important;
+  /* transition: all 0.3s ease-in !important; */
 }
 
 
