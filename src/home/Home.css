@@ -217,4 +217,8 @@
   .grid {
     grid-template-columns: 1fr !important;
   }
+  .soc-par{
+    padding-left: 0rem;
+    padding-right:0rem;
+  }
 }
