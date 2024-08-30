@@ -185,6 +185,10 @@
     height:20rem;
     width: 20rem;
   }
+  .soc-par{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
   @media only screen and (max-width:520px) {
     .heading,.tag-line{
@@ -194,6 +198,10 @@
   @media only screen and (max-width:455px) {
     .heading,.tag-line{
       font-size: 2rem;
+    }
+    .soc-par{
+      padding-left: 0rem;
+      padding-right:0rem;
     }
   }
 @media only screen and (max-width:402px) {
