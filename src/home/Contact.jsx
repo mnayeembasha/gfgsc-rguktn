@@ -7,18 +7,18 @@ const Contact = () => {
     >
       <div
         data-aos="fade-up"
-        className="container  md:shadow-lg bg-[#f0f8f0] grid grid-cols-1 gap-8 px-4 py-8 md:py-12 rounded-2xl md:grid-cols-2 md:gap-0 md:px-6"
+        className="md:shadow-lg bg-[#f0f8f0] grid grid-cols-1 gap-8 px-4 py-8 md:py-12 rounded-2xl md:grid-cols-2 md:gap-0 md:px-6 soc-gpar"
       >
         <div className="space-y-6 px-8  md:px-24  flex flex-col justify-center align-center soc-par">
-          <div data-aos="fade-up" className="space-y-2  px-4 md:px-8 ">
-            <h1 className="text-4xl font-bold text-green-700">Get in Touch</h1>
+          <div data-aos="fade-up" className="space-y-2  px-4 md:px-6 ">
+            <h1 className="text-4xl font-bold text-green-900">Get in Touch</h1>
             <p className="text-green-700">
               Have a question or want to contribute? Reach out!
             </p>
           </div>
           <div className="space-y-4  px-4 md:px-8">
           <div data-aos="fade-up" className="flex items-center gap-2 mb-8 flex-wrap w-full">
-  <div className="bg-[#32a852] rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
+  <div className="bg-[#308D46] rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
     <i className="bi bi-telephone-fill text-white"></i>
   </div>
   <a
@@ -30,7 +30,7 @@ const Contact = () => {
 </div>
 
 <div className="flex items-center gap-2 flex-wrap w-full">
-  <div className="bg-[#32a852] rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
+  <div className="bg-[#308D46] rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
     <i className="bi bi-envelope-fill text-white"></i>
   </div>
   <a
@@ -50,7 +50,7 @@ const Contact = () => {
                 className="text-[#a3d9a5] hover:text-[#32a852] transition-colors mr-4"
                 target="_blank"
               >
-                <div className="bg-[#32a852] rounded-full w-8 h-8 flex items-center justify-center icon-container">
+                <div className="bg-[#308D46] rounded-full w-8 h-8 flex items-center justify-center icon-container">
                   <i className="bi bi-twitter-x text-white"></i>
                 </div>
               </a>
@@ -59,7 +59,7 @@ const Contact = () => {
                 className="text-[#a3d9a5] hover:text-[#32a852] transition-colors mr-4"
                 target="_blank"
               >
-                <div className="bg-[#32a852] rounded-full w-8 h-8 flex items-center justify-center icon-container">
+                <div className="bg-[#308D46] rounded-full w-8 h-8 flex items-center justify-center icon-container">
                   <i className="bi bi-instagram text-white"></i>
                 </div>
               </a>
@@ -68,7 +68,7 @@ const Contact = () => {
                 className="text-[#a3d9a5] hover:text-[#32a852] transition-colors mr-4"
                 target="_blank"
               >
-                <div className="bg-[#32a852] rounded-full w-8 h-8 flex items-center justify-center icon-container">
+                <div className="bg-[#308D46] rounded-full w-8 h-8 flex items-center justify-center icon-container">
                   <i className="bi bi-linkedin text-white"></i>
                 </div>
               </a>
@@ -123,7 +123,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-2 rounded bg-[#32a852] text-white hover:bg-green-900 transition-colors"
+            className="w-full px-4 py-2 rounded bg-green-700 text-white hover:bg-green-900 transition-colors"
           >
             Send Message
           </button>

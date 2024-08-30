@@ -1,32 +1,8 @@
 // Events.jsx
 import './App.css'
+import {events} from './data/data'
 const Events = () => {
-  const events = [
-    {
-      id: 1,
-      title: 'Web Development Workshop',
-      date: 'April 15, 2023',
-      description: 'Join us for a hands-on workshop on the latest web development technologies and techniques.',
-    },
-    {
-      id: 2,
-      title: 'Hackathon',
-      date: 'May 5, 2023',
-      description: 'Join us for a 24-hour coding challenge and showcase your problem-solving skills.',
-    },
-    {
-      id: 3,
-      title: 'Tech Talk',
-      date: 'June 1, 2023',
-      description: 'Hear from industry experts on the latest trends and innovations in the tech world.',
-    },
-    {
-      id: 4,
-      title: 'Career Fair',
-      date: 'July 10, 2023',
-      description: 'Connect with top tech companies and explore career opportunities in the industry.',
-    },
-  ];
+
 
   return (
     <div className='primary min-h-[100vh]'>

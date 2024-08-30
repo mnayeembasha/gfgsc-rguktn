@@ -7,7 +7,7 @@ const Events = () => {
           <h2 className="mb-8 text-3xl font-bold md:text-4xl">Upcoming Events</h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {events.map((event) => (
-              <div data-aos="fade-up" key={event.id} className="rounded-lg bg-[#f0f8f0] p-4 shadow-md">
+              <div data-aos="fade-up" key={event.id} className="rounded-lg bg-[#f0f8f0] bg-green-100 p-4 shadow-md">
                 <img
                   src={event.image}
                   alt={event.title}

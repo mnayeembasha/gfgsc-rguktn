@@ -7,10 +7,8 @@ export const faqs = [
     },
     {
       id: 2,
-      question:
-        "How can I become a member of the Geeks for Geeks Student Chapter?",
-      answer:
-        "To become a member of the Geeks for Geeks Student Chapter, you need to fill out our membership form available on our website. Once submitted, our team will review your application and get back to you with further details on the onboarding process.",
+      question: "What we need to join the Geeks for Geeks Student Chapter?",
+      answer: "Joining the Geeks for Geeks Student Chapter provides you with access to  networking opportunities with industry professionals, hands-on learning experiences, and a supportive community of like-minded peers."
     },
     {
       id: 3,
@@ -22,76 +20,42 @@ export const faqs = [
       id: 4,
       question: "How can I get involved in organizing events?",
       answer:
-        "If you’re interested in helping organize events, you can reach out to us through our contact form or join our organizing committee. We welcome enthusiastic members who want to contribute to the planning and execution of our activities.",
+        "If you're a member of any club  in the university and want to collaborate with us for any events, feel free to  reach out to us through details in the contact section. We welcome enthusiastic members who want to contribute to the planning and execution of our activities.",
     },
     {
       id: 5,
       question: "Where can I find more information about upcoming events?",
       answer:
-        "You can find information about upcoming events on our website’s events page or follow us on social media for regular updates. We also send out newsletters to our members with details about upcoming activities.",
+        "You can find information about upcoming events on our website's events page or follow us on social media for regular updates.",
     },
-  ];
-
-
-  export const socialLinks = [
-    {
-      href: "https://www.linkedin.com/in/geeksforgeeks-rgukt-nuzvid-854270325/",
-      ariaLabel: "LinkedIn",
-      icon: "bi bi-linkedin",
-      label: "LinkedIn",
-    },
-    {
-      href: "",
-      ariaLabel: "Twitter",
-      icon: "bi bi-twitter-x",
-      label: "Twitter",
-    },
-    {
-      href: "https://www.instagram.com/gfgsc_rguktn",
-      ariaLabel: "Instagram",
-      icon: "bi bi-instagram",
-      label: "Instagram",
-    },
-    {
-      href: "",
-      ariaLabel: "YouTube",
-      icon: "bi bi-discord",
-      label: "Discord",
-    },
-    // {
-    //   href: "mailto:geeksforgeeksrguktnuzvid@gmail.com",
-    //   ariaLabel: "Email",
-    //   icon: "bi bi-envelope",
-    //   label: "geeksforgeeksrguktnuzvid@gmail.com",
-    // },
   ];
 
 export const events = [
     {
       id: 1,
       title: 'Web Development Workshop',
-      date: 'April 15, 2023',
+      date: 'September 10, 2024',
       description: 'Join us for a hands-on workshop on the latest web development technologies and techniques.',
       image:'/assets/fullstack.jpg',
     },
     {
       id: 2,
       title: 'Hackathon',
-      date: 'May 5, 2023',
+      date: 'October 10, 2024',
       description: 'Join us for a 24-hour coding challenge and showcase your problem-solving skills.',
       image:'https://media.istockphoto.com/id/1403622426/photo/hackathon-inscription-against-laptop-and-code-background-technology-concept.webp?b=1&s=612x612&w=0&k=20&c=8BzfrMqbfnfkFklzR6wBWcog-aiwzdFQOVYgZAzaV4A='
     },
     {
       id: 3,
       title: 'Tech Talk',
-      date: 'June 1, 2023',
+      date: 'October 15, 2024',
       description: 'Hear from industry experts on the latest trends and innovations in the tech world.',
       image:'https://media.istockphoto.com/id/499517325/photo/a-man-speaking-at-a-business-conference.webp?a=1&b=1&s=612x612&w=0&k=20&c=GANexorEVO7mDrp8JUHZKwoFbER0hfgrhu9pMkGfAq8='
     },
     {
       id: 4,
       title: 'Career Fair',
-      date: 'July 10, 2023',
+      date: 'October 25, 2024',
       description: 'Connect with top tech companies and explore career opportunities in the industry.',
       image:'https://media.istockphoto.com/id/536245001/photo/job-search-still-life-with-title-jobs.webp?a=1&b=1&s=612x612&w=0&k=20&c=c4DV3MFEFUnAyCcfpslIUuP9LjRov4exaJEq2C6r8CI='
     },

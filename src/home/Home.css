@@ -10,6 +10,9 @@
     font-weight: normal;
     font-style: normal;
   }
+.gfg{
+  background-color:#308D46 !important;
+}
 .navbar .logo-text{
   /* font-family: 'Garet Heavy' !important; */
   /* font-family: 'Montserrat' !important; */
@@ -32,7 +35,6 @@
  --color: rgba(0, 128, 0, 0.05); /* Light green lines */
  --color: rgba(0, 128, 0, 0.08); /* Light green lines */
  background-color: #e8f5e9; /* Very light green background */
- /* background-color: #000; */
  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
                    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
  background-size: 55px 55px;
@@ -57,7 +59,7 @@
   align-items:center;
   /* transition: transform 0.5s; */
   transition: all 2s ease-in-out !important;
-  background-color: #f0f8f0;
+  /* background-color: #f0f8f0; */
 }
 .team-member-card h3,.team-member-card p{
   text-align:center;
@@ -73,7 +75,7 @@
 
 .team-member-card:hover {
   /* border:8px solid #41B06E; */
-  border:2px solid #41B06E;
+  /* border:2px solid #41B06E; */
 }
 .team-member-card:hover h3,.team-member-card:hover p{
   /* color:#06D001; */
@@ -194,6 +196,10 @@
     .heading,.tag-line{
       font-size: 2.3rem;
     }
+    .soc-par{
+      padding-left: 0rem !important;
+      padding-right: 0rem !important;
+    }
   }
   @media only screen and (max-width:455px) {
     .heading,.tag-line{
@@ -203,8 +209,12 @@
       padding-left: 0rem;
       padding-right:0rem;
     }
+    .hero-img-con img{
+      height:15rem;
+      width: 15rem;
+    }
   }
-@media only screen and (max-width:402px) {
+@media only screen and (max-width:407px) {
   .navbar .logo{
     height:1.3rem;
   }
@@ -220,5 +230,9 @@
   .soc-par{
     padding-left: 0rem;
     padding-right:0rem;
+  }
+  .soc-gpar{
+    padding-left:0rem !important;
+    padding-right:0rem !important;
   }
 }
