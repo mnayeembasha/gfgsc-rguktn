@@ -19,7 +19,7 @@ const Team = () => {
                   width="300"
                   height="300"
                   // h-40 w-40
-                  className="mb-4 h-[12rem] w-[12rem] md:h-[13rem] md:w-[13rem] rounded-full object-cover  border-green-900 border-transparent transition-border duration-2000 ease-in-out"
+                  className="mb-4 h-40 w-40 md:h-[13rem] md:w-[13rem] rounded-full object-cover  border-green-900 border-transparent transition-border duration-2000 ease-in-out"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
