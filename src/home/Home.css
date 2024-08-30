@@ -14,19 +14,22 @@
   background-color:#308D46 !important;
 }
 .navbar .logo-text{
-  /* font-family: 'Garet Heavy' !important; */
   /* font-family: 'Montserrat' !important; */
   font-family: "Nunito", sans-serif !important;
   font-weight: 850;
+}
+.heading{
+  line-height: 1.2;
+  font-family: 'Garet Heavy' !important;
+}
+.heading,.tag-line{
+  font-family: 'Garet Heavy' !important;
 }
 .nav-menu li a{
   /* color:#1a5a1a; */
 }
 .lbr{
   display: none;
-}
-.heading{
-  line-height: 1.2;
 }
 /* Green grid pattern background */
 .primary {
