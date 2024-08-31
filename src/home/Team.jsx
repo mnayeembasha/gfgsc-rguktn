@@ -11,7 +11,7 @@ const Team = () => {
                 data-aos="fade-up"
                 key={index}
                 // hover:bg-green-500
-                className={`team-member-card relative image-container rounded-lg bg-green-300 p-2 md:p-4 shadow-lg  transition-colors duration-2000 ease-in-out`}
+                className={`team-member-card relative image-container rounded-lg bg-green-800 p-2 md:p-4 shadow-lg  transition-colors duration-2000 ease-in-out`}
               >
                 <img
                   src={member.img_link}

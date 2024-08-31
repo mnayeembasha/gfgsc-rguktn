@@ -24,7 +24,7 @@ const Events = () => {
                     alt="Calendar Icon"
                     className="w-4 h-4 text-[#1a5a1a]"
                   /> */}
-                 <i className="bi bi-calendar4-event text-gray-900"></i>
+                 <i className="bi bi-calendar4-event calendar-icon text-gray-900"></i>
 
                   <span className="text-sm font-medium">{event.date}</span>
                 </div>

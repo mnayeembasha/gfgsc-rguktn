@@ -1,23 +1,104 @@
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Contact = () => {
+  const form = useRef();
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const validateForm = () => {
+    const errors = {};
+    const formElements = form.current.elements;
+
+    if (!formElements.name.value.trim()) {
+      errors.name = 'Name is required';
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formElements.from_email.value.trim()) {
+      errors.email = 'Email is required';
+    } else if (!emailPattern.test(formElements.from_email.value.trim())) {
+      errors.email = 'Invalid email address';
+    }
+
+    if (!formElements.subject.value.trim()) {
+      errors.subject = 'Subject is required';
+    }
+
+    if (!formElements.message.value.trim()) {
+      errors.message = 'Message is required';
+    }
+
+    return errors;
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const errors = validateForm();
+    setFormErrors(errors);
+
+    if (Object.keys(errors).length === 0) {
+      setIsSubmitting(true);
+
+      emailjs
+        .sendForm('gfgsc_939eem', 'template_3vq9ujj', form.current, {
+          publicKey: 'D1hTzc9kJUVMHBimz',
+        })
+        .then(
+          () => {
+            toast.success('Message sent successfully!', {
+              position: "top-center",
+              autoClose: 4000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+            });
+            setIsSubmitting(false);
+            form.current.reset();
+          },
+          () => {
+            toast.error(`Failed to send message`, {
+              position: "top-center",
+              autoClose: 4000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+            });
+            setIsSubmitting(false);
+          },
+        );
+    }
+  };
+
   return (
     <section
       id="contact"
       data-aos="fade-up"
-      className="w-full py-6 md:py-6 lg:py-24 flex  justify-center align-center text-white"
+      className="w-full py-6 md:py-6 lg:py-24 flex justify-center align-center text-white"
     >
+      <ToastContainer />
       <div
         data-aos="fade-up"
         className="md:shadow-lg bg-[#f0f8f0] grid grid-cols-1 gap-8 px-4 py-8 md:py-12 rounded-2xl md:grid-cols-2 md:gap-0 md:px-6 soc-gpar"
       >
-        <div className="space-y-6 px-8  md:px-24  flex flex-col justify-center align-center soc-par">
-          <div data-aos="fade-up" className="space-y-2  px-4 md:px-6 ">
+        <div className="space-y-6 px-8 md:px-24 flex flex-col justify-center align-center soc-par">
+          <div data-aos="fade-up" className="space-y-2 px-4 md:px-6">
             <h1 className="text-4xl font-bold text-green-900">Get in Touch</h1>
             <p className="text-green-700">
               Have a question or want to contribute? Reach out!
             </p>
           </div>
-          <div className="space-y-4  px-4 md:px-8">
-          <div data-aos="fade-up" className="flex items-center gap-2 mb-8 flex-wrap w-full">
+          <div className="space-y-4 px-4 md:px-8">
+            {/* Contact Info */}
+            <div data-aos="fade-up" className="flex items-center gap-2 mb-8 flex-wrap w-full">
   <div className="bg-[#308D46] rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
     <i className="bi bi-telephone-fill text-white"></i>
   </div>
@@ -75,7 +156,13 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" className="contact-form space-y-4 px-8 md:px-8">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          data-aos="fade-up"
+          className="contact-form space-y-4 px-8 md:px-8"
+          noValidate
+        >
           <div data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-2 md:space-y-0">
             <div data-aos="fade-up" className="space-y-2">
               <label htmlFor="name" className="text-green-800">
@@ -84,9 +171,15 @@ const Contact = () => {
               <input
                 id="name"
                 type="text"
+                name="from_name"
                 placeholder="Enter your name"
-                className="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#32a852] bg-[#f0f8f0] text-gray-800"
+                className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 bg-[#f0f8f0] text-gray-800 ${
+                  formErrors.name ? 'ring-2 ring-red-500' : 'focus:ring-[#32a852]'
+                }`}
               />
+              {formErrors.name && (
+                <p className="text-red-500 text-sm mt-1">{formErrors.name}</p>
+              )}
             </div>
             <div data-aos="fade-up" className="space-y-2">
               <label htmlFor="email" className="text-green-800">
@@ -95,9 +188,15 @@ const Contact = () => {
               <input
                 id="email"
                 type="email"
+                name="from_email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#32a852] bg-[#f0f8f0] text-gray-800"
+                className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 bg-[#f0f8f0] text-gray-800 ${
+                  formErrors.email ? 'ring-2 ring-red-500' : 'focus:ring-[#32a852]'
+                }`}
               />
+              {formErrors.email && (
+                <p className="text-red-500 text-sm mt-1">{formErrors.email}</p>
+              )}
             </div>
           </div>
           <div data-aos="fade-up" className="space-y-2">
@@ -107,9 +206,15 @@ const Contact = () => {
             <input
               id="subject"
               type="text"
+              name="subject"
               placeholder="Enter the subject"
-              className="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#32a852] bg-[#f0f8f0] text-gray-800"
+              className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 bg-[#f0f8f0] text-gray-800 ${
+                formErrors.subject ? 'ring-2 ring-red-500' : 'focus:ring-[#32a852]'
+              }`}
             />
+            {formErrors.subject && (
+              <p className="text-red-500 text-sm mt-1">{formErrors.subject}</p>
+            )}
           </div>
           <div data-aos="fade-up" className="space-y-2">
             <label htmlFor="message" className="text-green-800">
@@ -117,22 +222,36 @@ const Contact = () => {
             </label>
             <textarea
               id="message"
+              name="message"
               placeholder="Enter your message"
-              className="w-full px-4 py-2 rounded-lg min-h-[120px] focus:outline-none focus:ring-2 focus:ring-[#32a852] bg-[#f0f8f0] text-gray-800"
+              className={`w-full px-4 py-2 rounded-lg min-h-[120px] focus:outline-none focus:ring-2 bg-[#f0f8f0] text-gray-800 ${
+                formErrors.message ? 'ring-2 ring-red-500' : 'focus:ring-[#32a852]'
+              }`}
             ></textarea>
+            {formErrors.message && (
+              <p className="text-red-500 text-sm mt-1">{formErrors.message}</p>
+            )}
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-2 rounded bg-green-700 text-white hover:bg-green-900 transition-colors"
+            disabled={isSubmitting}
+            className={`w-full px-4 py-2 rounded text-white ${
+              isSubmitting ? 'bg-gray-500' : 'bg-green-700 hover:bg-green-900 transition-colors'
+            }`}
           >
-            Send Message
+            {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>
-        </div>
+        </form>
       </div>
     </section>
+  );
+};
+
+export default Contact;
 
 
-     /* Subscribe to Newsletter section */
+
+  /* Subscribe to Newsletter section */
     /* <section data-aos="fade-up" className="bg-[#1a5a1a] py-12 md:py-24">
           <div className="container mx-auto flex flex-col items-center gap-4 px-4 text-white md:px-6">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -156,7 +275,3 @@ const Contact = () => {
           </div>
         </section>
         */
-  );
-};
-
-export default Contact;

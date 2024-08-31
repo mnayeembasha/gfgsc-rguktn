@@ -1,48 +1,70 @@
 /* Importing Poppins, Montserrat, Arvo, GreatVibes, Lobster, and Pacifico from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&family=Arvo&family=Great+Vibes&family=Lobster&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&family=Arvo&family=Great+Vibes&family=Lobster&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 /*Navbar-section*/
 @font-face {
-    font-family: 'Garet Heavy';
-    src: url('/fonts/Garet-Heavy.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-.gfg{
-  background-color:#308D46 !important;
+  font-family: "Garet Heavy";
+  src: url("/fonts/Garet-Heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-.navbar .logo-text{
+.gfg {
+  background-color: #308d46 !important;
+}
+.navbar .logo-text {
   /* font-family: 'Montserrat' !important; */
   font-family: "Nunito", sans-serif !important;
   font-weight: 850;
 }
-.heading{
+.heading {
   line-height: 1.2;
-  font-family: 'Garet Heavy' !important;
+  font-family: "Garet Heavy" !important;
 }
-.heading,.tag-line{
-  font-family: 'Garet Heavy' !important;
+.heading,
+.tag-line {
+  font-family: "Garet Heavy" !important;
 }
-.nav-menu li a{
+.nav-menu li a {
   /* color:#1a5a1a; */
 }
-.lbr{
+.lbr {
   display: none;
 }
 /* Green grid pattern background */
 .primary {
- width: 100%;
- height: 100%;
- --color: rgba(0, 128, 0, 0.05); /* Light green lines */
- --color: rgba(0, 128, 0, 0.08); /* Light green lines */
- background-color: #e8f5e9; /* Very light green background */
- background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
-                   linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
- background-size: 55px 55px;
+  width: 100%;
+  height: 100%;
+  --color: rgba(0, 128, 0, 0.05); /* Light green lines */
+  --color: rgba(0, 128, 0, 0.08); /* Light green lines */
+  background-color: #e8f5e9; /* Very light green background */
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 55px 55px;
 
- /* background-color: #242424 !important; */
+  /* background-color: #242424 !important; */
 }
 
 /* About section */
@@ -52,27 +74,26 @@
   filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.1));
 }
 
-
-
 /* Core Team section */
-.team-member-card{
+.team-member-card {
   display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   /* transition: transform 0.5s; */
   transition: all 2s ease-in-out !important;
   /* background-color: #f0f8f0; */
+  /* background-color: #000; */
 }
-.team-member-card h3,.team-member-card p{
-  text-align:center;
+.team-member-card h3,
+.team-member-card p {
+  text-align: center;
 }
 /* .team-member-card:hover img{
   border:6px solid linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);;
   color:#1a5a1a;
 } */
 .team-member-card {
-
   transition: all 0.3s ease-in !important;
 }
 
@@ -80,70 +101,93 @@
   /* border:8px solid #41B06E; */
   /* border:2px solid #41B06E; */
 }
-.team-member-card:hover h3,.team-member-card:hover p{
+.team-member-card:hover h3,
+.team-member-card:hover p {
   /* color:#06D001; */
 }
-.team-member-card:hover{
+.team-member-card:hover {
   /* transform:scale(1.05); */
 }
-.team-member-card img{
+.team-member-card img {
   /* transition: all 0.3s ease-in !important; */
 }
 
-
+/* Events section */
+.calendar-icon{
+  font-weight: bold !important;
+  font-size: 1.3rem !important;
+}
 
 /* FAQ's section */
 
 
-
-
 /*Contact-Us Section*/
-.icon-container{
-  width:3rem !important;
-  height:3rem !important;
+.icon-container {
+  width: 3rem !important;
+  height: 3rem !important;
 }
-.icon-container i{
-  font-size:1.5rem;
+.icon-container i {
+  font-size: 1.5rem;
 }
-.contact-form input,textarea{
+.contact-form input,
+textarea {
   outline: none !important;
   border: 1px solid green !important;
 }
-#contact .container{
+#contact .container {
   /* background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
-
 }
-
-
 
 /*Other utility CSS*/
 .green-gradient-text {
-    /* background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%); */
-    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
-    /* background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%); */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-}
-#typewriter{
-  background: linear-gradient(111.4deg, rgb(2, 255, 4) 18.4%, rgb(0, 232, 237) 100.2%);
-  background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);
+  /* background: linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%); */
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(19, 170, 82) 0%,
+    rgb(0, 102, 43) 90%
+  );
+  /* background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%); */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
+#typewriter {
+  background: linear-gradient(
+    111.4deg,
+    rgb(2, 255, 4) 18.4%,
+    rgb(0, 232, 237) 100.2%
+  );
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 204, 130) 11.2%,
+    rgb(58, 181, 46) 91.7%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: "Garet Heavy" !important;
+}
+.geek {
+  font-family: "Garet Heavy" !important;
+}
+.heading {
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(19, 170, 82) 0%,
+    rgb(0, 102, 43) 90%
+  );
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(19, 170, 82) 0%,
+    rgb(0, 102, 43) 90%
+  );
 
-
-.heading{
-  background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
-  background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
-
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 .image-container {
   position: relative;
@@ -152,7 +196,7 @@
   display: block;
 }
 .image-container::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -162,73 +206,75 @@
   z-index: 1;
 }
 
-
-
 /* Responsiveness */
-@media only screen and (max-width:600px) {
-  .hero-section{
-    height:80vh !important;
+@media only screen and (max-width: 600px) {
+  .hero-section {
+    height: 80vh !important;
     overflow: hidden !important;
   }
-  .navbar .logo{
-    height:1.5rem;
+  .navbar .logo {
+    height: 1.5rem;
   }
-  .tag-line,.heading{
+  .tag-line,
+  .heading {
     font-size: 2.5rem;
   }
-  .lbr{
+  .lbr {
     display: block;
   }
-  .hero-img-con img{
-    height:20rem;
+  .hero-img-con img {
+    height: 20rem;
     width: 20rem;
   }
-  .soc-par{
+  .soc-par {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
-  @media only screen and (max-width:520px) {
-    .heading,.tag-line{
-      font-size: 2.3rem;
-    }
-    .soc-par{
-      padding-left: 0rem !important;
-      padding-right: 0rem !important;
-    }
+@media only screen and (max-width: 520px) {
+  .heading,
+  .tag-line {
+    font-size: 2.3rem;
   }
-  @media only screen and (max-width:455px) {
-    .heading,.tag-line{
-      font-size: 2rem;
-    }
-    .soc-par{
-      padding-left: 0rem;
-      padding-right:0rem;
-    }
-    .hero-img-con img{
-      height:15rem;
-      width: 15rem;
-    }
+  .soc-par {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
   }
-@media only screen and (max-width:407px) {
-  .navbar .logo{
-    height:1.3rem;
+}
+@media only screen and (max-width: 455px) {
+  .heading,
+  .tag-line {
+    font-size: 2rem;
   }
-  .navbar .logo-text{
+  .soc-par {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .hero-img-con img {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+@media only screen and (max-width: 407px) {
+  .navbar .logo {
+    height: 1.3rem;
+  }
+  .navbar .logo-text {
     font-size: 1.2rem;
   }
-  .heading,.tag-line{
+  .heading,
+  .tag-line {
     font-size: 1.7rem;
   }
   .grid {
     grid-template-columns: 1fr !important;
   }
-  .soc-par{
+  .soc-par {
     padding-left: 0rem;
-    padding-right:0rem;
+    padding-right: 0rem;
   }
-  .soc-gpar{
-    padding-left:0rem !important;
-    padding-right:0rem !important;
+  .soc-gpar {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
   }
 }
