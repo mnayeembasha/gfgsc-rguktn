@@ -126,6 +126,9 @@
   width: 3rem !important;
   height: 3rem !important;
 }
+.Toastify__toast-container{
+  z-index:9999;
+}
 .icon-container i {
   font-size: 1.5rem;
 }

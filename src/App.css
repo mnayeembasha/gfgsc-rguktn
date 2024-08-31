@@ -55,7 +55,7 @@
   align-items:center;
   /* transition: transform 0.5s; */
   transition: all 2s ease-in-out !important;
-  background-color: #f0f8f0;
+  /* background-color: #f0f8f0; */
 }
 .team-member-card h3,.team-member-card p{
   text-align:center;

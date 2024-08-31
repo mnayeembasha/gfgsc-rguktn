@@ -11,7 +11,7 @@ const Team = () => {
                 data-aos="fade-up"
                 key={index}
                 // hover:bg-green-500
-                className={`team-member-card relative image-container rounded-lg bg-green-800 p-2 md:p-4 shadow-lg  transition-colors duration-2000 ease-in-out`}
+                className={`team-member-card relative image-container rounded-lg bg-green-300 p-2 md:p-4 shadow-lg  transition-colors duration-2000 ease-in-out`}
               >
                 <img
                   src={member.img_link}
@@ -19,7 +19,7 @@ const Team = () => {
                   width="300"
                   height="300"
                   // h-40 w-40
-                  className="mb-4 h-40 w-40 md:h-[13rem] md:w-[13rem] rounded-full object-cover  border-green-900 border-transparent transition-border duration-2000 ease-in-out"
+                  className="mb-4 h-40 w-40 md:h-[13rem] md:w-[13rem] rounded-full object-cover   transition-border duration-2000 ease-in-out"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",

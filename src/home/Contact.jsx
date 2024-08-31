@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
@@ -44,7 +44,7 @@ const Contact = () => {
 
       emailjs
         .sendForm('gfgsc_939eem', 'template_3vq9ujj', form.current, {
-          publicKey: 'D1hTzc9kJUVMHBimz',
+          publicKey: 'D1hTzc9kJUVMHBimy',
         })
         .then(
           () => {
@@ -84,7 +84,7 @@ const Contact = () => {
       data-aos="fade-up"
       className="w-full py-6 md:py-6 lg:py-24 flex justify-center align-center text-white"
     >
-      <ToastContainer />
+      {/* <ToastContainer className="Toastify__toast-container"/> */}
       <div
         data-aos="fade-up"
         className="md:shadow-lg bg-[#f0f8f0] grid grid-cols-1 gap-8 px-4 py-8 md:py-12 rounded-2xl md:grid-cols-2 md:gap-0 md:px-6 soc-gpar"
