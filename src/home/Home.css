@@ -9,6 +9,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+       url('/fonts/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
 .gfg {
   background-color: #308d46 !important;
 }
@@ -19,11 +26,11 @@
 }
 .heading {
   line-height: 1.2;
-  font-family: "Garet Heavy" !important;
+  font-family: "Garet Heavy",'Mona Sans','Poppins' !important;
 }
 .heading,
 .tag-line {
-  font-family: "Garet Heavy" !important;
+  font-family: "Garet Heavy",'Mona Sans','Poppins' !important;
 }
 .nav-menu li a {
   /* color:#1a5a1a; */
@@ -137,8 +144,25 @@ textarea {
   outline: none !important;
   border: 1px solid green !important;
 }
-#contact .container {
-  /* background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+.icon-par{
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+.icon-par:hover{
+  background-color: hsl(160, 51%, 60%); /* Light Green on hover */
+  background-color: #5cf164; /* Light Green on hover */
+  font-weight: bold !important;
+}
+
+.team-member-card{
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+.team-member-card:hover{
+  background-color: #5cf164; /* Light Green on hover */
+  background-color: #4ade80; /* Light Green on hover */
+  /* background-color: #4ade80;  */
+}
+.team-member-card:hover .team-member-card p{
+  font-weight: bold !important;
 }
 
 /*Other utility CSS*/

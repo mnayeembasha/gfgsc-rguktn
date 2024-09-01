@@ -99,19 +99,20 @@ const Contact = () => {
           <div className="space-y-4 px-4 md:px-8">
             {/* Contact Info */}
             <div data-aos="fade-up" className="flex items-center gap-2 mb-8 flex-wrap w-full">
-  <div className="bg-[#308D46] rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
-    <i className="bi bi-telephone-fill text-white"></i>
+  <div className="bg-[#308D46] icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
+  {/* bi-telephone-fill */}
+    <i className="bi bi-geo-alt-fill text-white"></i>
   </div>
-  <a
-    href="tel:+1234567890"
-    className="text-green-700 hover:underline hover:underline-offset-2"
+  <span
+
+    className="text-green-700"
   >
-    +91 12345-67890
-  </a>
+    RGUKT Nuzvid, Andhra Pradesh
+  </span>
 </div>
 
 <div className="flex items-center gap-2 flex-wrap w-full">
-  <div className="bg-[#308D46] rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
+  <div className="bg-[#308D46] icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
     <i className="bi bi-envelope-fill text-white"></i>
   </div>
   <a
@@ -131,7 +132,7 @@ const Contact = () => {
                 className="text-[#a3d9a5] hover:text-[#32a852] transition-colors mr-4"
                 target="_blank"
               >
-                <div className="bg-[#308D46] rounded-full w-8 h-8 flex items-center justify-center icon-container">
+                <div className="bg-[#308D46] icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container">
                   <i className="bi bi-twitter-x text-white"></i>
                 </div>
               </a>
@@ -140,7 +141,7 @@ const Contact = () => {
                 className="text-[#a3d9a5] hover:text-[#32a852] transition-colors mr-4"
                 target="_blank"
               >
-                <div className="bg-[#308D46] rounded-full w-8 h-8 flex items-center justify-center icon-container">
+                <div className="bg-[#308D46] icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container">
                   <i className="bi bi-instagram text-white"></i>
                 </div>
               </a>
@@ -149,7 +150,7 @@ const Contact = () => {
                 className="text-[#a3d9a5] hover:text-[#32a852] transition-colors mr-4"
                 target="_blank"
               >
-                <div className="bg-[#308D46] rounded-full w-8 h-8 flex items-center justify-center icon-container">
+                <div className="bg-[#308D46] icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container">
                   <i className="bi bi-linkedin text-white"></i>
                 </div>
               </a>
