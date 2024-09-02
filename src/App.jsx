@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Events from './Events';
+import NotFound from './NotFound.jsx';
 import Home from './home/Home.jsx'
 function App(){
 
@@ -18,7 +19,8 @@ function App(){
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/events" element={<Events />} />
-      {/* <Route path="*" element={<NotFound />} />  */}
+      <Route path="/404" element={<NotFound />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   </Router>
   );

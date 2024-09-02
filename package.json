@@ -15,8 +15,11 @@
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.20",
+    "lottie-web": "^5.12.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-lottie": "^1.2.4",
+    "react-lottie-player": "^2.1.0",
     "react-router-dom": "^6.26.1",
     "react-toastify": "^10.0.5"
   },
