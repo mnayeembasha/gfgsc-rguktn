@@ -3,7 +3,7 @@ import Event from "../components/Event.jsx";
 const Events = () => {
   return (
     <>
-      <Event />
+      <Event heading={"Upcoming Events"}/>
       <div className="container flex justify-center mx-auto">
         <a
           href="/events"

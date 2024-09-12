@@ -16,7 +16,7 @@ const  Navbar = () => {
           className="h-7 logo"
           alt=""
         />
-        <span className="logo-text self-center text-2xl font-bold whitespace-nowrap">
+        <span className="logo-text self-center text-2xl font-bold whitespace-nowrap text-[#1a5a1a]">
           GFGSC-RGUKTN
         </span>
       </a>
@@ -43,11 +43,6 @@ const  Navbar = () => {
             d="M1 1h15M1 7h15M1 13h15"
           />
         </svg>
-        {/* <img
-      src="/assets/menu.svg"
-      alt="Menu"
-      className="w-8 h-8"
-    /> */}
       </button>
       <div
         className={`${
@@ -67,15 +62,15 @@ const  Navbar = () => {
           </li>
           <li>
             <a
-              href="#about"
+              href="/events"
               className="block py-2 px-3 md:p-0 text-gray-900 rounded transition duration-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
             >
-              About
+              Events
             </a>
           </li>
           <li>
             <a
-              href="#team"
+              href="/#team"
               className="block py-2 px-3 md:p-0 text-gray-900 rounded transition duration-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
             >
               Core-Team
@@ -83,7 +78,7 @@ const  Navbar = () => {
           </li>
           <li>
             <a
-              href="#contact"
+              href="/#contact"
               className="block py-2 px-3 md:p-0 text-gray-900 rounded transition duration-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
             >
               Contact

@@ -3,14 +3,14 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import "./Home.css";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
 import Hero from "./Hero";
 import About from "./About";
 import Events from "./Events";
 import Team from "./Team";
 import Faqs from "./Faqs";
 import Contact from "./Contact";
-import Footer from "./Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -31,7 +31,7 @@ const Home = () => {
       <main>
         <Hero />
         <About />
-        <Events />
+        <Events/>
         <Team />
         <Faqs />
         <Contact />
