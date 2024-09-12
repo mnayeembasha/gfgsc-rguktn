@@ -103,7 +103,7 @@ export const events = [
     },
     {
       img_link: "/assets/team/harika.jpg",
-      name: "D.Harika",
+      name: "D.Harika Mahalakshmi",
       position: "Design/Branding Lead",
     },
     {
