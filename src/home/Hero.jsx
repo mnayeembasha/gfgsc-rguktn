@@ -39,7 +39,7 @@ const Hero = () => {
           GFG Student Chapter <br className="lbr" />
           RGUKT Nuzvid
         </h1>
-        <div data-aos="fade-up" className="relative image-container hero-img-con">
+        <div data-aos="zoom-in-down" className="relative image-container hero-img-con">
           <img
             src="./assets/gfgsc_rguktn_nobg.png"
             alt="Hero Image"

@@ -11,7 +11,9 @@ function App(){
 
    //Apply animation on scroll
    useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 1000,
+     });
   }, []);
 
   return (
@@ -19,7 +21,6 @@ function App(){
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/events" element={<Events />} />
-      <Route path="/404" element={<NotFound />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </Router>

@@ -42,9 +42,9 @@
 .primary {
   width: 100%;
   height: 100%;
-  --color: rgba(0, 128, 0, 0.05); /* Light green lines */
-  --color: rgba(0, 128, 0, 0.08); /* Light green lines */
-  background-color: #e8f5e9; /* Very light green background */
+  /* --color: rgba(0, 128, 0, 0.05);
+  --color: rgba(0, 128, 0, 0.08); */
+  background-color: #e8f5e9;
   background-image: linear-gradient(
       0deg,
       transparent 24%,
@@ -164,6 +164,30 @@ textarea {
 .team-member-card:hover .team-member-card p{
   font-weight: bold !important;
 }
+.border-white{
+  border-color: white !important;
+  /* mix-blend-mode:; */
+}
+
+.team-member-card img {
+  transition: all 0.5s ease-in !important;
+}
+
+.team-member-card:hover img {
+  mix-blend-mode: overlay;
+}
+
+.team-member-card img {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.team-member-card:hover img {
+  mix-blend-mode: overlay;
+  opacity: 1;
+  transform: scale(1.01); /* Slight zoom-in effect */
+}
+
 
 /*Other utility CSS*/
 .green-gradient-text {

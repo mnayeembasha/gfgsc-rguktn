@@ -37,28 +37,32 @@ export const events = [
       date: 'September 10, 2024',
       description: 'Join us for a hands-on workshop on the latest web development technologies and techniques.',
       image:'/assets/fullstack.jpg',
+      time:"5:00 PM",
     },
     {
       id: 2,
       title: 'Hackathon',
       date: 'October 10, 2024',
       description: 'Join us for a 24-hour coding challenge and showcase your problem-solving skills.',
-      image:'https://media.istockphoto.com/id/1403622426/photo/hackathon-inscription-against-laptop-and-code-background-technology-concept.webp?b=1&s=612x612&w=0&k=20&c=8BzfrMqbfnfkFklzR6wBWcog-aiwzdFQOVYgZAzaV4A='
+      image:'https://media.istockphoto.com/id/1403622426/photo/hackathon-inscription-against-laptop-and-code-background-technology-concept.webp?b=1&s=612x612&w=0&k=20&c=8BzfrMqbfnfkFklzR6wBWcog-aiwzdFQOVYgZAzaV4A=',
+      time:"5:00 PM",
     },
     {
       id: 3,
       title: 'Tech Talk',
       date: 'October 15, 2024',
       description: 'Hear from industry experts on the latest trends and innovations in the tech world.',
-      image:'https://media.istockphoto.com/id/499517325/photo/a-man-speaking-at-a-business-conference.webp?a=1&b=1&s=612x612&w=0&k=20&c=GANexorEVO7mDrp8JUHZKwoFbER0hfgrhu9pMkGfAq8='
+      image:'https://media.istockphoto.com/id/499517325/photo/a-man-speaking-at-a-business-conference.webp?a=1&b=1&s=612x612&w=0&k=20&c=GANexorEVO7mDrp8JUHZKwoFbER0hfgrhu9pMkGfAq8=',
+      time:"5:00 PM",
     },
-    {
-      id: 4,
-      title: 'Career Fair',
-      date: 'October 25, 2024',
-      description: 'Connect with top tech companies and explore career opportunities in the industry.',
-      image:'https://media.istockphoto.com/id/536245001/photo/job-search-still-life-with-title-jobs.webp?a=1&b=1&s=612x612&w=0&k=20&c=c4DV3MFEFUnAyCcfpslIUuP9LjRov4exaJEq2C6r8CI='
-    },
+    // {
+    //   id: 4,
+    //   title: 'Career Fair',
+    //   date: 'October 25, 2024',
+    //   description: 'Connect with top tech companies and explore career opportunities in the industry.',
+    //   image:'https://media.istockphoto.com/id/536245001/photo/job-search-still-life-with-title-jobs.webp?a=1&b=1&s=612x612&w=0&k=20&c=c4DV3MFEFUnAyCcfpslIUuP9LjRov4exaJEq2C6r8CI=',
+    //   time:"5:00 PM",
+    // },
   ];
 
   export const teamMembers = [
@@ -108,7 +112,7 @@ export const events = [
       position: "AI/ML Lead",
     },
     {
-      img_link: "/assets/team/nayeem.jpg",
+      img_link: "/assets/team/nayeem2.jpg",
       name: "M.Nayeem Basha",
       position: "Web Lead",
     },
