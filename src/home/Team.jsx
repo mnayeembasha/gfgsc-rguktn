@@ -64,12 +64,12 @@ const Team = () => {
   />
 
   {/* Team Member Name */}
-  <h3 className="mb-1 md:mb-2 text-xl font-bold text-gray-900 text-green-100">
+  <h3 className="mb-1 md:mb-2 text-lg md:text-xl font-bold text-gray-900 text-green-100">
     {member.name}
   </h3>
 
   {/* Team Member Position */}
-  <p className="text-gray-800 text-lg text-green-300 font-semibold">{member.position}</p>
+  <p className="text-gray-800 text-md md:text-lg text-green-300 font-semibold">{member.position}</p>
 </div>
 
             ))}
