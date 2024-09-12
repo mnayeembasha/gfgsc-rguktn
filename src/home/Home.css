@@ -169,15 +169,15 @@ textarea {
   /* mix-blend-mode:; */
 }
 
-.team-member-card img {
+/* .team-member-card img {
   transition: all 0.5s ease-in !important;
 }
 
 .team-member-card:hover img {
   mix-blend-mode: overlay;
-}
+} */
 
-.team-member-card img {
+/* .team-member-card img {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   opacity: 0.8;
 }
@@ -185,8 +185,8 @@ textarea {
 .team-member-card:hover img {
   mix-blend-mode: overlay;
   opacity: 1;
-  transform: scale(1.01); /* Slight zoom-in effect */
-}
+  transform: scale(1.01);
+*/
 
 
 /*Other utility CSS*/
