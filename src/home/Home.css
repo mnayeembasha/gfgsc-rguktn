@@ -1,26 +1,8 @@
-/* Importing Poppins, Montserrat, Arvo, GreatVibes, Lobster, and Pacifico from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&family=Arvo&family=Great+Vibes&family=Lobster&family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-
 /*Navbar-section*/
-@font-face {
-  font-family: "Garet Heavy";
-  src: url("/fonts/Garet-Heavy.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Mona Sans';
-  src: url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
-       url('/fonts/Mona-Sans.woff2') format('woff2-variations');
-  font-weight: 200 900;
-  font-stretch: 75% 125%;
-}
 .gfg {
   background-color: #308d46 !important;
 }
 .navbar .logo-text {
-  /* font-family: 'Montserrat' !important; */
   font-family: "Nunito", sans-serif !important;
   font-weight: 850;
 }
@@ -32,47 +14,10 @@
 .tag-line {
   font-family: "Garet Heavy",'Mona Sans','Poppins' !important;
 }
-.nav-menu li a {
-  /* color:#1a5a1a; */
-}
 .lbr {
   display: none;
 }
-/* Green grid pattern background */
-.primary {
-  width: 100%;
-  height: 100%;
-  /* --color: rgba(0, 128, 0, 0.05);
-  --color: rgba(0, 128, 0, 0.08); */
-  background-color: #e8f5e9;
-  background-image: linear-gradient(
-      0deg,
-      transparent 24%,
-      var(--color) 25%,
-      var(--color) 26%,
-      transparent 27%,
-      transparent 74%,
-      var(--color) 75%,
-      var(--color) 76%,
-      transparent 77%,
-      transparent
-    ),
-    linear-gradient(
-      90deg,
-      transparent 24%,
-      var(--color) 25%,
-      var(--color) 26%,
-      transparent 27%,
-      transparent 74%,
-      var(--color) 75%,
-      var(--color) 76%,
-      transparent 77%,
-      transparent
-    );
-  background-size: 55px 55px;
 
-  /* background-color: #242424 !important; */
-}
 
 /* About section */
 /* Apply filter and drop-shadow-xl effects */
@@ -87,27 +32,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* transition: transform 0.5s; */
   transition: all 2s ease-in-out !important;
-  /* background-color: #f0f8f0; */
-  /* background-color: #000; */
 }
 .team-member-card h3,
 .team-member-card p {
   text-align: center;
 }
-/* .team-member-card:hover img{
-  border:6px solid linear-gradient(109.6deg, rgb(0, 204, 130) 11.2%, rgb(58, 181, 46) 91.7%);;
-  color:#1a5a1a;
-} */
 .team-member-card {
   transition: all 0.3s ease-in !important;
-}
-
-.teacher-card{
-  /* display: grid;
- place-items: center;
- place-content: center; */
 }
 
 /* Events section */
@@ -145,39 +77,20 @@ textarea {
 }
 
 .team-member-card{
-  transition: background-color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease;
 }
 .team-member-card:hover{
-  background-color: #5cf164; /* Light Green on hover */
-  background-color: #4ade80; /* Light Green on hover */
-  /* background-color: #4ade80;  */
+  background-color: #5cf164;
+  background-color: #4ade80;
 }
 .team-member-card:hover .team-member-card p{
   font-weight: bold !important;
 }
 .border-white{
   border-color: white !important;
-  /* mix-blend-mode:; */
 }
 
-/* .team-member-card img {
-  transition: all 0.5s ease-in !important;
-}
 
-.team-member-card:hover img {
-  mix-blend-mode: overlay;
-} */
-
-/* .team-member-card img {
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  opacity: 0.8;
-}
-
-.team-member-card:hover img {
-  mix-blend-mode: overlay;
-  opacity: 1;
-  transform: scale(1.01);
-*/
 
 
 /*Other utility CSS*/

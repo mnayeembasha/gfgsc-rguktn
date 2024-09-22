@@ -7,7 +7,7 @@ export const faqs = [
     },
     {
       id: 2,
-      question: "What we need to join the Geeks for Geeks Student Chapter?",
+      question: "Why we need to join the Geeks for Geeks Student Chapter?",
       answer: "Joining the Geeks for Geeks Student Chapter provides you with access to  networking opportunities with industry professionals, hands-on learning experiences, and a supportive community of like-minded peers."
     },
     {

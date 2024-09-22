@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Events from './Events';
+import Events from './events/Events.jsx';
 import NotFound from './NotFound.jsx';
 import Home from './home/Home.jsx'
 function App(){
