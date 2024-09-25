@@ -27,10 +27,10 @@ const Team = () => {
         }}
       />
       {/* dark:text-green-500 */}
-      <h3 className="mb-1 md:mb-2 text-2xl font-bold text-green-900  dark:text-green-200">
+      <h3 className="mb-1 md:mb-2 text-2xl sm-text-xl font-bold text-green-900  dark:text-green-200">
         Dr. D.V. Nagarjuna Devi
       </h3>
-      <p className="text-gray-800 text-xl font-semibold text-green-700 text-green-grad">
+      <p className="text-gray-800 text-xl sm-text-lg font-semibold text-green-700 text-green-grad">
         HOD - Dept of CSE
       </p>
     </div>
@@ -63,10 +63,10 @@ const Team = () => {
                   }}
                 />
 
-                <h3 className="mb-1 md:mb-2 text-xl font-semibold text-green-900 dark:text-green-200">
+                <h3 className="mb-1 md:mb-2 text-xl sm-text-lg font-semibold text-green-900 dark:text-green-200">
                   {member.name}
                 </h3>
-                <p className="font-semibold text-lg text-green-600 text-green-grad">
+                <p className="font-semibold text-lg sm-text-md text-green-600 text-green-grad">
                   {member.position}
                 </p>
               </div>

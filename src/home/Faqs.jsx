@@ -20,11 +20,13 @@ const Faqs = () => {
             </h1>
             <div  id="accordion-flush" >
               {faqs.map(({ id, question, answer }) => (
+                /* dark:border-t-4 dark:border-green-300 */
                 /* border-b border-gray-200 */
+
                 <div
                 data-aos="fade-up"
                   key={id}
-                  className=" bg-[#f0f8f0] mb-2 px-3 shadow rounded-lg hover:bg-none dark:bg-[#252525] dark:border-t-4 dark:border-green-300"
+                  className=" bg-[#f0f8f0] mb-2 px-3 shadow rounded-lg hover:bg-none dark:bg-[#252525] "
                 >
                   <h2 id={`accordion-flush-heading-${id}`}>
                     <button
