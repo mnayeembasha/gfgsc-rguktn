@@ -63,10 +63,10 @@ const Team = () => {
                   }}
                 />
 
-                <h3 className="mb-1 md:mb-2 text-xl sm-text-lg font-semibold text-green-900 dark:text-green-200">
+                <h3 className="mb-1 md:mb-2 md-text-xl text-lg font-semibold text-green-900 dark:text-green-200">
                   {member.name}
                 </h3>
-                <p className="font-semibold text-lg sm-text-md text-green-600 text-green-grad">
+                <p className="font-semibold md-text-lg text-md text-green-600 text-green-grad">
                   {member.position}
                 </p>
               </div>
