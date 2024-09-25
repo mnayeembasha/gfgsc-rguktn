@@ -1,8 +1,8 @@
-/* eslint-disable no-undef */
-/** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class', // Enable dark mode using the 'class' strategy
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx,vue}',
   ],
   theme: {
     extend: {},

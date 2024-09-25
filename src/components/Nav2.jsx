@@ -11,6 +11,7 @@ const Navbar = () => {
     });
   }, []);
 
+
   // Track mobile menu state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -43,9 +44,6 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-[#f0f8f0] px-4 py-1 shadow-md md:px-6 navbar dark:bg-[#131417]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-
-        {/* Logo */}
-
         <a href="/" className="flex items-center space-x-3 image-container">
           <img
             src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"
@@ -56,52 +54,30 @@ const Navbar = () => {
             GFGSC-RGUKTN
           </span>
         </a>
-
-        {/* Right Section: Dark mode toggle + Hamburger */}
-        <div className="flex space-x-3 items-center md:hidden">
-          {/* Dark Mode Toggle Button */}
-          <button
-              id="tooltip-btn"
-              onClick={toggleTheme}
-              className="dark:text-gray-100 rounded transition-all duration-300"
-            >
-              <div className="toggle" id="toggle-icon">
-                {theme === 'dark' ? (
-                  <i className="light-mode-icon"></i>
-                ) : (
-                  <i className="dark-mode-icon"></i>
-                )}
-              </div>
-            </button>
-
-          {/* Hamburger Menu Button */}
-          <button
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg focus:outline-none"
-            aria-controls="navbar-solid-bg"
-            aria-expanded={isMenuOpen}
-            onClick={toggleMenu}
+        <button
+          type="button"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none"
+          aria-controls="navbar-solid-bg"
+          aria-expanded={isMenuOpen}
+          onClick={toggleMenu}
+        >
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
           >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-        </div>
-
-        {/* Menu - Hidden on mobile, visible on desktop */}
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
         <div
           className={`${
             isMenuOpen ? 'block' : 'hidden'
@@ -153,12 +129,11 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Dark mode toggle button visible only on larger screens */}
-        <div className="hidden md:flex">
+       <div className='toggle-button'>
           <button
               id="tooltip-btn"
               onClick={toggleTheme}
-              className="dark:text-gray-100 rounded transition-all duration-300"
+              className="flex justify-center rounded-full items-center dark:text-gray-100 rounded transition-all duration-300"
             >
               <div className="toggle" id="toggle-icon">
                 {theme === 'dark' ? (
@@ -169,7 +144,6 @@ const Navbar = () => {
               </div>
             </button>
         </div>
-
       </div>
     </nav>
   );

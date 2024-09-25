@@ -1,6 +1,16 @@
+/*All Colors and gradients*/
+.green-grad{
+    background: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
+    background-clip: text;
+    color: transparent;
+}
+
 /*Navbar-section*/
-.gfg {
+.gfg-bg {
   background-color: #308d46 !important;
+}
+.gfg-color{
+  color:#308d46 !important;
 }
 .navbar .logo-text {
   font-family: "Nunito", sans-serif !important;
@@ -33,6 +43,13 @@
   justify-content: center;
   align-items: center;
   transition: all 2s ease-in-out !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+  transition: box-shadow 0.5s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(0);
+}
+.team-member-card:hover{
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.8) !important;
+  transform: translateY(-5px) !important;
 }
 .team-member-card h3,
 .team-member-card p {
@@ -117,7 +134,7 @@ textarea {
     109.6deg,
     rgb(0, 204, 130) 11.2%,
     rgb(58, 181, 46) 91.7%
-  );
+  ) ;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

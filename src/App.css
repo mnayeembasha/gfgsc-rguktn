@@ -27,4 +27,56 @@
                     linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
   background-size: 55px 55px;
 }
+.navbar{
+  /* background-color: #131417 !important; */
+}
+.nav-menu li a{
+  color:green;
+}
+.gfg-dark-color{
+  background-color: #131417;
+}
+body{
+
+}
+.dark .primary{width: 100%;
+  height: 100%;
+  --color: rgba(0, 255, 0, 0.04); /* Brighter green with a slight transparency */
+  --color: rgba(0, 255, 0, 0.04); /* Slightly stronger green */
+
+  background-color: #1b1b1b; /* Dark background color (nearly black) */
+
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+                    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-size: 55px 55px;background-color: #131417 !important;
+
+}
+
+.toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 1rem; */
+}
+.toggle i{
+ border:none;
+ outline: none;
+ color:green;
+}
+.light-mode-icon {
+  background: url('/assets/lightmode.svg') no-repeat;
+  background-size: 100%;
+  width:2.2em;
+  height:2.2em;
+}
+
+/* Icon for dark mode */
+.dark-mode-icon{
+  background: url('/assets/darkmode.svg') no-repeat;
+  width:1.6em;
+  height:1.6em;
+  background-size: 100%;
+}
+
+
 

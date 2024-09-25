@@ -87,37 +87,37 @@ const Contact = () => {
       {/* <ToastContainer className="Toastify__toast-container"/> */}
       <div
         data-aos="fade-up"
-        className="md:shadow-lg bg-[#f0f8f0] grid grid-cols-1 gap-8 px-4 py-8 md:py-12 rounded-2xl md:grid-cols-2 md:gap-0 md:px-6 soc-gpar"
+        className="md:shadow-lg bg-[#f0f8f0] dark:bg-[#252525] grid grid-cols-1 gap-8 px-4 py-8 md:py-12 rounded-2xl md:grid-cols-2 md:gap-0 md:px-6 soc-gpar"
       >
         <div className="space-y-6 px-8 md:px-24 flex flex-col justify-center align-center soc-par">
           <div data-aos="fade-up" className="space-y-2 px-4 md:px-6">
-            <h1 className="text-4xl font-bold text-green-900">Get in Touch</h1>
-            <p className="text-green-700">
+            <h1 className="text-4xl font-bold text-green-900 dark:text-green-300">Get in Touch</h1>
+            <p className="text-green-700 dark:text-green-200">
               Have a question or want to contribute? Reach out!
             </p>
           </div>
           <div className="space-y-4 px-4 md:px-8">
             {/* Contact Info */}
             <div data-aos="fade-up" className="flex items-center gap-2 mb-8 flex-wrap w-full">
-  <div className="bg-[#308D46] icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
+  <div className="bg-[#308D46] dark:bg-green-300 icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
   {/* bi-telephone-fill */}
-    <i className="bi bi-geo-alt-fill text-white"></i>
+    <i className="bi bi-geo-alt-fill text-white dark:text-gray-800"></i>
   </div>
   <span
 
-    className="text-green-700"
+    className="text-green-700 dark:text-gray-200"
   >
     RGUKT Nuzvid, Andhra Pradesh
   </span>
 </div>
 
 <div className="flex items-center gap-2 flex-wrap w-full">
-  <div className="bg-[#308D46] icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
-    <i className="bi bi-envelope-fill text-white"></i>
+  <div className="bg-[#308D46] dark:bg-green-300 icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
+    <i className="bi bi-envelope-fill text-white dark:text-gray-800"></i>
   </div>
   <a
     href="mailto:geeksforgeeksrguktnuzvid@gmail.com"
-    className="text-green-700 hover:underline hover:underline-offset-2 break-all"
+    className="text-green-700 dark:text-gray-200 hover:underline hover:underline-offset-2 break-all"
   >
     geeksforgeeksrguktnuzvid@gmail.com
   </a>
@@ -129,11 +129,11 @@ const Contact = () => {
             >
               <a
                 href=""
-                className="text-[#a3d9a5] hover:text-[#32a852] transition-colors mr-4"
+                className="text-[#a3d9a5]  hover:text-[#32a852] transition-colors mr-4"
                 target="_blank"
               >
-                <div className="bg-[#308D46] icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container">
-                  <i className="bi bi-twitter-x text-white"></i>
+                <div className="bg-[#308D46] dark:bg-green-300 icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container">
+                  <i className="bi bi-twitter-x text-white dark:text-gray-900"></i>
                 </div>
               </a>
               <a
@@ -141,8 +141,8 @@ const Contact = () => {
                 className="text-[#a3d9a5] hover:text-[#32a852] transition-colors mr-4"
                 target="_blank"
               >
-                <div className="bg-[#308D46] icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container">
-                  <i className="bi bi-instagram text-white"></i>
+                <div className="bg-[#308D46] dark:bg-green-300 icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container">
+                  <i className="bi bi-instagram text-white dark:text-gray-900"></i>
                 </div>
               </a>
               <a
@@ -150,8 +150,8 @@ const Contact = () => {
                 className="text-[#a3d9a5] hover:text-[#32a852] transition-colors mr-4"
                 target="_blank"
               >
-                <div className="bg-[#308D46] icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container">
-                  <i className="bi bi-linkedin text-white"></i>
+                <div className="bg-[#308D46] dark:bg-green-300 icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container">
+                  <i className="bi bi-linkedin text-white dark:text-gray-800"></i>
                 </div>
               </a>
             </div>
@@ -166,7 +166,7 @@ const Contact = () => {
         >
           <div data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-2 md:space-y-0">
             <div data-aos="fade-up" className="space-y-2">
-              <label htmlFor="name" className="text-green-800">
+              <label htmlFor="name" className="text-green-800 dark:text-green-200">
                 Name
               </label>
               <input
@@ -174,7 +174,7 @@ const Contact = () => {
                 type="text"
                 name="from_name"
                 placeholder="Enter your name"
-                className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 bg-[#f0f8f0] text-gray-800 ${
+                className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 bg-[#f0f8f0] dark:bg-[#121212] dark:text-gray-200 text-gray-800 ${
                   formErrors.name ? 'ring-2 ring-red-500' : 'focus:ring-[#32a852]'
                 }`}
               />
@@ -183,7 +183,7 @@ const Contact = () => {
               )}
             </div>
             <div data-aos="fade-up" className="space-y-2">
-              <label htmlFor="email" className="text-green-800">
+              <label htmlFor="email" className="text-green-800 dark:text-green-200 ">
                 Email
               </label>
               <input
@@ -191,7 +191,7 @@ const Contact = () => {
                 type="email"
                 name="from_email"
                 placeholder="Enter your email"
-                className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 bg-[#f0f8f0] text-gray-800 ${
+                className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 bg-[#f0f8f0] dark:bg-[#121212] dark:text-gray-200 text-gray-800 ${
                   formErrors.email ? 'ring-2 ring-red-500' : 'focus:ring-[#32a852]'
                 }`}
               />
@@ -201,7 +201,7 @@ const Contact = () => {
             </div>
           </div>
           <div data-aos="fade-up" className="space-y-2">
-            <label htmlFor="subject" className="text-green-800">
+            <label htmlFor="subject" className="text-green-800 dark:text-green-200 ">
               Subject
             </label>
             <input
@@ -209,7 +209,7 @@ const Contact = () => {
               type="text"
               name="subject"
               placeholder="Enter the subject"
-              className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 bg-[#f0f8f0] text-gray-800 ${
+              className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 bg-[#f0f8f0] dark:bg-[#121212] dark:text-gray-200 text-gray-800 ${
                 formErrors.subject ? 'ring-2 ring-red-500' : 'focus:ring-[#32a852]'
               }`}
             />
@@ -218,14 +218,14 @@ const Contact = () => {
             )}
           </div>
           <div data-aos="fade-up" className="space-y-2">
-            <label htmlFor="message" className="text-green-800">
+            <label htmlFor="message" className="text-green-800 dark:text-green-200">
               Message
             </label>
             <textarea
               id="message"
               name="message"
               placeholder="Enter your message"
-              className={`w-full px-4 py-2 rounded-lg min-h-[120px] focus:outline-none focus:ring-2 bg-[#f0f8f0] text-gray-800 ${
+              className={`w-full px-4 py-2 rounded-lg min-h-[120px] focus:outline-none focus:ring-2 bg-[#f0f8f0]  dark:bg-[#121212] dark:text-gray-200 text-gray-800 ${
                 formErrors.message ? 'ring-2 ring-red-500' : 'focus:ring-[#32a852]'
               }`}
             ></textarea>
