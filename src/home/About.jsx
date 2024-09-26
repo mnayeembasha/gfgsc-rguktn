@@ -11,7 +11,7 @@ const About = () => {
         */
 
 
-    <section data-aos="fade-up" id="about" className="py-12 md:py-18 dark:bg-[#252525]">
+    <section data-aos="fade-up" id="about" className="py-12 md:py-18 bg-green-100 dark:bg-[#252525]">
       <div
         data-aos="fade-up"
         className="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 px-4 md:px-6 flex justify-center items-center"
@@ -31,13 +31,13 @@ const About = () => {
         </div>
         <div data-aos="fade-up" className="md:col-span-7 space-y-4">
           <h2 className="text-3xl font-bold md:text-4xl dark-green-grad">About Us</h2>
-          <p className="text-lg dark:text-gray-200">
+          <p className="text-lg text-gray-600 dark:text-gray-200">
             Welcome to the Geeks for Geeks student chapter at RGUKT Nuzvid! We
             are a community of passionate students who share a love for
             technology and programming. Our goal is to create a supportive
             environment where we can learn, collaborate, and grow together.
           </p>
-          <p className="text-lg dark:text-gray-200">
+          <p className="text-lg text-gray-600 dark:text-gray-200">
             Through our events, workshops, and projects, we aim to empower
             students with the skills and knowledge they need to succeed in the
             tech industry. Join us on this exciting journey as we explore the

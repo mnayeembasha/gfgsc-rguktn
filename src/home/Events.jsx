@@ -4,7 +4,7 @@ const Events = () => {
   return (
     <>
       <Event heading={"Upcoming Events"}/>
-      <div className="container flex justify-center mx-auto">
+      <div className="container flex justify-center mx-auto mt-4">
         <a
           href="/events"
           className="px-2 py-2.5"

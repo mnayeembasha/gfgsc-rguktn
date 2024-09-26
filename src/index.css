@@ -3,11 +3,6 @@
 @tailwind utilities;
 /* Global styles */
 @layer utilities {
-  /* .dark-green-grad {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
-  } */
-
   .dark .dark-green-grad {
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);

@@ -42,21 +42,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 2s ease-in-out !important;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.1); /* Subtle initial shadow */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+    transform: translateY(0);
+
+}
+.dark .team-member-card{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
   transition: box-shadow 0.5s ease-in-out, transform 0.3s ease-in-out;
-    transform: translateY(0);
+}
+.dark .team-member-card:hover{
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.8) !important;
 }
 .team-member-card:hover{
-  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.8) !important;
+  box-shadow: 0 8px 16px rgba(0, 128, 0, 0.2);
   transform: translateY(-5px) !important;
 }
 .team-member-card h3,
 .team-member-card p {
   text-align: center;
 }
-.team-member-card {
-  transition: all 0.3s ease-in !important;
+.team-member-card:hover .team-member-card p{
+  font-weight: bold !important;
 }
 
 /* Events section */
@@ -64,9 +71,14 @@
   font-weight: bold !important;
   font-size: 1.3rem !important;
 }
+.dark .event-shadow{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+}
 
 /* FAQ's section */
-
+.dark .faq-shadow{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+}
 
 /*Contact-Us Section*/
 .icon-container {
@@ -90,17 +102,6 @@ textarea {
 .icon-par:hover{
   background-color: hsl(160, 51%, 60%); /* Light Green on hover */
   background-color: #5cf164; /* Light Green on hover */
-  font-weight: bold !important;
-}
-
-.team-member-card{
-  transition: background-color 0.3s ease;
-}
-.team-member-card:hover{
-  background-color: #5cf164;
-  background-color: #4ade80;
-}
-.team-member-card:hover .team-member-card p{
   font-weight: bold !important;
 }
 .border-white{
@@ -248,5 +249,10 @@ textarea {
   .soc-gpar {
     padding-left: 0rem !important;
     padding-right: 0rem !important;
+  }
+}
+@media (min-width: 430px) {
+  .contact-card {
+    border-radius: 1rem; /* Equivalent to rounded-2xl for screens >= 400px */
   }
 }

@@ -53,7 +53,7 @@ const Hero = () => {
         <div className="text-2xl font-bold md:text-5xl tag-line green-gradient-text dark-green-grad">
           Unlock the <span className="geek">Geek</span> in You!
         </div>
-        <div className="text-2xl font-bold md:text-5xl tag-line dark-green-grad ">
+        <div className="text-2xl font-bold md:text-5xl tag-line green-gradient-text dark-green-grad ">
           Join us for <span id="typewriter" className="typewriter-green-grad"></span>{" "}
         </div>
       </div>

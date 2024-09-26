@@ -49,7 +49,7 @@ const Navbar = () => {
         <a href="/" className="flex items-center space-x-3 image-container">
           <img
             src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"
-            className="h-6 logo"
+            className="h-5 logo"
             alt="Logo"
           />
           <span className="logo-text self-center gfg-color text-2xl font-bold whitespace-nowrap text-[#1a5a1a] dark:text-gray-100">

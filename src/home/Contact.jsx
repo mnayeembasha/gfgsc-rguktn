@@ -82,12 +82,12 @@ const Contact = () => {
     <section
       id="contact"
       data-aos="fade-up"
-      className="w-full py-6 md:py-6 lg:py-24 flex justify-center align-center text-white"
+      className="w-full py-6 mb-6 md:mb-1 md:py-6 lg:py-24 flex justify-center align-center text-white"
     >
       {/* <ToastContainer className="Toastify__toast-container"/> */}
       <div
         data-aos="fade-up"
-        className="md:shadow-lg bg-[#f0f8f0] dark:bg-[#252525] grid grid-cols-1 gap-8 px-4 py-8 md:py-12 rounded-2xl md:grid-cols-2 md:gap-0 md:px-6 soc-gpar"
+        className="contact-card md:shadow-lg bg-[#f0f8f0] dark:bg-[#252525] grid grid-cols-1 gap-8 px-4 py-8 md:py-12 md:grid-cols-2 md:gap-0 md:px-6 soc-gpar"
       >
         <div className="space-y-6 px-8 md:px-24 flex flex-col justify-center align-center soc-par">
           <div data-aos="fade-up" className="space-y-2 px-4 md:px-6">
@@ -161,7 +161,7 @@ const Contact = () => {
           ref={form}
           onSubmit={sendEmail}
           data-aos="fade-up"
-          className="contact-form space-y-4 px-8 md:px-8"
+          className="contact-form space-y-4 px-4 md:px-8"
           noValidate
         >
           <div data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-2 md:space-y-0">
