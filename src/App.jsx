@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import Events from './events/Events.jsx';
 import NotFound from './NotFound.jsx';
 import Home from './home/Home.jsx'
+import Blogs from './blogs/Blog.jsx'
 function App(){
 
   const location = useLocation();
@@ -32,6 +33,7 @@ function App(){
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/events" element={<Events />} />
+      <Route path="/blogs" element={<Blogs />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   // </Router>
