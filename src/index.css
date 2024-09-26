@@ -15,6 +15,16 @@
     @apply bg-clip-text text-transparent !important;
     background: linear-gradient(110.1deg, rgb(34, 126, 34) 0.9%, rgb(168, 251, 60) 0.3%);
   }
+  .blog-light-bg{
+    background: radial-gradient(788px at 0.7% 3.4%, rgb(164, 231, 192) 0%, rgb(255, 255, 255) 90%);
+    background-size: contain;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: repeat;
+  }
+  .dark .blog-light-bg{
+    background: none;
+  }
 }
 
 /* Mona Sans font */
@@ -34,10 +44,9 @@
 img{
   user-select: none;
   pointer-events: none !important;
+  color:#080808;
 }
-/* @font-face {
-    font-family: 'Garet Heavy';
-    src: url('/fonts/Garet-Heavy.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  } */
+.dsa-category-card{
+  outline: none !important;
+}
+

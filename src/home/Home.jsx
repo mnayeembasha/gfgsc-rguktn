@@ -26,7 +26,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="bg-[#f0f8f0] text-[#1a5a1a] primary">
+    <div className="min-h-screen flex flex-col bg-[#f0f8f0] text-[#1a5a1a] primary">
       <Navbar />
       <main>
         <Hero />

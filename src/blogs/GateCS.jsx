@@ -1,16 +1,28 @@
+import Navbar from '../components/Navbar.jsx'
+import Footer from '../components/Footer.jsx'
 import React from 'react';
-
 const GateCS = () => {
   return (
-    <div className="px-[10%] md:px-[20%] py-8 md:py-16 dark:bg-[#252525] dark:text-white">
+    <>
+    <Navbar/>
+    <div className="px-[5%] md:px-[20%] py-8 md:py-16 bg-[#f0f8f0]  blog-light-bg dark:bg-[#252525] dark:text-white">
       <article id="a1b2d00e-aa80-4065-9429-1247e2992180" className="page sans">
         <header>
-          <h1 className="page-title text-4xl font-bold text-center">Gate-CS Overview</h1>
+          <h1 className="page-title text-5xl font-extrabold mb-2 md:mb-5 text-center">Gate-CS 2025</h1>
         </header>
         <div className="page-body mt-4">
           <p className="my-4">
             The <strong>Graduate Aptitude Test in Engineering (GATE) 2025</strong> is an entrance exam conducted for admissions to postgraduate programs (Master’s and Doctoral) in engineering, technology, architecture, and science in India. It's also used by several Public Sector Undertakings (PSUs) for recruiting engineers.
           </p>
+          <div className='gate-image my-2  md:my-4'>
+          <img
+                  src={'/assets/gate-2025.jpg'}
+                  width={300}
+                  height={400}
+                  className="h-80 w-full rounded-lg object-cover"
+                  style={{ aspectRatio: '300/400', objectFit: 'cover',objectPosition:'left'}}
+                />
+          </div>
 
           <h3 className="text-xl font-semibold mt-6">
             <strong>Why a CSE student should consider writing GATE?</strong>
@@ -45,64 +57,64 @@ const GateCS = () => {
           </h2>
 
           <div className="overflow-x-auto mt-4">
-            <table className="table-auto border-collapse w-full dark:border-gray-700">
+            <table className="table-auto border-collapse w-full border-gray-700">
               <thead>
                 <tr>
-                  <th className="border px-4 py-2 dark:border-gray-700">Subject</th>
-                  <th className="border px-4 py-2 dark:border-gray-700">Approximate Weightage (%)</th>
+                  <th className="border px-4 py-2 border-gray-700 text-left">Subject</th>
+                  <th className="border px-4 py-2 border-gray-700 text-left">Approximate Weightage(%)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border px-4 py-2 dark:border-gray-700">General Aptitude</td>
-                  <td className="border px-4 py-2 dark:border-gray-700">15%</td>
+                  <td className="border px-4 py-2 border-gray-700">General Aptitude</td>
+                  <td className="border px-4 py-2 border-gray-700">15%</td>
                 </tr>
                 <tr>
-                  <td className="border px-4 py-2 dark:border-gray-700">Engineering Mathematics (Linear Algebra, Calculus, Discrete Mathematics, Probability)</td>
-                  <td className="border px-4 py-2 dark:border-gray-700">15%</td>
+                  <td className="border px-4 py-2 border-gray-700">Engineering Mathematics (Linear Algebra, Calculus, Discrete Mathematics, Probability)</td>
+                  <td className="border px-4 py-2 border-gray-700">15%</td>
                 </tr>
                 <tr>
-                  <td className="border px-4 py-2 dark:border-gray-700">Digital Logic</td>
-                  <td className="border px-4 py-2 dark:border-gray-700">4-6%</td>
+                  <td className="border px-4 py-2 border-gray-700">Digital Logic</td>
+                  <td className="border px-4 py-2 border-gray-700">4-6%</td>
                 </tr>
                 <tr>
-                  <td className="border px-4 py-2 dark:border-gray-700">Computer Organization & Architecture</td>
-                  <td className="border px-4 py-2 dark:border-gray-700">6-10%</td>
+                  <td className="border px-4 py-2 border-gray-700">Computer Organization & Architecture</td>
+                  <td className="border px-4 py-2 border-gray-700">6-10%</td>
                 </tr>
                 <tr>
-                  <td className="border px-4 py-2 dark:border-gray-700">C Programming & Data Structures</td>
-                  <td className="border px-4 py-2 dark:border-gray-700">8-12%</td>
+                  <td className="border px-4 py-2 border-gray-700">C Programming & Data Structures</td>
+                  <td className="border px-4 py-2 border-gray-700">8-12%</td>
                 </tr>
                 <tr>
-                  <td className="border px-4 py-2 dark:border-gray-700">Algorithms</td>
-                  <td className="border px-4 py-2 dark:border-gray-700">8-10%</td>
+                  <td className="border px-4 py-2 border-gray-700">Algorithms</td>
+                  <td className="border px-4 py-2 border-gray-700">8-10%</td>
                 </tr>
                 <tr>
-                  <td className="border px-4 py-2 dark:border-gray-700">Theory of Computation</td>
-                  <td className="border px-4 py-2 dark:border-gray-700">7-10%</td>
+                  <td className="border px-4 py-2 border-gray-700">Theory of Computation</td>
+                  <td className="border px-4 py-2 border-gray-700">7-10%</td>
                 </tr>
                 <tr>
-                  <td className="border px-4 py-2 dark:border-gray-700">Compiler Design</td>
-                  <td className="border px-4 py-2 dark:border-gray-700">5-7%</td>
+                  <td className="border px-4 py-2 border-gray-700">Compiler Design</td>
+                  <td className="border px-4 py-2 border-gray-700">5-7%</td>
                 </tr>
                 <tr>
-                  <td className="border px-4 py-2 dark:border-gray-700">Operating Systems</td>
-                  <td className="border px-4 py-2 dark:border-gray-700">8-10%</td>
+                  <td className="border px-4 py-2 border-gray-700">Operating Systems</td>
+                  <td className="border px-4 py-2 border-gray-700">8-10%</td>
                 </tr>
                 <tr>
-                  <td className="border px-4 py-2 dark:border-gray-700">Databases</td>
-                  <td className="border px-4 py-2 dark:border-gray-700">7-9%</td>
+                  <td className="border px-4 py-2 border-gray-700">Databases</td>
+                  <td className="border px-4 py-2 border-gray-700">7-9%</td>
                 </tr>
                 <tr>
-                  <td className="border px-4 py-2 dark:border-gray-700">Computer Networks</td>
-                  <td className="border px-4 py-2 dark:border-gray-700">6-9%</td>
+                  <td className="border px-4 py-2 border-gray-700">Computer Networks</td>
+                  <td className="border px-4 py-2 border-gray-700">6-9%</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <h3 className="text-xl font-semibold mt-6">Exam Pattern:</h3>
-          <ul className="list-disc mt-4">
+          <h3 className="text-2xl font-extrabold mt-6">Exam Pattern:</h3>
+          <ul className="list-disc mt-4" style={{lineHeight:'2rem'}}>
             <li><strong>Total Marks</strong>: 100</li>
             <li><strong>Total Questions</strong>: 65</li>
             <li><strong>Duration</strong>: 3 hours (180 minutes)</li>
@@ -110,7 +122,7 @@ const GateCS = () => {
 
           <ul className="list-disc mt-4">
             <li><strong>Type of Questions</strong>:
-              <ul className="list-circle ml-5">
+              <ul className="list-circle ml-5" style={{lineHeight:'2rem'}}>
                 <li><strong>Multiple Choice Questions (MCQs)</strong>: Each question has 4 options, and only one is correct.</li>
                 <li><strong>Numerical Answer Type (NAT) Questions</strong>: Requires a numerical value as the answer, to be entered by the candidate.</li>
                 <li><strong>Multiple Select Questions (MSQs)</strong>: More than one option may be correct.</li>
@@ -119,7 +131,7 @@ const GateCS = () => {
           </ul>
 
           <h3 className="text-xl font-semibold mt-6">Negative Marking:</h3>
-          <ul className="list-disc mt-4">
+          <ul className="list-disc mt-4" style={{lineHeight:'2rem'}}>
             <li><strong>For MCQs</strong>:
               <ul className="list-circle ml-5">
                 <li><strong>1-mark questions</strong>: 1/3 mark will be deducted for every wrong answer.</li>
@@ -136,10 +148,16 @@ const GateCS = () => {
             </a>
           </p>
 
-          <h2 className="text-2xl font-semibold mt-6">Practicing Previous Year Questions</h2>
+          <h2 className="text-2xl font-bold mt-6">Practicing Previous Year Questions</h2>
           <p className="mt-4">
             <a href="https://practicepaper.in/gate-cse" className="text-blue-600 dark:text-blue-400">
               https://practicepaper.in/gate-cse
+            </a>
+          </p>
+          <h2 className="text-2xl font-bold mt-6">Mock Tests</h2>
+          <p className="mt-4">
+            <a href="https://gate.iitk.ac.in/GATE2023/mock.html" className="text-blue-600 dark:text-blue-400">
+            iitk-mocktests
             </a>
           </p>
 
@@ -192,6 +210,8 @@ const GateCS = () => {
         </div>
       </article>
     </div>
+    <Footer/>
+    </>
   );
 };
 

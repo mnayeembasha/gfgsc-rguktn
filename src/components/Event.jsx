@@ -11,14 +11,14 @@ const Event = ({heading}) => {
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
             {events.map((event) => (
               <div data-aos="fade-up" key={event.id} className="rounded-lg bg-[#f0f8f0] bg-green-100 md:bg-green-200 p-5 shadow-md dark:bg-[#252525]">
-                <img
-                  src={event.image}
-                  alt={event.title}
-                  width={300}
-                  height={200}
-                  className="mb-4 h-40 w-full rounded-lg object-cover"
-                  style={{ aspectRatio: '300/200', objectFit: 'cover',objectPosition:'left'}}
-                />
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    width={300}
+                    height={200}
+                    className="mb-4 h-40 w-full rounded-lg object-cover"
+                    style={{ aspectRatio: '300/200', objectFit: 'cover',objectPosition:'left'}}
+                  />
                 <h3 className="text-[#1a5a1a] text-green-900 mb-2 text-lg font-bold dark:text-gray-200 lime-green-grad">{event.title}</h3>
                 <p className="text-[#1a5a1a] text-sm dark:text-gray-300">{event.description}</p>
                 <div className="flex items-center gap-2 my-2">

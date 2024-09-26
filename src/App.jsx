@@ -9,6 +9,10 @@ import Events from './events/Events.jsx';
 import NotFound from './NotFound.jsx';
 import Home from './home/Home.jsx'
 import Blogs from './blogs/Blog.jsx'
+import GateCS from './blogs/GateCS.jsx';
+import Web3 from './blogs/Web3.jsx';
+import DSASheet from './dsasheet/DSASheet.jsx';
+import Resources from './resources/Resources.jsx';
 function App(){
 
   const location = useLocation();
@@ -33,7 +37,11 @@ function App(){
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/events" element={<Events />} />
+      <Route path="/dsa-sheet" element={<DSASheet />} />
+      <Route path="/resources" element={<Resources />} />
       <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blogs/gate-cs-2025-roadmap" element={<GateCS />} />
+        <Route path="/blogs/web3-newage-internet" element={<Web3 />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   // </Router>

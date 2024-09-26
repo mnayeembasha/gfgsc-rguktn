@@ -65,7 +65,7 @@ const Navbar = () => {
               onClick={toggleTheme}
               className="dark:text-gray-100 rounded transition-all duration-300"
             >
-              <div className="toggle" id="toggle-icon">
+              <div className="toggle" id="toggle-icon focus:outline-none">
                 {theme === 'dark' ? (
                   <i className="light-mode-icon"></i>
                 ) : (
@@ -160,7 +160,7 @@ const Navbar = () => {
               onClick={toggleTheme}
               className="dark:text-gray-100 rounded transition-all duration-300"
             >
-              <div className="toggle" id="toggle-icon">
+              <div className="toggle focus:outline-none" id="toggle-icon">
                 {theme === 'dark' ? (
                   <i className="light-mode-icon"></i>
                 ) : (
