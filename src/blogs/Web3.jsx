@@ -148,13 +148,13 @@ const Web3 = () => {
               id="10d85e8e-433c-801e-b2f4-c63f7085734d"
               className="image text-center mb-4"
             >
-              <a href="WEB%203%200%20New%20Age%20Internet%2010c85e8e433c809fa0dff32e6b0eb7a8/image%201.png">
+              {/* <a href="WEB%203%200%20New%20Age%20Internet%2010c85e8e433c809fa0dff32e6b0eb7a8/image%201.png"> */}
                 <img
                   className="mx-auto w-80"
                   src="/assets/etherium.png"
                   alt="Ethereum"
                 />
-              </a>
+              {/* </a> */}
             </figure>
             <p className="mb-2">
               DeFi: Decentralized finance is gaining adoption in the Ethereum
