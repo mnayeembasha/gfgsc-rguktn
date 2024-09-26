@@ -11,7 +11,7 @@ const About = () => {
         */
 
 
-    <section data-aos="fade-up" id="about" className="py-12 md:py-18 bg-green-100 dark:bg-[#252525]">
+    <section data-aos="fade-up" id="about" className="py-9 md:py-18 mb-5 md:mb-1 bg-green-100 dark:bg-[#252525]">
       <div
         data-aos="fade-up"
         className="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 px-4 md:px-6 flex justify-center items-center"

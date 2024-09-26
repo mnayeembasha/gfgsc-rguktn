@@ -251,7 +251,7 @@ textarea {
     padding-right: 0rem !important;
   }
 }
-@media (min-width: 430px) {
+@media (min-width: 450px) {
   .contact-card {
     border-radius: 1rem; /* Equivalent to rounded-2xl for screens >= 400px */
   }

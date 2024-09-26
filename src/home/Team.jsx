@@ -47,7 +47,7 @@ const Team = () => {
                <div
                 data-aos="fade-up"
                 key={index}
-                className={`team-member-card dark:bg-[#202020] bg-green-100 md:bg-green-300 shadow-lg relative image-container rounded-lg  p-2 md:p-4 shadow-lg  transition-colors duration-2000 ease-in-out`}
+                className={`team-member-card dark:bg-[#202020] bg-green-200 md:bg-green-300 shadow-lg relative image-container rounded-lg  p-2 md:p-4 shadow-lg  transition-colors duration-2000 ease-in-out`}
 
               >
                 <img
