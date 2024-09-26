@@ -150,7 +150,7 @@ const Web3 = () => {
             >
               <a href="WEB%203%200%20New%20Age%20Internet%2010c85e8e433c809fa0dff32e6b0eb7a8/image%201.png">
                 <img
-                  className="mx-auto w-80 "
+                  className="mx-auto w-80"
                   src="/assets/etherium.png"
                   alt="Ethereum"
                 />
