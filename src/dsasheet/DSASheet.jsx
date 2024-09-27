@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 import { dsaSheet } from "../data/dsaSheet.js";
 import { useState } from "react";
+import './DSASheet.css'
 const DSASheet=()=>{
     const [openIndex, setOpenIndex] = useState(null);
 
@@ -25,7 +26,7 @@ const DSASheet=()=>{
   {Object.keys(dsaSheet).map((category, index) => (
     <div
       key={index}
-      className="dsa-category-card bg-[#f0f8f0] focus:outline-none dark:border-t-4 dark:border-green-300 mb-2 my-4 md:my-8 px-3 shadow-lg faq-shadow rounded-lg hover:bg-none dark:bg-[#252525]"
+      className="dsa-category-card gradient-border-top bg-[#f0f8f0] focus:outline-none border-t-4 border-green-grad dark:border-t-4 dark:border-green-300 mb-2 my-4 md:my-5 px-3 shadow-lg faq-shadow rounded-lg hover:bg-none  dark:bg-[#252525]"
     >
       <h2 id={`accordion-flush-heading-${index}`}>
         <button
