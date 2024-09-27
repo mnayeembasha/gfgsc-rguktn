@@ -1,11 +1,12 @@
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 import React from 'react';
+import './blogs.css';
 const GateCS = () => {
   return (
     <>
     <Navbar/>
-    <div className="px-[5%] md:px-[20%] py-8 md:py-16 bg-[#f0f8f0]  blog-light-bg dark:bg-[#252525] dark:text-white">
+    <div style={{overflowX:'hidden'}} className="px-[8%] md:px-[20%] py-12 md:py-16 bg-[#f0f8f0]  blog-light-bg dark:bg-[#252525] dark:text-white">
       <article id="a1b2d00e-aa80-4065-9429-1247e2992180" className="page sans">
         <header>
           <h1 className="page-title text-5xl font-extrabold mb-2 md:mb-5 text-center">Gate-CS 2025</h1>
@@ -15,13 +16,13 @@ const GateCS = () => {
             The <strong>Graduate Aptitude Test in Engineering (GATE) 2025</strong> is an entrance exam conducted for admissions to postgraduate programs (Master’s and Doctoral) in engineering, technology, architecture, and science in India. It's also used by several Public Sector Undertakings (PSUs) for recruiting engineers.
           </p>
           <div className='gate-image my-2  md:my-4'>
-          <img
-                  src={'/assets/gate-2025.jpg'}
-                  width={300}
-                  height={400}
-                  className="h-80 w-full rounded-lg object-cover"
-                  style={{ aspectRatio: '300/400', objectFit: 'cover',objectPosition:'left'}}
-                />
+                <img
+                    src={'/assets/gate-2025.jpg'}
+                    width={250}
+                    height={250}
+                    className='mx-auto'
+                    style={{ aspectRatio: '250/250', objectFit: 'cover'}}
+                 />
           </div>
 
           <h3 className="text-xl font-semibold mt-6">
@@ -34,11 +35,11 @@ const GateCS = () => {
             <li><strong>Opportunities Abroad</strong>: Some international universities accept GATE scores for master's programs.</li>
           </ol>
 
-          <ul className="list-disc mt-6">
+          <ul className="list-disc mt-6 pl-3">
             <li><strong>Conducting Body</strong>: GATE will likely be conducted by one of the Indian Institutes of Technology (IITs) or the Indian Institute of Science (IISc).</li>
           </ul>
 
-          <ul className="list-disc mt-4">
+          <ul className="list-disc mt-4 pl-3">
             <li>
               <strong>Eligibility</strong>:
               <ul className="list-circle ml-5">
@@ -48,7 +49,7 @@ const GateCS = () => {
             </li>
           </ul>
 
-          <ul className="list-disc mt-4">
+          <ul className="list-disc mt-4 pl-3">
             <li><strong>Validity</strong>: The GATE score is valid for 3 years from the date of the result.</li>
           </ul>
 
@@ -114,13 +115,13 @@ const GateCS = () => {
           </div>
 
           <h3 className="text-2xl font-extrabold mt-6">Exam Pattern:</h3>
-          <ul className="list-disc mt-4" style={{lineHeight:'2rem'}}>
+          <ul className="list-disc mt-4 pl-5" style={{lineHeight:'2rem'}}>
             <li><strong>Total Marks</strong>: 100</li>
             <li><strong>Total Questions</strong>: 65</li>
             <li><strong>Duration</strong>: 3 hours (180 minutes)</li>
           </ul>
 
-          <ul className="list-disc mt-4">
+          <ul className="list-disc mt-4 pl-5">
             <li><strong>Type of Questions</strong>:
               <ul className="list-circle ml-5" style={{lineHeight:'2rem'}}>
                 <li><strong>Multiple Choice Questions (MCQs)</strong>: Each question has 4 options, and only one is correct.</li>
@@ -131,7 +132,7 @@ const GateCS = () => {
           </ul>
 
           <h3 className="text-xl font-semibold mt-6">Negative Marking:</h3>
-          <ul className="list-disc mt-4" style={{lineHeight:'2rem'}}>
+          <ul className="list-disc mt-4 pl-5" style={{lineHeight:'2rem'}}>
             <li><strong>For MCQs</strong>:
               <ul className="list-circle ml-5">
                 <li><strong>1-mark questions</strong>: 1/3 mark will be deducted for every wrong answer.</li>
@@ -143,7 +144,7 @@ const GateCS = () => {
 
           <h2 className="text-2xl font-bold mt-6">Detailed Syllabus</h2>
           <p className="mt-4">
-            <a href="https://gate2025.iitr.ac.in/doc/2025/GATE%20_CS_2025_Syllabus.pdf" className="text-blue-600 dark:text-blue-400">
+            <a href="https://gate2025.iitr.ac.in/doc/2025/GATE%20_CS_2025_Syllabus.pdf" className="text-blue-600 dark:text-blue-400 word-break">
               https://gate2025.iitr.ac.in/doc/2025/GATE%20_CS_2025_Syllabus.pdf
             </a>
           </p>

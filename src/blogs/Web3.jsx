@@ -1,17 +1,18 @@
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 import React from 'react';
+import './blogs.css';
 const Web3 = () => {
   return (
     <>
     <Navbar/>
-    <div className="text-gray-800 dark:text-white px-[5%] md:px-[20%] py-8 md:py-16 bg-[#f0f8f0]  blog-light-bg dark:bg-[#252525]">
+    <div style={{overflowX:'hidden'}} className="text-gray-800 dark:text-white px-[8%] md:px-[20%] py-12 md:py-16 bg-[#f0f8f0]  blog-light-bg dark:bg-[#252525]">
       <article
         id="10c85e8e-433c-809f-a0df-f32e6b0eb7a8"
         className="page sans"
       >
         <header className="flex flex-col items-center mb-8">
-          <h1 className="text-5xl font-extrabold mb-2">WEB 3.0 : New Age Internet</h1>
+          <h1 className="text-4xl font-extrabold mb-2">WEB 3.0 - New Age Internet</h1>
           <img
             className="mt-4 rounded w-100 h-64 mb-4"
             src="/assets/blockchain.webp"
@@ -60,7 +61,7 @@ const Web3 = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-2xl font-extrabold mb-4">
             Blockchain Technology
           </h2>
           <p className="mb-4">
@@ -73,7 +74,7 @@ const Web3 = () => {
             in a way that ensures <strong>security, transparency, and immutability</strong>. Once data is stored on a blockchain, it is not possible to delete it unless you control over 33% of total nodes in the network, which is not feasible in the real world.
           </p>
 
-          <h3 className="text-xl font-bold mb-4">Technical View</h3>
+          <h3 className="text-xl font-extrabold mb-4">Technical View</h3>
           <div className="indented mb-4">
             <p className="mb-2">
               Blockchain is nothing but a chain of blocks, where each block
@@ -93,7 +94,7 @@ const Web3 = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-2xl font-extrabold mb-4">
             Bitcoin: The Peer to Peer Electronic Cash System
           </h2>
           <div className="indented mb-4">
@@ -130,7 +131,7 @@ const Web3 = () => {
             on the network.
           </p>
 
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-2xl font-extrabold mb-4">
             Ethereum: Next Generation Blockchain
           </h2>
           <div className="indented mb-4">
@@ -164,7 +165,7 @@ const Web3 = () => {
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold mb-4">Value Layer: Cryptocurrency</h2>
+          <h2 className="text-2xl font-extrabold mb-4">Value Layer: Cryptocurrency</h2>
           <p className="mb-4">
             Blockchain and cryptocurrency are not the same; they represent
             different layers in the blockchain.
@@ -179,7 +180,7 @@ const Web3 = () => {
             currency.
           </p>
 
-          <h2 className="text-2xl font-bold mb-4">Conclusion</h2>
+          <h2 className="text-2xl font-extrabold mb-4">Conclusion</h2>
           <p className="mb-4">
             In conclusion, Web 3.0 represents the next generation of the web,
             built on the principles of decentralization, user control, and

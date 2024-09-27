@@ -14,20 +14,20 @@ import GateCS from './GateCS.jsx'
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
       {blogs.map((blog) => (
         <div data-aos="fade-up" key={blog.id} className="rounded-lg bg-[#f0f8f0] bg-green-100 md:bg-green-200 p-4 shadow-md dark:bg-[#252525]">
-  <a href={blog.link} target="_blank" rel="noopener noreferrer">
+  <a href={blog.link} rel="noopener noreferrer">
     <img
       src={blog.image}
       alt={blog.name}
       width={100}
       height={300}
-      className="mb-4 h-40 w-full rounded object-cover"
-      style={{ aspectRatio: '300/200', objectFit: 'cover', objectPosition: 'top' }}
+      className="mb-2 h-40 w-full rounded object-cover"
+      style={{ aspectRatio: '300/200', objectFit:blog.objectFit, objectPosition: 'center' }}
     />
   </a>
-  <div className="flex flex-col gap-2 items-center justify-between">
+  <div className="">
     <div>
     <a href={blog.link} rel="noopener noreferrer">
-      <h3 className="text-[#1a5a1a] text-center text-green-900  text-lg font-bold  text-[#1a5a1a] dark-green-grad">
+      <h3 className="text-[#1a5a1a] text-center text-green-900  text-2xl font-bold  text-[#1a5a1a] dark-green-grad">
         {blog.name}
       </h3>
     </a></div>
