@@ -61,10 +61,10 @@ const DSASheet=()=>{
           <table className="min-w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead className="text-xs uppercase bg-green-200 dark:bg-black dark:text-gray-400">
               <tr>
-                <th scope="col" className="px-6 py-3 md:py-5 border-b dark:border-gray-600 text-green-900 dark:text-gray-100">Question</th>
-                <th scope="col" className="px-6 py-3 md:py-5 border-b dark:border-gray-600 text-green-900 dark:text-gray-100">Article</th>
-                <th scope="col" className="px-6 py-3 md:py-5 border-b dark:border-gray-600 text-green-900 dark:text-gray-100">Practice</th>
-                <th scope="col" className="px-6 py-3 md:py-5 border-b dark:border-gray-600 text-green-900 dark:text-gray-100">Video</th>
+                <th scope="col" className="px-6 py-4 md:py-5 border-b dark:border-gray-600 text-green-900 dark:text-gray-100">Question</th>
+                <th scope="col" className="px-6 py-4 md:py-5 border-b dark:border-gray-600 text-green-900 dark:text-gray-100">Article</th>
+                <th scope="col" className="px-6 py-4 md:py-5 border-b dark:border-gray-600 text-green-900 dark:text-gray-100">Practice</th>
+                <th scope="col" className="px-6 py-4 md:py-5 border-b dark:border-gray-600 text-green-900 dark:text-gray-100">Video</th>
               </tr>
             </thead>
             <tbody className="bg-green-50 dark:bg-black">
