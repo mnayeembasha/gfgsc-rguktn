@@ -5,7 +5,7 @@ const Resources = () => {
   return (
     <>
       <Navbar />
-      <section id="resources" className="primary py-4 md:pt-6">
+      <section id="resources" className="primary py-4 md:pt-6 pb-8">
         <div data-aos="fade-up" className="container mx-auto px-4 md:px-12 md:pt-4 md:pb-4 rounded-2xl">
           <h2 className="mb-8 text-3xl font-bold md:text-4xl text-[#1a5a1a] dark-green-grad">Useful Resources</h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
