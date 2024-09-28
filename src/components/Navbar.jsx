@@ -4,12 +4,12 @@ import 'tippy.js/dist/tippy.css';
 
 const Navbar = () => {
 
-  useEffect(() => {
-    tippy('#tooltip-btn', {
-      content: 'Toggle Mode',
-      theme: {theme},
-    });
-  }, []);
+  // useEffect(() => {
+  //   tippy('#tooltip-btn', {
+  //     content: 'Toggle Mode',
+  //     theme: {theme},
+  //   });
+  // }, []);
 
   // Track mobile menu state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     // dark:bg-[#131417]
-    <nav className="bg-[#f0f8f0] px-4 py-1 shadow-xl md:px-6 navbar dark:bg-[#202020] nav-shadow">
+    <nav className="sticky top-0 z-50 bg-[#f0f8f0] px-4 py-1 shadow-lg md:px-6 navbar dark:bg-[#202020] nav-shadow">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         {/* Logo */}
