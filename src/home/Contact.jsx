@@ -38,13 +38,20 @@ const Contact = () => {
     e.preventDefault();
     const errors = validateForm();
     setFormErrors(errors);
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 
     if (Object.keys(errors).length === 0) {
       setIsSubmitting(true);
 
+      // .sendForm('gfgsc_939eem', 'template_3vq9ujj', form.current, {
+      //   publicKey: 'D1hTzc9kJUVMHBimy',
+      // })
       emailjs
-        .sendForm('gfgsc_939eem', 'template_3vq9ujj', form.current, {
-          publicKey: 'D1hTzc9kJUVMHBimy',
+        .sendForm(serviceID, templateID, form.current, {
+          publicKey: publicKey,
         })
         .then(
           () => {
