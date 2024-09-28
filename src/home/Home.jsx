@@ -30,11 +30,13 @@ const Home = () => {
       <Navbar />
       <main>
         <Hero />
+        <div className="dark:bg-[#1a1c1f]">
         <About />
         <Events/>
         <Team />
         <Faqs />
         <Contact />
+        </div>
       </main>
       <Footer />
       <ToastContainer

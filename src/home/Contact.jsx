@@ -82,7 +82,7 @@ const Contact = () => {
     <section
       id="contact"
       data-aos="fade-up"
-      className="w-full py-6 mb-6 md:mb-1 md:py-6 lg:py-24 flex justify-center align-center text-white"
+      className="w-full py-10 md:py-6 lg:py-24 flex justify-center align-center text-white"
     >
       {/* <ToastContainer className="Toastify__toast-container"/> */}
       <div

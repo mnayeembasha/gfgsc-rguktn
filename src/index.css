@@ -27,6 +27,8 @@
   }
 }
 
+
+
 /* Mona Sans font */
 @font-face {
   font-family: 'Mona Sans';
@@ -48,5 +50,11 @@ img{
 }
 .dsa-category-card{
   outline: none !important;
+}
+.card-light-green-grad{
+  background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+}
+.dark .card-light-green-grad{
+  background: none;
 }
 

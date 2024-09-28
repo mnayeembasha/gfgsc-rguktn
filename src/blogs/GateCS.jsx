@@ -6,7 +6,7 @@ const GateCS = () => {
   return (
     <>
     <Navbar/>
-    <div style={{overflowX:'hidden'}} className="px-[5%] md:px-[20%] py-12 md:py-16 bg-[#f0f8f0]  blog-light-bg dark:bg-[#252525] dark:text-white">
+    <div style={{overflowX:'hidden'}} className="px-[5%] md:px-[20%] py-12 md:py-16 bg-[#f0f8f0]  blog-light-bg dark:text-white blog-dark-bg">
       <article id="a1b2d00e-aa80-4065-9429-1247e2992180" className="page sans">
         <header>
           <h1 className="page-title text-5xl font-extrabold mb-2 md:mb-5 text-center">Gate-CS 2025</h1>

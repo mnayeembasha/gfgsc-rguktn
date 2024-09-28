@@ -41,7 +41,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#f0f8f0] px-4 py-1 shadow-md md:px-6 navbar dark:bg-[#131417]">
+    // dark:bg-[#131417]
+    <nav className="bg-[#f0f8f0] px-4 py-1 shadow-xl md:px-6 navbar dark:bg-[#202020] nav-shadow">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         {/* Logo */}

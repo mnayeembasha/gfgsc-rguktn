@@ -5,15 +5,15 @@ import { Outlet } from 'react-router-dom';
 import GateCS from './GateCS.jsx'
  const Blog = () => {
     return(
-        <>
+        <div className='flex flex-col min-h-screen'>
             <Navbar/>
-            <div className='min-h-screen primary '>
-            <section id="blogs" className="primary py-4 md:pt-6">
-        <div data-aos="fade-up" className="container mx-auto px-4 md:px-12 md:pt-4 md:pb-4 rounded-2xl">
+            <div className='dark:bg-[#1b1c1f] flex-grow'>
+            <section id="blogs" className="py-4 md:pt-6">
+        <div data-aos="fade-up" className="container   mx-auto px-4 md:px-12 md:pt-4 md:pb-4 rounded-2xl">
           <h2 className="mb-8 text-3xl font-bold md:text-4xl text-[#1a5a1a] dark-green-grad">Blog Posts</h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
       {blogs.map((blog) => (
-        <div data-aos="fade-up" key={blog.id} className="rounded-lg bg-[#f0f8f0] bg-green-100 md:bg-green-200 p-4 shadow-md dark:bg-[#252525]">
+        <div data-aos="fade-up" key={blog.id} className="rounded-lg bg-[#f0f8f0] bg-green-100 md:bg-green-200 card-light-green-grad p-4 shadow-md dark:bg-[#252525]">
   <a href={blog.link} rel="noopener noreferrer">
     <img
       src={blog.image}
@@ -44,7 +44,7 @@ import GateCS from './GateCS.jsx'
             </div>
             <Footer pos="bottom"/>
             <Outlet/>
-        </>
+        </div>
     );
 }
 export default Blog;

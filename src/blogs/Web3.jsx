@@ -6,7 +6,7 @@ const Web3 = () => {
   return (
     <>
     <Navbar/>
-    <div style={{overflowX:'hidden'}} className="text-gray-800 dark:text-white px-[5%] md:px-[20%] py-12 md:py-16 bg-[#f0f8f0]  blog-light-bg dark:bg-[#252525]">
+    <div style={{overflowX:'hidden'}} className="text-gray-800 dark:text-white px-[5%] md:px-[20%] py-12 md:py-16 bg-[#f0f8f0]  blog-light-bg blog-dark-bg">
       <article
         id="10c85e8e-433c-809f-a0df-f32e6b0eb7a8"
         className="page sans"
