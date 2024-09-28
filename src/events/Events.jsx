@@ -7,10 +7,10 @@ const Events = () => {
 
 
   return (
-    <div className='primary min-h-[100vh]'>
+    <div className='primary no-grid-bg min-h-screen flex flex-col'>
       <Navbar/>
       <Event heading={"Upcoming Events"}/>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -30,11 +30,13 @@ const Hero = () => {
       }, []);
   return (
     <section
-      data-aos="zoom-in"
-      data-aos-duration="2500"
       className="hero-section sm:h-[80vh] xsm:h-[80vh] md:h-[90vh] py-2 md:py-24 flex flex-col items-center justify-center"
     >
-      <div className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 md:px-6">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="2500"
+        data-aos-delay="300"
+        className="container mx-auto flex flex-col items-center justify-center gap-4 px-4 md:px-6">
         <h1 className="text-2xl  font-bold md:text-5xl text-center heading dark-green-grad">
           GFG Student Chapter <br className="lbr" />
           RGUKT Nuzvid

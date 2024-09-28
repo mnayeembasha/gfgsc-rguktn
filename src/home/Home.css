@@ -4,6 +4,40 @@
     background-clip: text;
     color: transparent;
 }
+.about-bg{
+  /* background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%); */
+  background: linear-gradient(109.6deg, rgb(217, 250, 158) 11.2%, rgb(128, 251, 174) 91.1%);
+}
+.dark .about-bg{
+  background: none;
+}
+
+.no-grid-bg{
+  background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+}
+.event-card{
+  background: radial-gradient(circle at 10% 20%, rgb(116, 203, 199) 0%, rgb(220, 246, 200) 90%);
+  background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+.dark .event-card{
+  background: none;
+}
+.dark .no-grid-bg{
+  background: none;
+}
+
+.team-member-card{
+  background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+  /* background: radial-gradient(266px at 12% 29.3%, rgba(58, 219, 154, 0.93) 2%, rgb(153, 228, 208) 38.6%, rgba(142, 246, 219, 0.82) 73.9%, rgb(253, 255, 238) 100.7%);
+  background-size: 100% 100% !important;
+  background-position:center;
+  width: 100%;
+  max-width: 400px;
+  height: auto;  */
+}
+.dark .team-member-card{
+  background: none;
+}
 
 /*Navbar-section*/
 .gfg-bg {
@@ -30,6 +64,7 @@
 
 
 /* About section */
+
 /* Apply filter and drop-shadow-xl effects */
 .custom-shadow {
   filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));

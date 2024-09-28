@@ -5,12 +5,12 @@ import { faClock } from '@fortawesome/free-solid-svg-icons';
 
 const Event = ({heading}) => {
     return (
-        <section data-aos="fade-up" id="events" className="py-4 md:pt-6">
+        <section  id="events" className="py-4 flex-grow">
         <div data-aos="fade-up" className="container mx-auto px-4 md:px-12 md:pt-12 md:pb-4 rounded-2xl">
           <h2 className="mb-8 text-3xl font-bold md:text-4xl text-[#1a5a1a] dark-green-grad">{heading}</h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
             {events.map((event) => (
-              <div data-aos="fade-up" key={event.id} className="rounded-lg bg-[#f0f8f0] bg-green-100 md:bg-green-200 p-5 shadow-md dark:bg-[#252525]">
+              <div data-aos="fade-up" key={event.id} className="event-card rounded-lg bg-[#f0f8f0] bg-green-100 md:bg-green-200 p-5 shadow-md dark:bg-[#252525]">
                   <img
                     src={event.image}
                     alt={event.title}

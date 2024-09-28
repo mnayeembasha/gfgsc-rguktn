@@ -15,7 +15,7 @@ const DSASheet=()=>{
              <section
 
           id="faq-section"
-          className="primary p-3 md-p-6 "
+          className="primary p-3 md-p-6 min-h-screen flex-grow"
         >
           <div data-aos="fade-up" className="container px-2 md:px-4 mx-auto">
           {/* dark-green-grad */}

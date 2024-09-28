@@ -1,5 +1,5 @@
 const Footer = ({pos}) => {
-  const footerStyle = pos === 'bottom' ? { position: 'fixed', bottom: '0px',width:'100%' } : {};
+  const footerStyle = pos === 'bottom' ? { position: 'absolute', bottom: '0px',width:'100%' } : {};
 
     return (
       <footer className="bg-[#f0f8f0] dark:bg-[#252525] py-6" style={footerStyle}>
