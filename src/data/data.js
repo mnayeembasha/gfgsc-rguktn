@@ -42,21 +42,22 @@ export const events = [
     },
     {
       id: 2,
+      title: 'Tech Talk',
+      date: 'November 29, 2024',
+      description: 'Hear from industry experts on the latest trends and innovations in the tech world.',
+      image:'https://media.istockphoto.com/id/499517325/photo/a-man-speaking-at-a-business-conference.webp?a=1&b=1&s=612x612&w=0&k=20&c=GANexorEVO7mDrp8JUHZKwoFbER0hfgrhu9pMkGfAq8=',
+      time:"5:00 PM",
+    },
+    {
+      id: 3,
       title: 'Hackathon',
-      date: 'October 10, 2024',
+      date: 'December 26, 2024',
       description: 'Join us for a 24-hour coding challenge and showcase your problem-solving skills.',
       // image:'https://media.istockphoto.com/id/1403622426/photo/hackathon-inscription-against-laptop-and-code-background-technology-concept.webp?b=1&s=612x612&w=0&k=20&c=8BzfrMqbfnfkFklzR6wBWcog-aiwzdFQOVYgZAzaV4A=',
       image:'https://media.istockphoto.com/id/1484758991/photo/hackathon-concept-the-meeting-at-the-white-office-table.jpg?b=1&s=612x612&w=0&k=20&c=lKZoNcCmRjbl0lUItRq4n_d-fW9R7RzSYDzNKg_pwAA=',
       time:"5:00 PM",
     },
-    {
-      id: 3,
-      title: 'Tech Talk',
-      date: 'October 15, 2024',
-      description: 'Hear from industry experts on the latest trends and innovations in the tech world.',
-      image:'https://media.istockphoto.com/id/499517325/photo/a-man-speaking-at-a-business-conference.webp?a=1&b=1&s=612x612&w=0&k=20&c=GANexorEVO7mDrp8JUHZKwoFbER0hfgrhu9pMkGfAq8=',
-      time:"5:00 PM",
-    },
+
     // {
     //   id: 4,
     //   title: 'Career Fair',
