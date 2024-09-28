@@ -46,10 +46,10 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         {/* Logo */}
-
+        {/* https://media.geeksforgeeks.org/gfg-gg-logo.svg */}
         <a href="/" className="flex items-center space-x-3 image-container">
           <img
-            src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"
+            src={theme==="dark"?"/assets/logo.svg":"https://media.geeksforgeeks.org/gfg-gg-logo.svg"}
             className="h-5 logo"
             alt="Logo"
           />
@@ -113,7 +113,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/"
-                className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200 "
+                className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200  hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
                 aria-current="page"
               >
                 Home
@@ -122,7 +122,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/events"
-                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 "
+                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
               >
                 Events
               </a>
@@ -130,7 +130,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/dsa-sheet"
-                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 "
+                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
               >
                 DSA Sheet
               </a>
@@ -138,7 +138,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/blogs"
-                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 "
+                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
               >
                 Blogs
               </a>
@@ -146,7 +146,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/resources"
-                className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200 "
+                className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200 hover:bg-green-200 md:hover:bg-transparent md:hover:text-[#4CAF50]"
               >
                 Resources
               </a>

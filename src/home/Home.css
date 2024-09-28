@@ -61,15 +61,13 @@
 .lbr {
   display: none;
 }
-.logo{
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-  background-clip:text;
-  color:transparent;
+.dark .nav-link,.dark .logo-text{
+  color:#5cf164 !important;
 }
-.nav-link,.logo-text{
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-  background-clip:text;
-  color:transparent;
+.dark .nav-link:hover {
+  color: #34d058 !important; 
+}
+.nav-link{
   font-weight: bold;
 }
 
