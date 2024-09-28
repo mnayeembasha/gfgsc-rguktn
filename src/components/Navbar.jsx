@@ -59,7 +59,7 @@ const Navbar = () => {
         </a>
 
         {/* Right Section: Dark mode toggle + Hamburger */}
-        <div className="flex space-x-3 items-center md:hidden">
+        <div className="toggle-btn flex space-x-3 items-center md:hidden">
           {/* Dark Mode Toggle Button */}
           <button
               id="tooltip-btn"

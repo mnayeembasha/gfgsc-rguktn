@@ -263,9 +263,14 @@ textarea {
     width: 15rem;
   }
 }
+@media (max-width: 500px) {
+  .logo{
+    height:1.2rem !important;
+  }
+}
 @media only screen and (max-width: 407px) {
   .navbar .logo {
-    height: 1.3rem;
+    height: 1.15rem !important;
   }
   .navbar .logo-text {
     font-size: 1.2rem;
@@ -289,5 +294,29 @@ textarea {
 @media (min-width: 450px) {
   .contact-card {
     border-radius: 1rem; /* Equivalent to rounded-2xl for screens >= 400px */
+  }
+}
+
+
+@media (max-width: 375px) {
+  .navbar {
+    padding-left: 0.15rem !important;
+    padding-right: 0.15rem !important;
+  }
+  .hamberger-menu{
+    padding:0rem !important;
+  }
+  .toggle-btn > * + *{
+    margin-left:0rem  !important;
+    margin-right:0rem  !important;
+  }
+  .logo{
+    height:0.75rem !important;
+  }
+}
+@media (max-width: 350px) {
+  .navbar {
+    padding-left: 0.15rem !important;
+    padding-right: 0.15rem !important;
   }
 }
