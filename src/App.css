@@ -27,17 +27,8 @@
                     linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
   background-size: 55px 55px;
 }
-.navbar{
-  /* background-color: #131417 !important; */
-}
-.nav-menu li a{
-  color:green;
-}
 .gfg-dark-color{
   background-color: #131417;
-}
-body{
-
 }
 .dark .primary{
   width: 100%;
@@ -51,7 +42,6 @@ body{
   background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
                     linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
   background-size: 55px 55px;background-color: #131417 !important;
-
 }
 
 .toggle{

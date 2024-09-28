@@ -113,7 +113,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/"
-                className="block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
+                className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200 "
                 aria-current="page"
               >
                 Home
@@ -122,7 +122,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/events"
-                className="block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
+                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 "
               >
                 Events
               </a>
@@ -130,7 +130,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/dsa-sheet"
-                className="block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
+                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 "
               >
                 DSA Sheet
               </a>
@@ -138,7 +138,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/blogs"
-                className="block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
+                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 "
               >
                 Blogs
               </a>
@@ -146,7 +146,7 @@ const Navbar = () => {
             <li>
               <a
                 href="/resources"
-                className="block py-2 px-3 md:p-0 rounded transition duration-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
+                className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200 "
               >
                 Resources
               </a>

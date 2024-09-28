@@ -38,13 +38,9 @@ const Contact = () => {
     e.preventDefault();
     const errors = validateForm();
     setFormErrors(errors);
-    // const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    // const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    // const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-    // const serviceID = process.env.VITE_EMAILJS_SERVICE_ID;
-    // const templateID = process.env.VITE_EMAILJS_TEMPLATE_ID;
-    // const publicKey = process.env.VITE_EMAILJS_PUBLIC_KEY;
-
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     if (Object.keys(errors).length === 0) {
       setIsSubmitting(true);
@@ -197,7 +193,7 @@ const Contact = () => {
                 type="email"
                 name="from_email"
                 placeholder="Enter your email"
-                className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 bg-[#f0f8f0] dark:bg-[#121212] dark:text-gray-200 text-gray-800 ${
+                className={`w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 bg-[#f0f8f0] dark:bg-[#121212] dark:focus:bg-[#121212] dark:text-gray-200 text-gray-800 ${
                   formErrors.email ? 'ring-2 ring-red-500' : 'focus:ring-[#32a852]'
                 }`}
               />

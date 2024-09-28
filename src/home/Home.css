@@ -61,7 +61,17 @@
 .lbr {
   display: none;
 }
-
+.logo{
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  background-clip:text;
+  color:transparent;
+}
+.nav-link,.logo-text{
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  background-clip:text;
+  color:transparent;
+  font-weight: bold;
+}
 
 /* About section */
 

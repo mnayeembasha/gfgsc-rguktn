@@ -9,7 +9,7 @@
   }
   .dark .text-green-grad{
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
   }
   .dark .lime-green-grad{
     @apply bg-clip-text text-transparent !important;
