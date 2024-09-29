@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import {resources} from '../data/resources.js'
+import MERN_Resources from "./MERN_Resources.jsx";
 const Resources = () => {
   return (
     <>
@@ -36,6 +37,7 @@ const Resources = () => {
 </div>
 
       ))}
+      <MERN_Resources/>
       </div></div>
 </section>
       <Footer/>
