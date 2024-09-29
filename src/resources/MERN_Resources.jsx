@@ -39,17 +39,18 @@ const MERN_Resources = () => {
 
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 items-start justify-evenly">
   {tutorials.map((tutorial, index) => (
+    <a href={tutorial.link} target="_blank" rel="noopener noreferrer">
     <div
       key={index}
       className="flex flex-col gap-2 justify-center items-center px-6 py-2 rounded-lg shadow-lg bg-green-100 dark:bg-[#353535]
                  hover:bg-green-200 dark:hover:bg-[#484848] transition-colors duration-300"
     >
-      <a href={tutorial.link} target="_blank" rel="noopener noreferrer">
+
         <h3 className="text-green-900 text-lg font-bold text-center dark-green-grad hover:text-green-700 dark:hover:text-gray-100">
           {tutorial.name}  Tutorial
         </h3>
-      </a>
     </div>
+      </a>
   ))}
 </div>
 
