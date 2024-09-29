@@ -34,7 +34,7 @@ export const events = [
     {
       id: 1,
       title: 'Full Stack Webinar',
-      date: 'September 10, 2024',
+      date: 'September 28, 2024',
       description: 'Join us for a hands-on workshop on the latest web development technologies and techniques.',
       // image:'/assets/fullstack.jpg',
       image:'/assets/fullstack2.jpg',
