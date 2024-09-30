@@ -5,7 +5,7 @@ const MERN_Resources = () => {
           link: "https://www.geeksforgeeks.org/courses/mongodb-developers-toolkit-crud-mastery",
         },
         {
-          name: "Express",
+          name: "Express.js",
           link: "https://www.geeksforgeeks.org/learn-express/",
         },
         {
