@@ -2,14 +2,13 @@ import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 import {blogs} from '../data/blog.js'
 import { Outlet } from 'react-router-dom';
-import GateCS from './GateCS.jsx'
  const Blog = () => {
     return(
         <div className='flex flex-col min-h-screen'>
             <Navbar/>
-            <div className='dark:bg-[#1b1c1f] flex-grow'>
+            <div className='bg-[#DCF5DC] bg-[#E6F0E9] dark:bg-[#1b1c1f] flex-grow'>
             <section id="blogs" className="py-4 md:pt-6">
-        <div data-aos="fade-up" className="container   mx-auto px-4 md:px-12 md:pt-4 md:pb-4 rounded-2xl">
+        <div data-aos="fade-up" className="container mx-auto px-4 md:px-12 md:pt-4 md:pb-4 rounded-2xl">
           <h2 className="mb-8 text-3xl font-bold md:text-4xl text-[#1a5a1a] dark-green-grad">Blog Posts</h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
       {blogs.map((blog) => (

@@ -1,18 +1,22 @@
 const MERN_Resources = () => {
     const tutorials = [
         {
+          id:1,
           name: "MongoDB",
           link: "https://www.geeksforgeeks.org/courses/mongodb-developers-toolkit-crud-mastery",
         },
         {
+          id:2,
           name: "Express.js",
           link: "https://www.geeksforgeeks.org/learn-express/",
         },
         {
+          id:3,
           name: "React",
           link: "https://www.geeksforgeeks.org/react-tutorial/",
         },
         {
+          id:4,
           name: "Node.js",
           link: "https://www.geeksforgeeks.org/nodejs/",
         },
@@ -39,7 +43,7 @@ const MERN_Resources = () => {
 
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 items-start justify-evenly">
   {tutorials.map((tutorial, index) => (
-    <a href={tutorial.link} target="_blank" rel="noopener noreferrer">
+    <a href={tutorial.link} key={tutorial.id} target="_blank" rel="noopener noreferrer">
     <div
       key={index}
       className="flex flex-col gap-2 justify-center items-center px-6 py-2 rounded-lg shadow-lg bg-green-100 dark:bg-[#353535]

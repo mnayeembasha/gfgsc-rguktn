@@ -85,11 +85,12 @@ const Contact = () => {
       id="contact"
       data-aos="fade-up"
       className="w-full py-10 md:py-6 lg:py-24 flex justify-center align-center text-white"
+      style={{boxSizing:'border-box'}}
     >
       {/* <ToastContainer className="Toastify__toast-container"/> */}
       <div
         data-aos="fade-up"
-        className="contact-card md:shadow-lg bg-[#f0f8f0] dark:bg-[#252525] grid grid-cols-1 gap-8 px-4 py-8 md:py-12 md:grid-cols-2 md:gap-0 md:px-6 soc-gpar"
+        className="contact-card md:shadow-lg bg-[#f0f8f0] dark:bg-[#252525] grid grid-cols-1 gap-8 px-4 md:px-4 py-8 md:py-12 md:grid-cols-2 md:gap-0  soc-gpar"
       >
         <div className="space-y-6 px-8 md:px-24 flex flex-col justify-center align-center soc-par">
           <div data-aos="fade-up" className="space-y-2 px-4 md:px-6">
@@ -100,26 +101,26 @@ const Contact = () => {
           </div>
           <div className="space-y-4 px-4 md:px-8">
             {/* Contact Info */}
-            <div data-aos="fade-up" className="flex items-center gap-2 mb-8 flex-wrap w-full">
-  <div className="bg-[#308D46] dark:bg-green-300 icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
+            <div data-aos="fade-up" className="address-section flex items-center gap-2 mb-8 flex-wrap w-full">
+  <div className="address-icon bg-[#308D46] dark:bg-green-300 icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
   {/* bi-telephone-fill */}
     <i className="bi bi-geo-alt-fill text-white dark:text-gray-800"></i>
   </div>
   <span
 
-    className="text-green-700 dark:text-gray-200"
+    className="address-content text-green-700 dark:text-gray-200"
   >
     RGUKT Nuzvid, Andhra Pradesh
   </span>
 </div>
 
-<div className="flex items-center gap-2 flex-wrap w-full">
-  <div className="bg-[#308D46] dark:bg-green-300 icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
+<div className="flex items-center email-section gap-2 flex-wrap w-full">
+  <div className="bg-[#308D46] email-icon dark:bg-green-300 icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container flex-shrink-0">
     <i className="bi bi-envelope-fill text-white dark:text-gray-800"></i>
   </div>
   <a
     href="mailto:geeksforgeeksrguktnuzvid@gmail.com"
-    className="text-green-700 dark:text-gray-200 hover:underline hover:underline-offset-2 break-all"
+    className="email-content text-green-700 dark:text-gray-200 hover:underline hover:underline-offset-2 break-all"
   >
     geeksforgeeksrguktnuzvid@gmail.com
   </a>
@@ -127,15 +128,15 @@ const Contact = () => {
 
             <div
               data-aos="fade-up"
-              className="flex items-center gap-4 py-2 md:py-4"
+              className="icons-section flex items-center gap-4 py-2 md:py-4"
             >
               <a
-                href=""
+                href="https://chat.whatsapp.com/LbP4VJ7V0E1ERD0YwGJuv3"
                 className="text-[#a3d9a5]  hover:text-[#32a852] transition-colors mr-4"
                 target="_blank"
               >
                 <div className="bg-[#308D46] dark:bg-green-300 icon-par rounded-full w-8 h-8 flex items-center justify-center icon-container">
-                  <i className="bi bi-twitter-x text-white dark:text-gray-900"></i>
+                  <i className="bi bi-whatsapp text-white dark:text-gray-900"></i>
                 </div>
               </a>
               <a

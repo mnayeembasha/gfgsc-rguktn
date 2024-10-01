@@ -6,7 +6,7 @@ const GateCS = () => {
   return (
     <>
     <Navbar/>
-    <div style={{overflowX:'hidden'}} className="px-[5%] md:px-[20%] py-12 md:py-16 bg-[#f0f8f0]  blog-light-bg dark:text-white blog-dark-bg">
+    <div style={{overflowX:'hidden'}} className="px-[5%] md:px-[20%] py-12 md:py-16 bg-[#f0f8f0] dark:text-white blog-dark-bg">
       <article id="a1b2d00e-aa80-4065-9429-1247e2992180" className="page sans">
         <header>
           <h1 className="page-title text-5xl font-extrabold mb-2 md:mb-5 text-center">Gate-CS 2025</h1>
@@ -114,6 +114,13 @@ const GateCS = () => {
             </table>
           </div>
 
+          <h2 className="text-2xl font-bold mt-6">Detailed Syllabus</h2>
+          <p className="mt-4">
+            <a href="https://gate2025.iitr.ac.in/doc/2025/GATE%20_CS_2025_Syllabus.pdf" className="text-blue-600 dark:text-blue-400 word-break">
+              https://gate2025.iitr.ac.in/doc/2025/GATE%20_CS_2025_Syllabus.pdf
+            </a>
+          </p>
+
           <h3 className="text-2xl font-extrabold mt-6">Exam Pattern:</h3>
           <ul className="list-disc mt-4 pl-5" style={{lineHeight:'2rem'}}>
             <li><strong>Total Marks</strong>: 100</li>
@@ -142,12 +149,7 @@ const GateCS = () => {
             <li><strong>No negative marking</strong> for <strong>NAT</strong> and <strong>MSQ</strong> questions.</li>
           </ul>
 
-          <h2 className="text-2xl font-bold mt-6">Detailed Syllabus</h2>
-          <p className="mt-4">
-            <a href="https://gate2025.iitr.ac.in/doc/2025/GATE%20_CS_2025_Syllabus.pdf" className="text-blue-600 dark:text-blue-400 word-break">
-              https://gate2025.iitr.ac.in/doc/2025/GATE%20_CS_2025_Syllabus.pdf
-            </a>
-          </p>
+
 
           <h2 className="text-2xl font-bold mt-6">Practicing Previous Year Questions</h2>
           <p className="mt-4">
@@ -167,7 +169,7 @@ const GateCS = () => {
           </h1>
 
           <p className="mt-4">
-            Here’s a table summarizing the some of the competitive exams for <strong>GATE CSE aspirants</strong>:
+            Here's a table summarizing the some of the competitive exams for <strong>GATE CSE aspirants</strong> along with the overlap and additional preparation required:
           </p>
 
           <div className="overflow-x-auto mt-4">

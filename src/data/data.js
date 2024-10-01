@@ -37,6 +37,7 @@ export const events = [
       date: 'September 28, 2024',
       description: 'Join us for a hands-on workshop on the latest web development technologies and techniques.',
       // image:'/assets/fullstack.jpg',
+      // image:'/assets/fullstack_aig.jpg',
       image:'/assets/fullstack2.jpg',
       time:"5:00 PM",
     },
@@ -53,8 +54,8 @@ export const events = [
       title: 'Hackathon',
       date: 'December 26, 2024',
       description: 'Join us for a 24-hour coding challenge and showcase your problem-solving skills.',
-      // image:'https://media.istockphoto.com/id/1403622426/photo/hackathon-inscription-against-laptop-and-code-background-technology-concept.webp?b=1&s=612x612&w=0&k=20&c=8BzfrMqbfnfkFklzR6wBWcog-aiwzdFQOVYgZAzaV4A=',
-      image:'https://media.istockphoto.com/id/1484758991/photo/hackathon-concept-the-meeting-at-the-white-office-table.jpg?b=1&s=612x612&w=0&k=20&c=lKZoNcCmRjbl0lUItRq4n_d-fW9R7RzSYDzNKg_pwAA=',
+      // image:'https://media.istockphoto.com/id/1484758991/photo/hackathon-concept-the-meeting-at-the-white-office-table.jpg?b=1&s=612x612&w=0&k=20&c=lKZoNcCmRjbl0lUItRq4n_d-fW9R7RzSYDzNKg_pwAA=',
+      image:'/assets/hackathon.webp',
       time:"5:00 PM",
     },
 

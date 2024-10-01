@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   // Set up state to track the current theme
-  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light');
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
 
   // Apply the theme when the component mounts and whenever it changes
   useEffect(() => {

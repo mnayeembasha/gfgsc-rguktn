@@ -14,15 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script>
-      // Optionally check if user previously selected dark mode from localStorage
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    </script>
-
 
   </head>
   <body>
@@ -35,50 +26,10 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+
   </body>
 </html>
 
 
 
 
-<!-- const MERN_Resources = () => {
-  const tutorials = [
-      {
-        name: "MongoDB",
-        link: "https://www.mongodb.com/",
-      },
-      {
-        name: "Express",
-        link: "https://expressjs.com/",
-      },
-      {
-        name: "React",
-        link: "https://reactjs.org/",
-      },
-      {
-        name: "Node.js",
-        link: "https://nodejs.org/",
-      },
-    ];
-return (
-<>
-     <div className="flex flex-wrap gap-4 items-start justify-between">
-    {tutorials.map((tutorial, index) => (
-      <div
-        key={index}
-        className="flex flex-col gap-2 items-start px-6 py-2 rounded-lg shadow-lg bg-green-100 dark:bg-[#484848]"
-      >
-        <a href={tutorial.link} target="_blank" rel="noopener noreferrer">
-          <h3 className="text-green-900 text-lg font-bold dark:text-gray-200 text-left">
-            {tutorial.name} <br /> Tutorial
-          </h3>
-        </a>
-      </div>
-    ))}
-  </div>
-</>
-);
-};
-
-export default MERN_Resources;
- -->

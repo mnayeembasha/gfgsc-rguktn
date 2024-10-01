@@ -25,6 +25,12 @@
   .dark .blog-light-bg{
     background: none;
   }
+  @screen md{
+    .no-grid-bg{
+      background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+    }
+  }
+
 }
 
 
@@ -53,8 +59,12 @@ img{
 }
 .card-light-green-grad{
   background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+  background-repeat: repeat;
 }
 .dark .card-light-green-grad{
   background: none;
+}
+.light-bg-wg{
+  background: #E6F0E9
 }
 

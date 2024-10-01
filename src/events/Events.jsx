@@ -7,9 +7,11 @@ const Events = () => {
 
 
   return (
-    <div className='primary no-grid-bg min-h-screen flex flex-col'>
+    <div className='min-h-screen flex flex-col'>
       <Navbar/>
+      <div className='bg-[#DCF5DC] dark:bg-[#111] flex-grow'>
       <Event heading={"Upcoming Events"}/>
+      </div>
       <Footer />
     </div>
   );

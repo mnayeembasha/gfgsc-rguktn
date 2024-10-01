@@ -11,6 +11,7 @@ import Events from "./Events";
 import Team from "./Team";
 import Faqs from "./Faqs";
 import Contact from "./Contact";
+import ExploreSections from "./ExploreSections.jsx";
 
 const Home = () => {
   useEffect(() => {
@@ -30,9 +31,12 @@ const Home = () => {
       <Navbar />
       <main>
         <Hero />
-        <div className="dark:bg-[#1a1c1f]">
+        <div className="bg-[#DCF5DC] dark:bg-[#1a1c1f]">
         <About />
         <Events/>
+        {/* <BlogsShowCase/>
+        <ResourcesShowCase/> */}
+        <ExploreSections/>
         <Team />
         <Faqs />
         <Contact />

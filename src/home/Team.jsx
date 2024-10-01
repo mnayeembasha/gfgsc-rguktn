@@ -2,13 +2,13 @@ import { teamMembers } from "../data/data";
 
 const Team = () => {
     return (
-        <section data-aos="fade-up" id="team" className="py-8 md:py-16">
+        <section data-aos="fade-up" id="team" className="py-10 md:py-8">
             <div  data-aos="fade-up" className="container mx-auto px-4 md:px-6 ">
           <h2 className="mb-2 text-3xl font-bold md:text-4xl dark-green-grad">Faculty Coordinator</h2>
           <div className="flex justify-center items-center">
   <div
     data-aos="fade-up"
-    className="grid grid-cols-1 w-full py-4 md:py-8 gap-4 place-items-center"
+    className="grid grid-cols-1 w-full py-6 md:py-12 gap-4 place-items-center"
   >
     <div
       data-aos="fade-up"
@@ -63,7 +63,7 @@ const Team = () => {
                   }}
                 />
 
-                <h3 className="mb-1 md:mb-2 md-text-xl text-lg font-semibold md:font-bold dark:md:font-semibold text-green-900 text-[#1a5a1a] dark:text-green-200">
+                <h3 className="mb-1 md:mb-2 md-text-xl text-lg font-bold md:font-bold dark:md:font-semibold text-green-900 text-[#1a5a1a] dark:text-green-200">
                   {member.name}
                 </h3>
                 <p className="font-semibold md-text-lg text-md text-green-700 text-green-grad">
