@@ -54,8 +54,8 @@ export const events = [
       title: 'Hackathon',
       date: 'December 26, 2024',
       description: 'Join us for a 24-hour coding challenge and showcase your problem-solving skills.',
-      // image:'https://media.istockphoto.com/id/1484758991/photo/hackathon-concept-the-meeting-at-the-white-office-table.jpg?b=1&s=612x612&w=0&k=20&c=lKZoNcCmRjbl0lUItRq4n_d-fW9R7RzSYDzNKg_pwAA=',
-      image:'/assets/hackathon.webp',
+      image:'https://media.istockphoto.com/id/1484758991/photo/hackathon-concept-the-meeting-at-the-white-office-table.jpg?b=1&s=612x612&w=0&k=20&c=lKZoNcCmRjbl0lUItRq4n_d-fW9R7RzSYDzNKg_pwAA=',
+      // image:'/assets/hackathon.webp',
       time:"5:00 PM",
     },
 
