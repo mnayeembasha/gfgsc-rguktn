@@ -1,7 +1,7 @@
 {
-  "name": "gfgsc-rguktn",
+  "name": "gfg-student-chapter-rgukt-nuzvid",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -42,5 +42,32 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
     "vite": "^5.4.1"
-  }
+  },
+ "keywords": [
+    "gfg student Chapter rgukt Nuzvid",
+    "geeks for geeks student chapter rgukt nuzvid",
+    "Student Chapter rgukt Nuzvid",
+    "gfgsc rguktn",
+    "gfg rgukt nuzvid",
+    "rgukt Nuzvid",
+    "gfg Student Chapter",
+    "rgukt",
+    "iiit",
+    "GeeksforGeeks RGUKTStudent Chapter",
+    "GFG events RGUKT",
+    "Programming community Nuzvid",
+    "GeeksforGeeks RGUKT",
+    "Student coding events",
+    "Tech enthusiasts RGUKT",
+    "GFG coding challenges",
+    "Software development RGUKT",
+    "Career in tech RGUKT",
+    "Code mentorship Nuzvid",
+    "Tech meetups RGUKT",
+    "RGUKT coding competitions",
+    "Web development workshops rgukt"
+  ],
+  "description": "Join the GFG Student Chapter at RGUKT Nuzvid, fostering a community of aspiring coders and tech enthusiasts. Participate in coding events, workshops, hackathons, and build industry-relevant skills with guidance from experts. Unlock opportunities for networking, learning, and career growth.",
+  "license": "ISC",
+  "author": "Nayeem Basha"
 }
