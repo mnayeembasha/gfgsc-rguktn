@@ -89,7 +89,7 @@ const Home = () => {
       {scrollToTopButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 h-12 w-12 flex items-center justify-center bg-gradient-to-b from-green-500 to-green-700  dark:from-green-400 dark:to-green-500 text-white rounded-full shadow-lg hover:bg-green-600 dark:bg-green-700 dark:hover:bg-green-800 transition duration-300 ease-in-out"
+          className="fixed bottom-6 right-6 h-12 w-12 flex items-center justify-center bg-gradient-to-b from-green-500 to-green-700  text-white rounded-full shadow-lg hover:bg-green-600 dark:bg-green-700 dark:hover:bg-green-800 transition duration-300 ease-in-out"
         >
           <i className="bi bi-arrow-up"></i>
         </button>
