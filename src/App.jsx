@@ -1,5 +1,5 @@
 
-import { useEffect } from 'react';
+import { useState,useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import AOS from "aos";
@@ -33,7 +33,7 @@ function App(){
   }, []);
 
   return (
-    // <Router>
+    //  <Router>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/events" element={<Events />} />
@@ -44,7 +44,8 @@ function App(){
         <Route path="/blogs/web3-newage-internet" element={<Web3 />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
-  // </Router>
+
+  //  </Router>
   );
 }
 export default App;

@@ -42,7 +42,7 @@ const Team = () => {
         </div>
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="mb-8 text-3xl font-bold md:text-4xl dark-green-grad">Core Team</h2>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div data-aos="fade-up" className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {teamMembers.map((member, index) => (
                <div
                 data-aos="fade-up"
