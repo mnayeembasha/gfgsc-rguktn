@@ -7,16 +7,17 @@ const DSAContest = () => {
   return (
     <section>
       <Navbar />
-      <div  data-aos="fade-up"
+      <div  className="dsa-contest min-h-screen px-[5%] md:px-[20%] py-12 md:py-16 bg-[#E6F0E9] dark:text-white dark:bg-[#1a1c1f] dark:bg-none">        <div className="gate-image my-2 md:my-4">
+        <div data-aos="fade-up"
          data-aos-duration="2500"
-        data-aos-delay="300" className="dsa-contest min-h-screen px-[5%] md:px-[20%] py-12 md:py-16 bg-[#E6F0E9] dark:text-white dark:bg-[#1a1c1f] dark:bg-none">        <div className="gate-image my-2 md:my-4">
+        data-aos-delay="300">
           <img
             src={"/assets/dsa-contest.jpeg"}
             width={500}
             height={500}
             className="mx-auto rounded-lg"
             style={{ aspectRatio: "250/250", objectFit: "contain" }}
-          />
+          /></div>
         </div>
         <div data-aos="fade-up"
          data-aos-duration="1500"
@@ -38,8 +39,8 @@ const DSAContest = () => {
             YOU!
           </p>
         </div>
-        <div data-aos="fade-up"
-         data-aos-duration="1500"
+        <div data-aos="zoom-in"
+         data-aos-duration="1000"
         data-aos-delay="300"><RegisterButton/></div>
 
         <div data-aos="fade-up"
