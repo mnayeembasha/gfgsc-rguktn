@@ -1,7 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 /* Global styles */
+@layer utilities {
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+  @media (max-width: 768px) {
+    .animate-marquee {
+      animation: marquee 20s linear infinite !important;
+    }
+  }
+}
+
 @layer utilities {
   .dark .dark-green-grad {
     @apply bg-clip-text text-transparent;

@@ -25,12 +25,12 @@ const Resources = () => {
   <div className="flex flex-col gap-2 items-center justify-between">
     <div>
     <a href={resource.link} target="_blank" rel="noopener noreferrer">
-      <h3 className="text-[#1a5a1a] text-green-900 text-lg font-bold dark-green-grad text-left">
+      <h3 className="text-[#1a5a1a] text-green-900 text-lg font-bold dark-green-grad ">
         {resource.name}
       </h3>
     </a></div>
 
-    <div className="about-resource dark:text-gray-200">
+    <div className="about-resource dark:text-gray-200 break-words">
         {resource.about}
     </div>
   </div>
@@ -39,7 +39,7 @@ const Resources = () => {
       ))}
       <MERN_Resources/>
       </div></div>
-</section>
+      </section>
       <Footer/>
     </>
   );

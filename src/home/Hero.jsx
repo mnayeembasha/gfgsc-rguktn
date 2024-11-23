@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Announcement from "../dsa-contest/Announcement";
 
 const Hero = () => {
     useEffect(() => {
@@ -30,8 +31,9 @@ const Hero = () => {
       }, []);
   return (
     <section
-      className="hero-section sm:h-[80vh] xsm:h-[80vh] md:h-[90vh] py-2 md:py-24 flex flex-col items-center justify-center"
+    className="hero-section sm:h-[80vh] xsm:h-[80vh] md:h-[90vh] py-2 md:py-24 flex flex-col items-center justify-center"
     >
+    <div className="mb-4"><Announcement/></div>
       <div
         data-aos="zoom-in"
         data-aos-duration="2500"

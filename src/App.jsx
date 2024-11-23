@@ -13,6 +13,7 @@ import GateCS from './blogs/GateCS.jsx';
 import Web3 from './blogs/Web3.jsx';
 import DSASheet from './dsasheet/DSASheet.jsx';
 import Resources from './resources/Resources.jsx';
+import DSAContest from './dsa-contest/DSAContest.jsx';
 function App(){
 
   const location = useLocation();
@@ -42,6 +43,7 @@ function App(){
       <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/gate-cs-2025-roadmap" element={<GateCS />} />
         <Route path="/blogs/web3-newage-internet" element={<Web3 />} />
+      <Route path="/dsa-contest" element={<DSAContest/>}/>
       <Route path="*" element={<NotFound />} />
     </Routes>
 
