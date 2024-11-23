@@ -1,4 +1,5 @@
 import ExploreMoreButton from "../components/ExploreMoreButton.jsx";
+import {Link} from 'react-router-dom';
 const ExploreSections = () => {
 
 
@@ -45,7 +46,9 @@ const ExploreSections = () => {
               key={section.id}
               className="section-showcase-card rounded-lg  bg-green-200 p-4 shadow-md dark:bg-[#252525]"
             >
-              <a href={section.link} target="_blank" rel="noopener noreferrer">
+              <Link to={section.link}
+              // target="_blank"
+              rel="noopener noreferrer">
                 <img
                   src={section.image}
                   alt={section.name}
@@ -58,18 +61,18 @@ const ExploreSections = () => {
                     objectPosition: "center",
                   }}
                 />
-              </a>
+              </Link>
               <div className="flex flex-col gap-2 items-center justify-between">
                 <div>
-                  <a
-                    href={section.link}
-                    target="_blank"
+                  <Link
+                    to={section.link}
+                    // target="_blank"
                     rel="noopener noreferrer"
                   >
                     <h3 className="text-[#1a5a1a] text-green-900 text-lg font-bold dark-green-grad text-left">
                       {section.name}
                     </h3>
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="about-resource dark:text-gray-200">

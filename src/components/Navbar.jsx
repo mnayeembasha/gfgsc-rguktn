@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -45,7 +46,7 @@ const Navbar = () => {
 
         {/* Logo */}
         {/* https://media.geeksforgeeks.org/gfg-gg-logo.svg */}
-        <a href="/" className="flex items-center space-x-3 image-container">
+        <Link to="/" className="flex items-center space-x-3 image-container">
           <img
             src={theme==="dark"?"/assets/logo.svg":"https://media.geeksforgeeks.org/gfg-gg-logo.svg"}
             className="h-5 logo"
@@ -54,7 +55,7 @@ const Navbar = () => {
           <span className="logo-text self-center gfg-color text-2xl font-bold whitespace-nowrap text-[#1a5a1a] dark:text-gray-100">
             GFGSC-RGUKTN
           </span>
-        </a>
+        </Link>
 
         {/* Right Section: Dark mode toggle + Hamburger */}
         <div className="toggle-btn flex space-x-3 items-center md:hidden">
@@ -109,45 +110,45 @@ const Navbar = () => {
         >
           <ul className="nav-menu flex flex-col font-medium mt-4 rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent">
             <li>
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200  hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
                 aria-current="page"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/events"
+              <Link
+                to="/events"
                 className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
               >
                 Events
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/dsa-sheet"
+              <Link
+                to="/dsa-sheet"
                 className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
               >
                 DSA Sheet
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/blogs"
+              <Link
+                to="/blogs"
                 className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
               >
                 Blogs
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/resources"
+              <Link
+                to="/resources"
                 className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200 hover:bg-green-200 md:hover:bg-transparent md:hover:text-[#4CAF50]"
               >
                 Resources
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
