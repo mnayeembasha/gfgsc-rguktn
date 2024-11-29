@@ -84,7 +84,6 @@
 
 /* Apply filter and drop-shadow-xl effects */
 .custom-shadow {
-  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
   filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.1));
 }
 
@@ -155,8 +154,8 @@ textarea {
   transition: background-color 0.3s ease; /* Smooth transition */
 }
 .icon-par:hover{
-  background-color: hsl(160, 51%, 60%); /* Light Green on hover */
-  background-color: #5cf164; /* Light Green on hover */
+  background-color: hsl(160, 51%, 60%);
+  background-color: #5cf164;
   font-weight: bold !important;
 }
 .border-white{
@@ -317,7 +316,7 @@ textarea {
 }
 @media (min-width: 450px) {
   .contact-card {
-    border-radius: 1rem; /* Equivalent to rounded-2xl for screens >= 400px */
+    border-radius: 1rem;
   }
 }
 

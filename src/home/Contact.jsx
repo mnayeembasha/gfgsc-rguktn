@@ -90,7 +90,7 @@ const Contact = () => {
       {/* <ToastContainer className="Toastify__toast-container"/> */}
       <div
         data-aos="fade-up"
-        className="contact-card md:shadow-lg bg-[#f0f8f0] dark:bg-[#252525] grid grid-cols-1 gap-8 px-4 md:px-4 py-8 md:py-12 md:grid-cols-2 md:gap-0  soc-gpar"
+        className="contact-card md:shadow-lg bg-[#f0f8f0] dark:bg-card-dark grid grid-cols-1 gap-8 px-4 md:px-4 py-8 md:py-12 md:grid-cols-2 md:gap-0  soc-gpar"
       >
         <div className="space-y-6 px-8 md:px-24 flex flex-col justify-center align-center soc-par">
           <div data-aos="fade-up" className="space-y-2 px-4 md:px-6">

@@ -73,5 +73,24 @@
   background-size: 100%;
 }
 
+img{
+  user-select: none;
+  pointer-events: none !important;
+  color:#080808;
+}
+.dsa-category-card{
+  outline: none !important;
+}
+.card-light-green-grad{
+  background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+  background-repeat: repeat;
+}
+.dark .card-light-green-grad{
+  background: none;
+}
+.light-bg-wg{
+  background: #E6F0E9
+}
+
 
 

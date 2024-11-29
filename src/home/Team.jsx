@@ -13,7 +13,7 @@ const Team = () => {
     <div
       data-aos="fade-up"
       key={11}
-      className="team-member-card dark:bg-[#202020] col-span-1 w-full sm:w-[100%] md:w-[50%] lg:w-[50%] px-4 md:px-16 py-4 relative image-container rounded-lg bg-green-200 md:bg-green-300 p-2 md:p-4 shadow-lg transition-colors duration-2000 ease-in-out"
+      className="team-member-card dark:bg-[#202020] col-span-1 w-full sm:w-[100%] md:w-[50%] lg:w-[50%] px-4 md:px-16 py-4 relative image-container rounded-lg p-2 md:p-4 shadow-lg transition-colors duration-2000 ease-in-out"
     >
       <img
         src={"/assets/team/devi_mam.jpg"}
@@ -30,7 +30,7 @@ const Team = () => {
       <h3 className="mb-1 md:mb-2 text-xl md-text-2xl font-bold text-green-900  dark:text-green-200">
         Dr. D.V. Nagarjuna Devi
       </h3>
-      <p className="text-gray-800 text-lg md-text-xl font-semibold text-green-700 text-green-grad">
+      <p className="text-lg md-text-xl font-semibold text-green-700 text-green-grad">
         HOD - Dept of CSE
       </p>
     </div>
@@ -47,7 +47,7 @@ const Team = () => {
                <div
                 data-aos="fade-up"
                 key={index}
-                className={`team-member-card dark:bg-[#202020] bg-green-200 md:bg-green-300 shadow-lg relative image-container rounded-lg  p-2 md:p-4 shadow-lg  transition-colors duration-2000 ease-in-out`}
+                className={`team-member-card dark:bg-[#202020]  shadow-lg relative image-container rounded-lg  p-2 md:p-4  transition-colors duration-2000 ease-in-out`}
 
               >
                 <img

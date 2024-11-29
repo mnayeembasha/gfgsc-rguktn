@@ -1,8 +1,6 @@
-import { useState,useEffect } from "react";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-// import tippy from 'tippy.js';
-// import 'tippy.js/dist/tippy.css';
+import { useState, useEffect } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import "./Home.css";
 import Navbar from "../components/Navbar.jsx";
@@ -20,40 +18,26 @@ const Home = () => {
     const handleContextMenu = (e) => {
       e.preventDefault();
     };
-
     document.addEventListener("contextmenu", handleContextMenu);
-
     return () => {
       document.removeEventListener("contextmenu", handleContextMenu);
     };
   }, []);
 
-   //scrolltoTop button
-  //  useEffect(() => {
-  //   tippy('#scroll-to-top-button', {
-  //     content: 'Scroll to top',
-  //     theme: {theme},
-  //   });
-  // }, []);
-
   const [scrollToTopButton, setScrollToTopButton] = useState(false);
-
-  // Function to scroll to top
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
-
-  // Function to track scroll position
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const documentHeight = document.documentElement.scrollHeight;
       const windowHeight = window.innerHeight;
 
-      // Show button if scrolled more than 300px, hide if near the footer
+      // Showing button if scrolled more than 300px, hide if near the footer
       if (scrollY > 300 && scrollY + windowHeight < documentHeight - 100) {
         setScrollToTopButton(true);
       } else {
@@ -61,31 +45,29 @@ const Home = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-
   return (
-    <div className="min-h-screen flex flex-col bg-[#f0f8f0] text-[#1a5a1a] primary">
+    <div className="min-h-screen flex flex-col bg-[#f0f8f0] text-heading-green                                             primary">
       <Navbar />
       <main>
         <Hero />
-        <div className="bg-[#DCF5DC] dark:bg-[#1a1c1f]">
-        <About />
-        <Events/>
-        {/* <BlogsShowCase/>
+        <div className="bg-home-light dark:bg-home-dark">
+          <About />
+          <Events />
+          {/* <BlogsShowCase/>
         <ResourcesShowCase/> */}
-        <ExploreSections/>
-        <Team />
-        <Faqs />
-        <Contact />
+          <ExploreSections />
+          <Team />
+          <Faqs />
+          <Contact />
         </div>
       </main>
-      {/* Scroll-to-Top Button */}
       {scrollToTopButton && (
         <button
           onClick={scrollToTop}
@@ -103,10 +85,8 @@ const Home = () => {
         pauseOnHover
         draggable
         theme="light"
-        style={{zIndex:9999}}
+        style={{ zIndex: 9999 }}
       />
-
-
     </div>
   );
 };

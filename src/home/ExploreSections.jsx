@@ -30,13 +30,13 @@ const ExploreSections = () => {
   return (
     <section
       id="resources"
-      className="dark:bg-[#1b1c1f] py-8 md:py-12"
+      className="dark:bg-primary-dark py-8 md:py-12"
     >
       <div
         data-aos="fade-up"
         className="container mx-auto px-4 md:px-12 md:pt-4 rounded-2xl"
       >
-        <h2 className="mb-8 text-3xl font-bold md:text-4xl text-[#1a5a1a] dark-green-grad">
+        <h2 className="mb-8 text-3xl font-bold md:text-4xl text-heading-green dark-green-grad">
         Explore all Sections
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
@@ -44,7 +44,7 @@ const ExploreSections = () => {
             <div
               data-aos="fade-up"
               key={section.id}
-              className="section-showcase-card rounded-lg  bg-green-200 p-4 shadow-md dark:bg-[#252525]"
+              className="section-showcase-card rounded-lg  p-4 shadow-md dark:bg-card-dark"
             >
               <Link to={section.link}
               // target="_blank"
@@ -69,7 +69,7 @@ const ExploreSections = () => {
                     // target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <h3 className="text-[#1a5a1a] text-green-900 text-lg font-bold dark-green-grad text-left">
+                    <h3 className="text-heading-green text-lg font-bold dark-green-grad text-left">
                       {section.name}
                     </h3>
                   </Link>

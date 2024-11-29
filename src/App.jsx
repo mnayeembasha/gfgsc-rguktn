@@ -1,7 +1,6 @@
 
-import { useState,useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
+import {useEffect } from 'react';
+import { Route, Routes,useLocation } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -11,7 +10,7 @@ import Home from './home/Home.jsx'
 import Blogs from './blogs/Blog.jsx'
 import GateCS from './blogs/GateCS.jsx';
 import Web3 from './blogs/Web3.jsx';
-import DSASheet from './dsasheet/DSASheet.jsx';
+import DSASheet from './dsa-sheet/DSASheet.jsx';
 import Resources from './resources/Resources.jsx';
 import DSAContest from './dsa-contest/DSAContest.jsx';
 function App(){
@@ -26,7 +25,7 @@ function App(){
       }
     }
   }, [location]);
-   //Apply animation on scroll
+
    useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -34,20 +33,21 @@ function App(){
   }, []);
 
   return (
-    //  <Router>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/events" element={<Events />} />
-      <Route path="/dsa-sheet" element={<DSASheet />} />
-      <Route path="/resources" element={<Resources />} />
-      <Route path="/blogs" element={<Blogs />} />
-        <Route path="/blogs/gate-cs-2025-roadmap" element={<GateCS />} />
-        <Route path="/blogs/web3-newage-internet" element={<Web3 />} />
-      <Route path="/dsa-contest" element={<DSAContest/>}/>
+      <Route path="/">
+      <Route index  element={<Home />} />
+      <Route path="events" element={<Events />} />
+      <Route path="dsa-sheet" element={<DSASheet />} />
+      <Route path="resources" element={<Resources />} />
+      <Route path="blogs">
+        <Route index element={<Blogs/>}/>
+        <Route path="gate-cs-2025-roadmap" element={<GateCS />} />
+        <Route path="web3-newage-internet" element={<Web3 />} />
+      </Route>
+      <Route path="dsa-contest" element={<DSAContest/>}/>
       <Route path="*" element={<NotFound />} />
+      </Route>
     </Routes>
-
-  //  </Router>
   );
 }
 export default App;

@@ -6,12 +6,12 @@ const Resources = () => {
   return (
     <>
       <Navbar />
-      <section id="resources" className="bg-[#DCF5DC] min-h-screen dark:bg-[#1b1c1f] bg-[#E6F0E9] py-4 md:pt-6 pb-8">
+      <section id="resources" className="bg-primary-light dark:bg-primary-dark min-h-screen py-4 md:pt-6 pb-8">
         <div data-aos="fade-up" className="container mx-auto px-4 md:px-12 md:pt-4 md:pb-4 rounded-2xl">
-          <h2 className="mb-8 text-3xl font-bold md:text-4xl text-[#1a5a1a] dark-green-grad"> Resources</h2>
+          <h2 className="mb-8 text-3xl font-bold md:text-4xl text-heading-green dark-green-grad text-center"> Resources</h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
       {resources.map((resource) => (
-        <div data-aos="fade-up" key={resource.id} className="rounded-lg bg-[#f0f8f0] bg-green-100 md:bg-green-200 card-light-green-grad p-4 shadow-md dark:bg-[#252525]">
+        <div data-aos="fade-up" key={resource.id} className="rounded-lg card-light-green-grad p-4 shadow-md dark:bg-card-dark">
   <a href={resource.link} target="_blank" rel="noopener noreferrer">
     <img
       src={resource.image}
@@ -25,7 +25,7 @@ const Resources = () => {
   <div className="flex flex-col gap-2 items-center justify-between">
     <div>
     <a href={resource.link} target="_blank" rel="noopener noreferrer">
-      <h3 className="text-[#1a5a1a] text-green-900 text-lg font-bold dark-green-grad ">
+      <h3 className="text-green-900 text-lg font-bold dark-green-grad ">
         {resource.name}
       </h3>
     </a></div>

@@ -14,8 +14,7 @@ const Faqs = () => {
           className="p-3 md-p-6 rounded-lg"
         >
           <div className="container px-2 md:px-4 mx-auto">
-          {/* dark-green-grad */}
-            <h1 className="text-3xl font-bold md:text-4xl font-bold  mb-6 dark-green-grad">
+            <h1 className="text-3xl font-bold md:text-4xl mb-6 dark-green-grad">
               Frequently Asked Questions
             </h1>
             <div  id="accordion-flush" >
@@ -26,7 +25,7 @@ const Faqs = () => {
                 <div
                 data-aos="fade-up"
                   key={id}
-                  className=" bg-[#f0f8f0] mb-2 px-3 shadow-lg faq-shadow rounded-lg hover:bg-none dark:bg-[#252525] "
+                  className=" bg-[#f0f8f0] mb-2 px-3 shadow-lg faq-shadow rounded-lg hover:bg-none dark:bg-card-dark "
                 >
                   <h2 id={`accordion-flush-heading-${id}`}>
                     <button
