@@ -14,7 +14,7 @@ const BlogsShowCase = () => {
             <div
               data-aos="fade-up"
               key={blog.id}
-              className="rounded-lg bg-[#f0f8f0] bg-green-100 md:bg-green-200 card-light-green-grad p-4 shadow-md dark:bg-[#252525]"
+              className="rounded-lg  bg-green-100 md:bg-green-200 card-light-green-grad p-4 shadow-md dark:bg-[#252525]"
             >
               <a href={blog.link} rel="noopener noreferrer">
                 <img
@@ -33,7 +33,7 @@ const BlogsShowCase = () => {
               <div className="">
                 <div>
                   <a href={blog.link} rel="noopener noreferrer">
-                    <h3 className="text-[#1a5a1a] text-center text-green-900  text-2xl font-bold  text-[#1a5a1a] dark-green-grad">
+                    <h3 className="text-center  text-2xl font-bold  text-[#1a5a1a] dark-green-grad">
                       {blog.name}
                     </h3>
                   </a>

@@ -33,7 +33,7 @@ const Hero = () => {
     <section
     className="hero-section sm:h-[80vh] xsm:h-[80vh] md:h-[90vh] py-2 md:py-24 flex flex-col items-center justify-center"
     >
-    <div className="mb-4"><Announcement/></div>
+    {/* <div className="mb-4"><Announcement/></div> */}
       <div
         data-aos="zoom-in"
         data-aos-duration="2500"

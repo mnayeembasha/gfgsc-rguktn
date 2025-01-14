@@ -53,7 +53,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f0f8f0] text-heading-green                                             primary">
+    <div className="min-h-screen flex flex-col text-heading-green                                           primary">
       <Navbar />
       <main>
         <Hero />

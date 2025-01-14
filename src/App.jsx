@@ -13,6 +13,7 @@ import Web3 from './blogs/Web3.jsx';
 import DSASheet from './dsa-sheet/DSASheet.jsx';
 import Resources from './resources/Resources.jsx';
 import DSAContest from './dsa-contest/DSAContest.jsx';
+import MemeGallery from './meme-gallery/MemeGallery.jsx';
 function App(){
 
   const location = useLocation();
@@ -39,6 +40,7 @@ function App(){
       <Route path="events" element={<Events />} />
       <Route path="dsa-sheet" element={<DSASheet />} />
       <Route path="resources" element={<Resources />} />
+      <Route path="memes" element={<MemeGallery />} />
       <Route path="blogs">
         <Route index element={<Blogs/>}/>
         <Route path="gate-cs-2025-roadmap" element={<GateCS />} />

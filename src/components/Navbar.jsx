@@ -52,7 +52,7 @@ const Navbar = () => {
             className="h-5 logo"
             alt="Logo"
           />
-          <span className="logo-text self-center gfg-color text-2xl font-bold whitespace-nowrap text-[#1a5a1a] dark:text-gray-100">
+          <span className="logo-text self-center gfg-color text-2xl font-bold whitespace-nowrap text-heading-green dark:text-gray-100">
             GFGSC-RGUKTN
           </span>
         </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200  hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
+                className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200 hover:bg-green-200 md:hover:bg-transparent md:hover:text-navitem-hover-light dark:hover:text-navitem-hover-dark"
                 aria-current="page"
               >
                 Home
@@ -121,7 +121,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/events"
-                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
+                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 md:hover:bg-transparent md:hover:text-navitem-hover-light dark:hover:text-navitem-hover-dark"
               >
                 Events
               </Link>
@@ -129,7 +129,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/dsa-sheet"
-                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
+                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 md:hover:bg-transparent md:hover:text-navitem-hover-light dark:hover:text-navitem-hover-dark"
               >
                 DSA Sheet
               </Link>
@@ -137,7 +137,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/blogs"
-                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 hover:bg-[#4CAF50] md:hover:bg-transparent md:hover:text-[#4CAF50]"
+                className="nav-link block py-2 px-3 md:p-0  rounded transition duration-200 hover:bg-green-200 md:hover:bg-transparent md:hover:text-navitem-hover-light dark:hover:text-navitem-hover-dark"
               >
                 Blogs
               </Link>
@@ -145,9 +145,17 @@ const Navbar = () => {
             <li>
               <Link
                 to="/resources"
-                className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200 hover:bg-green-200 md:hover:bg-transparent md:hover:text-[#4CAF50]"
+                className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200 hover:bg-green-200 md:hover:bg-transparent md:hover:text-navitem-hover-light dark:hover:text-navitem-hover-dark"
               >
                 Resources
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/memes"
+                className="nav-link block py-2 px-3 md:p-0 rounded transition duration-200 hover:bg-green-200 md:hover:bg-transparent md:hover:text-navitem-hover-light dark:hover:text-navitem-hover-dark"
+              >
+                MemeGallery
               </Link>
             </li>
           </ul>

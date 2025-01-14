@@ -24,7 +24,14 @@ const ExploreSections = () => {
             link: "/resources",
             image: "/assets/resources.jpg",
             about: "Find essential programming books and tutorials to boost your coding journey and knowledge base."
-        }
+        },
+        // {
+        //     id: 4,
+        //     name: "Programming Memes",
+        //     link: "/memes",
+        //     image: "/assets/programming-memes-banner.jpg",
+        //     about: " Explore humorous content featuring jokes about coding struggles, debugging, and tech culture."
+        // }
     ];
 
   return (

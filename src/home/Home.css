@@ -5,39 +5,26 @@
     color: transparent;
 }
 .about-bg{
-  /* background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%); */
   background: linear-gradient(109.6deg, rgb(217, 250, 158) 11.2%, rgb(128, 251, 174) 91.1%);
 }
-.dark .about-bg{
-  background: none;
-}
-
 .event-card{
-  background: radial-gradient(circle at 10% 20%, rgb(116, 203, 199) 0%, rgb(220, 246, 200) 90%);
-  background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  background-color: #7ee8fa;
-  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  background: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%) ;
 }
-.dark .event-card{
-  background: none;
-}
-.dark .no-grid-bg{
-  background: none;
-}
-
 .team-member-card{
-  background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
-}
-.dark .team-member-card{
-  background: none;
+  background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%) ;
 }
 .section-showcase-card{
-  background-color: #3ee577;
-  background-image: linear-gradient(315deg, #3ee577 0%, #42fcdb 74%);
+  background: linear-gradient(315deg, #3ee577 0%, #42fcdb 74%) ;
 }
-.dark .section-showcase-card{
+.dark .event-card,
+.dark .about-bg,
+.dark .no-grid-bg,
+.dark .team-member-card
+,.dark .section-showcase-card
+{
   background: none;
 }
+
 
 
 /*Navbar-section*/
@@ -68,16 +55,12 @@
 }
 .nav-link{
   color:#1a5a1a;
+  color:#308d46;
   font-size:1.08rem;
+  font-weight: bold;
 }
 .dark .nav-link,.dark .logo-text{
   color:#5cf164 !important;
-}
-.dark .nav-link:hover {
-  color: #34d058 !important;
-}
-.nav-link{
-  font-weight: bold;
 }
 
 /* About section */
